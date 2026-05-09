@@ -25,5 +25,21 @@ fi
 
 cd "${MEI_VAULT_DIR}"
 echo "[$(date -u +%FT%TZ)] running score ledger" >> "${LOG}"
-/opt/homebrew/bin/bun run scripts/preflight-ledger.ts >> "${LOG}" 2>&1
+/opt/homebrew/bin/bun run scripts/preflight-ledger.ts >> "${LOG}" 2>&1 \
+  || echo "[$(date -u +%FT%TZ)] probe non-zero exit, proceeding to publish whatever data did land" >> "${LOG}"
+
+# auto-publish: commit + push any new ledger / whitelist / intents data
+if [[ -n "$(git status --porcelain ledger whitelist intents 2>/dev/null)" ]]; then
+  git add ledger whitelist intents >> "${LOG}" 2>&1
+  if git commit -m "data: probe $(date -u +%Y-%m-%dT%H:%MZ)" >> "${LOG}" 2>&1; then
+    git push >> "${LOG}" 2>&1 \
+      && echo "[$(date -u +%FT%TZ)] published" >> "${LOG}" \
+      || echo "[$(date -u +%FT%TZ)] push failed (will retry next cycle)" >> "${LOG}"
+  else
+    echo "[$(date -u +%FT%TZ)] commit failed (skipping push)" >> "${LOG}"
+  fi
+else
+  echo "[$(date -u +%FT%TZ)] no data changes, skipping commit" >> "${LOG}"
+fi
+
 echo "[$(date -u +%FT%TZ)] done" >> "${LOG}"
