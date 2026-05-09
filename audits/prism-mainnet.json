@@ -1,0 +1,920 @@
+{
+  "protocol": "prism",
+  "chainId": 4326,
+  "scannedAt": "2026-05-08T16:18:21.198Z",
+  "blockHeight": 15459970,
+  "setup": {
+    "factory": "0x1adb8f973373505bb206e0e5d87af8fb1f5514ef",
+    "factoryOwner": "0x68915D1eA12Eb987956e4e647289611e31a982F7",
+    "factoryOwnerKind": "EOA",
+    "positionManager": "0xcb91c75a6b29700756d4411495be696c4e9a576e",
+    "universalRouter": "0x955d56F6391a496231509134e0d2Beadf82a223f",
+    "feeTiers": [
+      {
+        "fee": 100,
+        "tickSpacing": 1,
+        "enabled": true
+      },
+      {
+        "fee": 500,
+        "tickSpacing": 10,
+        "enabled": true
+      },
+      {
+        "fee": 3000,
+        "tickSpacing": 60,
+        "enabled": true
+      },
+      {
+        "fee": 10000,
+        "tickSpacing": 200,
+        "enabled": true
+      }
+    ]
+  },
+  "pools": {
+    "total": 44,
+    "feeDistribution": [
+      {
+        "fee": 100,
+        "count": 2
+      },
+      {
+        "fee": 10000,
+        "count": 19
+      },
+      {
+        "fee": 3000,
+        "count": 22
+      },
+      {
+        "fee": 500,
+        "count": 1
+      }
+    ],
+    "averageRiskBps": 3727,
+    "healthyCount": 4,
+    "deadCount": 16,
+    "perPool": [
+      {
+        "pool": "0x216A3C6BDab182EBaF083AF9204BfF9086A68c71",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 10000,
+        "reasons": [
+          "liquidity is 0 (effectively dead)",
+          "shallow oracle cardinality: 1",
+          "pool likely too new for TVL drift signal",
+          "token 0xf624DFAC…: bytecode matches a known mass-deployment scam template (mass-deployment scam template — 6+ siblings on MegaETH 4326 (BOBO/MMMA/metox/rrx/test) share this exact bytecode)"
+        ],
+        "liquidity": "0",
+        "cardinality": 1,
+        "blockCreated": 7934259
+      },
+      {
+        "pool": "0x29c92e9A2418F8A8C164F91dDFd04CC159cc1248",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 10000,
+        "reasons": [
+          "liquidity is 0 (effectively dead)",
+          "shallow oracle cardinality: 1",
+          "pool likely too new for TVL drift signal",
+          "token 0x6ff1ED39…: bytecode matches a known mass-deployment scam template (mass-deployment scam template — 6+ siblings on MegaETH 4326 (BOBO/MMMA/metox/rrx/test) share this exact bytecode)"
+        ],
+        "liquidity": "0",
+        "cardinality": 1,
+        "blockCreated": 8998332
+      },
+      {
+        "pool": "0xcdE1CD1964A2606540bAA873C107Bde4b38027F2",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 10000,
+        "reasons": [
+          "liquidity is 0 (effectively dead)",
+          "shallow oracle cardinality: 1",
+          "pool likely too new for TVL drift signal",
+          "token 0x7d01C31A…: bytecode matches a known mass-deployment scam template (mass-deployment scam template — 6+ siblings on MegaETH 4326 (BOBO/MMMA/metox/rrx/test) share this exact bytecode)"
+        ],
+        "liquidity": "0",
+        "cardinality": 1,
+        "blockCreated": 9000908
+      },
+      {
+        "pool": "0x8369a90B50f0B6B68d3a0038931462dAd560c61d",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 10000,
+        "reasons": [
+          "liquidity is 0 (effectively dead)",
+          "shallow oracle cardinality: 1",
+          "token 0x0Cfb8eA2…: bytecode matches a known mass-deployment scam template (mass-deployment scam template — 6+ siblings on MegaETH 4326 (BOBO/MMMA/metox/rrx/test) share this exact bytecode)"
+        ],
+        "liquidity": "0",
+        "cardinality": 1,
+        "blockCreated": 12179900
+      },
+      {
+        "pool": "0xdEc4DA3f5dDe7fA3a51221d112675401Dc8C6250",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 7500,
+        "reasons": [
+          "liquidity is 0 (effectively dead)",
+          "shallow oracle cardinality: 1",
+          "pool likely too new for TVL drift signal",
+          "token 0x1f06ee3d…: mint(address,uint256) selector present — supply may be inflated by an admin",
+          "token 0x21711943…: mint(address,uint256) selector present — supply may be inflated by an admin"
+        ],
+        "liquidity": "0",
+        "cardinality": 1,
+        "blockCreated": 8058422
+      },
+      {
+        "pool": "0x1fF51B8209Ce42241236ecbcE9D36585d3A9E472",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 7500,
+        "reasons": [
+          "liquidity is 0 (effectively dead)",
+          "shallow oracle cardinality: 1",
+          "pool likely too new for TVL drift signal",
+          "token 0x96943400…: mint(address,uint256) selector present — supply may be inflated by an admin",
+          "token 0xb0735aff…: mint(address,uint256) selector present — supply may be inflated by an admin"
+        ],
+        "liquidity": "0",
+        "cardinality": 1,
+        "blockCreated": 8058422
+      },
+      {
+        "pool": "0x1e9778D5c5554f77274E20a6dFdb4bD54499278C",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 7500,
+        "reasons": [
+          "liquidity is 0 (effectively dead)",
+          "shallow oracle cardinality: 1",
+          "token 0x1519015a…: mint(address,uint256) selector present — supply may be inflated by an admin",
+          "token 0x5a83eb80…: mint(address,uint256) selector present — supply may be inflated by an admin"
+        ],
+        "liquidity": "0",
+        "cardinality": 1,
+        "blockCreated": 8060428
+      },
+      {
+        "pool": "0x7016bb66A4ea69122AD0a7A9a211cFBadd4d4638",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 7500,
+        "reasons": [
+          "liquidity is 0 (effectively dead)",
+          "shallow oracle cardinality: 1",
+          "token 0x0E8e5c10…: mint(address,uint256) selector present — supply may be inflated by an admin",
+          "token 0xB31C60fB…: mint(address,uint256) selector present — supply may be inflated by an admin"
+        ],
+        "liquidity": "0",
+        "cardinality": 1,
+        "blockCreated": 8060428
+      },
+      {
+        "pool": "0xCDBcCe2f93d4403880028dF450E29aCF9559E87b",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 7500,
+        "reasons": [
+          "liquidity is 0 (effectively dead)",
+          "shallow oracle cardinality: 1",
+          "token 0xf7d2F0d0…: mint(address,uint256) selector present — supply may be inflated by an admin"
+        ],
+        "liquidity": "0",
+        "cardinality": 1,
+        "blockCreated": 8824756
+      },
+      {
+        "pool": "0xb74e039d4A82dA6CD93B5Ef96cCc22b1227c1e27",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 7500,
+        "reasons": [
+          "liquidity is 0 (effectively dead)",
+          "shallow oracle cardinality: 1",
+          "token 0x92AE20C7…: mint(address,uint256) selector present — supply may be inflated by an admin"
+        ],
+        "liquidity": "0",
+        "cardinality": 1,
+        "blockCreated": 14921229
+      },
+      {
+        "pool": "0x1B6C4857d44286B7C7d7F35f2E03fbf204e070E1",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 7500,
+        "reasons": [
+          "liquidity is 0 (effectively dead)",
+          "shallow oracle cardinality: 1",
+          "token 0x8228F9a5…: mint(address,uint256) selector present — supply may be inflated by an admin"
+        ],
+        "liquidity": "0",
+        "cardinality": 1,
+        "blockCreated": 14926265
+      },
+      {
+        "pool": "0x3c70CbaDF6809A6a87730307A96bE38468c82f7D",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 7500,
+        "reasons": [
+          "liquidity is 0 (effectively dead)",
+          "shallow oracle cardinality: 1",
+          "token 0xf7d2F0d0…: mint(address,uint256) selector present — supply may be inflated by an admin"
+        ],
+        "liquidity": "0",
+        "cardinality": 1,
+        "blockCreated": 14988791
+      },
+      {
+        "pool": "0x129bEd04FeB52276f3ed59ef0634F9AB1A999D83",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 7500,
+        "reasons": [
+          "liquidity is 0 (effectively dead)",
+          "shallow oracle cardinality: 1",
+          "token 0x28B7E77f…: mint(address,uint256) selector present — supply may be inflated by an admin"
+        ],
+        "liquidity": "0",
+        "cardinality": 1,
+        "blockCreated": 15168209
+      },
+      {
+        "pool": "0xcF816d3E3AeC077f6CD161a0F416Bd7CF3fCd703",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 6500,
+        "reasons": [
+          "shallow oracle cardinality: 1",
+          "token 0x4547e939…: bytecode matches a known mass-deployment scam template (mass-deployment scam template — 6+ siblings on MegaETH 4326 (BOBO/MMMA/metox/rrx/test) share this exact bytecode)"
+        ],
+        "liquidity": "22332567124295255138804",
+        "cardinality": 1,
+        "blockCreated": 7945479
+      },
+      {
+        "pool": "0xc1E228E09A59a7D0FF383eB4C3EAB95349766E64",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 6500,
+        "reasons": [
+          "shallow oracle cardinality: 1",
+          "token 0x4547e939…: bytecode matches a known mass-deployment scam template (mass-deployment scam template — 6+ siblings on MegaETH 4326 (BOBO/MMMA/metox/rrx/test) share this exact bytecode)"
+        ],
+        "liquidity": "223606793277843025559975",
+        "cardinality": 1,
+        "blockCreated": 8135579
+      },
+      {
+        "pool": "0xeFC1C30212E011045e71BA14a4D6EFDed349A85c",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 6500,
+        "reasons": [
+          "shallow oracle cardinality: 1",
+          "token 0xB9D748a3…: bytecode matches a known mass-deployment scam template (mass-deployment scam template — 6+ siblings on MegaETH 4326 (BOBO/MMMA/metox/rrx/test) share this exact bytecode)"
+        ],
+        "liquidity": "22783694338631700922531",
+        "cardinality": 1,
+        "blockCreated": 8999146
+      },
+      {
+        "pool": "0x206BcC794ACD58158E5364F77d745313e73361fF",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 5500,
+        "reasons": [
+          "liquidity is 0 (effectively dead)",
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "0",
+        "cardinality": 1,
+        "blockCreated": 8207685
+      },
+      {
+        "pool": "0x2A69D05F3613b89e58D9cD2E0B35d14A67902aEC",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 5500,
+        "reasons": [
+          "liquidity is 0 (effectively dead)",
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "0",
+        "cardinality": 1,
+        "blockCreated": 8214669
+      },
+      {
+        "pool": "0x00680829b8F18C60170c76a5cc4efd34a87c55d1",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 5500,
+        "reasons": [
+          "liquidity is 0 (effectively dead)",
+          "shallow oracle cardinality: 1",
+          "pool likely too new for TVL drift signal"
+        ],
+        "liquidity": "0",
+        "cardinality": 1,
+        "blockCreated": 14867863
+      },
+      {
+        "pool": "0xfa30Cd6ce3dF04c58E6EC2DbC1B4a02ac4692Cd1",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 2500,
+        "reasons": [
+          "shallow oracle cardinality: 1",
+          "token 0xB995060d…: mint(address,uint256) selector present — supply may be inflated by an admin",
+          "token 0xdbBc63B4…: mint(address,uint256) selector present — supply may be inflated by an admin"
+        ],
+        "liquidity": "118749999999999985",
+        "cardinality": 1,
+        "blockCreated": 8280149
+      },
+      {
+        "pool": "0x1c894280451a9d8150357BF5CB13c191F7F1b5a0",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 2500,
+        "reasons": [
+          "shallow oracle cardinality: 1",
+          "token 0x63a60513…: mint(address,uint256) selector present — supply may be inflated by an admin",
+          "token 0xA4cF723d…: mint(address,uint256) selector present — supply may be inflated by an admin"
+        ],
+        "liquidity": "118749999999999985",
+        "cardinality": 1,
+        "blockCreated": 8280149
+      },
+      {
+        "pool": "0xeAa31CD00a39cD0fad0E27150af7D11EB7094C72",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 2500,
+        "reasons": [
+          "shallow oracle cardinality: 1",
+          "token 0xf7d2F0d0…: mint(address,uint256) selector present — supply may be inflated by an admin"
+        ],
+        "liquidity": "288594301932430937",
+        "cardinality": 1,
+        "blockCreated": 8873759
+      },
+      {
+        "pool": "0x8C2a652c4428d87480C0f18cc8FD1ce3574e04Df",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 2500,
+        "reasons": [
+          "shallow oracle cardinality: 1",
+          "token 0x28B7E77f…: mint(address,uint256) selector present — supply may be inflated by an admin"
+        ],
+        "liquidity": "7249111832140174915579",
+        "cardinality": 1,
+        "blockCreated": 14747068
+      },
+      {
+        "pool": "0x05a4d3e8735d7691e74815947CC60f1203680a5D",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 2500,
+        "reasons": [
+          "shallow oracle cardinality: 1",
+          "token 0x28B7E77f…: mint(address,uint256) selector present — supply may be inflated by an admin"
+        ],
+        "liquidity": "13701209734952460827718",
+        "cardinality": 1,
+        "blockCreated": 14750554
+      },
+      {
+        "pool": "0xE4950e73aEa41cc61682F7d32117c7353B42D472",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 2500,
+        "reasons": [
+          "shallow oracle cardinality: 1",
+          "token 0x28B7E77f…: mint(address,uint256) selector present — supply may be inflated by an admin"
+        ],
+        "liquidity": "592405716728945486050937",
+        "cardinality": 1,
+        "blockCreated": 14856181
+      },
+      {
+        "pool": "0xF80aA221D62B5756e89a043979D02F809A5e1F3F",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "167270473651135962871805",
+        "cardinality": 1,
+        "blockCreated": 8045436
+      },
+      {
+        "pool": "0x4907d5a13a25428dfAdfF461AB096510a0675D58",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "1581138830084189665999",
+        "cardinality": 1,
+        "blockCreated": 8056444
+      },
+      {
+        "pool": "0x529D809bca1A1637E4F1A9D2f4E82a26dD462bC3",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "1079580839626683677727",
+        "cardinality": 1,
+        "blockCreated": 8060111
+      },
+      {
+        "pool": "0x6c9BF0198FB387DC392db9792fDF44b444f7aA50",
+        "fee": 100,
+        "tickSpacing": 1,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "214747572508465216608",
+        "cardinality": 1,
+        "blockCreated": 8204791
+      },
+      {
+        "pool": "0x7291823016D7326339F3efC487Db465AFeD5a70C",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "5285637813288",
+        "cardinality": 1,
+        "blockCreated": 8213683
+      },
+      {
+        "pool": "0xD003f45152Bf4389B0A5A20A2059fd0ED3eA07Fc",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "544862367942584194030",
+        "cardinality": 1,
+        "blockCreated": 8277056
+      },
+      {
+        "pool": "0xF428bec5F1971186F0921226cd57e6d81E4a28eF",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "764624711227762487084349",
+        "cardinality": 1,
+        "blockCreated": 8547504
+      },
+      {
+        "pool": "0x8d06F22e9104c7ff24d75B1a8290a69212e548eB",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1",
+          "tvl-drift unavailable (likely non-archive RPC): Request exceeds defined limit."
+        ],
+        "liquidity": "97667784171664628",
+        "cardinality": 1,
+        "blockCreated": 14733769
+      },
+      {
+        "pool": "0x4d5c60b71f902F94885F1E5682fE3293F428Bf43",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "10183373547635658762798",
+        "cardinality": 1,
+        "blockCreated": 14803916
+      },
+      {
+        "pool": "0x9A6570aB821029c35B37AB2298B7E77d5FaF21D2",
+        "fee": 500,
+        "tickSpacing": 10,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "1182296078726267",
+        "cardinality": 1,
+        "blockCreated": 14830392
+      },
+      {
+        "pool": "0x1568Cb4E5c594497e5c42aDfE68ad5820F5EB4dB",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "18349822638352142475365",
+        "cardinality": 1,
+        "blockCreated": 15084682
+      },
+      {
+        "pool": "0xC2FaC0B5B6C075819E654bcFbBBCda2838609d32",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 0,
+        "reasons": [],
+        "liquidity": "167635009493907629956080",
+        "cardinality": 2000,
+        "blockCreated": 7847497
+      },
+      {
+        "pool": "0x41cB3DD6824Bb9c4cFC0cc4E15675F7a2E6aF869",
+        "fee": 100,
+        "tickSpacing": 1,
+        "riskBps": 0,
+        "reasons": [],
+        "liquidity": "4292227237343696860635",
+        "cardinality": 2000,
+        "blockCreated": 7848502
+      },
+      {
+        "pool": "0xd2C7D4B8083FDD91Cf6A05c53139F34a187dc633",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 0,
+        "reasons": [],
+        "liquidity": "199097622119044",
+        "cardinality": 2000,
+        "blockCreated": 7848699
+      },
+      {
+        "pool": "0xad284761d8a7Fab0FEeE790061314CFACC31BBb4",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 0,
+        "reasons": [],
+        "liquidity": "209649495",
+        "cardinality": 2000,
+        "blockCreated": 7848813
+      },
+      {
+        "pool": "0x36C06217A9855a2cE68CF183A9A4F0186db5E9f6",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": -1,
+        "reasons": [
+          "SCORE FAILED: Request exceeds defined limit."
+        ],
+        "liquidity": "0",
+        "cardinality": 0,
+        "blockCreated": 14747225
+      },
+      {
+        "pool": "0x3b42dd0E2f036d4714cA3d83EDD7B90732C85Ee2",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": -1,
+        "reasons": [
+          "SCORE FAILED: Request exceeds defined limit."
+        ],
+        "liquidity": "0",
+        "cardinality": 0,
+        "blockCreated": 14754778
+      },
+      {
+        "pool": "0x3a62F001540F995E0660f1aEd56F7A5E09357C46",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": -1,
+        "reasons": [
+          "SCORE FAILED: Request exceeds defined limit."
+        ],
+        "liquidity": "0",
+        "cardinality": 0,
+        "blockCreated": 14780807
+      },
+      {
+        "pool": "0x9fe7A472D3Cb0504a529e1b58FA357A8AC97f663",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": -1,
+        "reasons": [
+          "SCORE FAILED: Request exceeds defined limit."
+        ],
+        "liquidity": "0",
+        "cardinality": 0,
+        "blockCreated": 14805926
+      }
+    ]
+  },
+  "tokens": {
+    "unique": 35,
+    "survey": [
+      {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "totalSupply": "6653216395518517589872",
+        "bytecodeBytes": 2846
+      },
+      {
+        "address": "0xFAfDdbb3FC7688494971a79cc65DCa3EF82079E7",
+        "symbol": "USDm",
+        "decimals": 18,
+        "totalSupply": "381762056818197000000000000",
+        "bytecodeBytes": 141
+      },
+      {
+        "address": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
+        "symbol": "USDT0",
+        "decimals": 6,
+        "totalSupply": "14730080905049",
+        "bytecodeBytes": 2227
+      },
+      {
+        "address": "0xB0F70C0bD6FD87dbEb7C10dC692a2a6106817072",
+        "symbol": "BTC.b",
+        "decimals": 8,
+        "totalSupply": "7287166576",
+        "bytecodeBytes": 1159
+      },
+      {
+        "address": "0xf624DFAC284d510bA2a7FEbe9544Dd335ADfbb1d",
+        "symbol": "test",
+        "decimals": 18,
+        "totalSupply": "1000000000000000000000000000",
+        "bytecodeBytes": 4191
+      },
+      {
+        "address": "0x4547e9393845d1ED721f55943fA8489D35cDcb1d",
+        "symbol": "BOBO",
+        "decimals": 18,
+        "totalSupply": "1000000000000000000000000000",
+        "bytecodeBytes": 4191
+      },
+      {
+        "address": "0x2eA493384F42d7Ea78564F3EF4C86986eAB4a890",
+        "symbol": "USDmY",
+        "decimals": 18,
+        "totalSupply": "109602837380767678622544",
+        "bytecodeBytes": 22022
+      },
+      {
+        "address": "0xC66142C3460B0f5f3d66906C20E1a5DCBefeb777",
+        "symbol": "TEST",
+        "decimals": 18,
+        "totalSupply": "20000000000000000000000000",
+        "bytecodeBytes": 1891
+      },
+      {
+        "address": "0x1f06ee3d25dC458024634DC06aeE762B267E90a4",
+        "symbol": "pTEST",
+        "decimals": 18,
+        "totalSupply": "0",
+        "bytecodeBytes": 2563
+      },
+      {
+        "address": "0x21711943926991950b5946DF0E67380d9D59F32f",
+        "symbol": "pUSDm",
+        "decimals": 18,
+        "totalSupply": "0",
+        "bytecodeBytes": 2563
+      },
+      {
+        "address": "0x96943400AB10F94fE938DddA58c212E0D0BF5a8b",
+        "symbol": "fUSDm",
+        "decimals": 18,
+        "totalSupply": "0",
+        "bytecodeBytes": 2563
+      },
+      {
+        "address": "0xb0735afff8Bd5EBae43adbeB1C542349FcAD42a2",
+        "symbol": "fTEST",
+        "decimals": 18,
+        "totalSupply": "0",
+        "bytecodeBytes": 2563
+      },
+      {
+        "address": "0x3308Ee5968E4A5f483bB10457C823c1480521BBA",
+        "symbol": "BACKED",
+        "decimals": 18,
+        "totalSupply": "50000000000000000000000000",
+        "bytecodeBytes": 1891
+      },
+      {
+        "address": "0x1519015ae3d9f0f2adC26Cb6A5f0Aa6A22222E0F",
+        "symbol": "pBACKED",
+        "decimals": 18,
+        "totalSupply": "1",
+        "bytecodeBytes": 2563
+      },
+      {
+        "address": "0x5a83eb808C163713BD7CfC6D1BC186Ae0DbE4a2D",
+        "symbol": "pUSDm",
+        "decimals": 18,
+        "totalSupply": "1",
+        "bytecodeBytes": 2563
+      },
+      {
+        "address": "0x0E8e5c10696d4243f40f7c2Fba9Ca1814F30e5ca",
+        "symbol": "fUSDm",
+        "decimals": 18,
+        "totalSupply": "1",
+        "bytecodeBytes": 2563
+      },
+      {
+        "address": "0xB31C60fBc2640c829DB6F567572E54C192255773",
+        "symbol": "fBACKED",
+        "decimals": 18,
+        "totalSupply": "1",
+        "bytecodeBytes": 2563
+      },
+      {
+        "address": "0x118b949f2CaF55F9D75cdE8D2F6C8fEC98376420",
+        "symbol": "BUN",
+        "decimals": 18,
+        "totalSupply": "1000000000000000000000000000",
+        "bytecodeBytes": 6218
+      },
+      {
+        "address": "0x3A2FC2964Cd1d9C0C5589fA70647d3632eF2B0c9",
+        "symbol": "FRUIT",
+        "decimals": 18,
+        "totalSupply": "1000000000000000000000000000",
+        "bytecodeBytes": 6218
+      },
+      {
+        "address": "0x1F363E1DC8a0Ef4a99818E31F080090a33C2957B",
+        "symbol": "SIRIO",
+        "decimals": 18,
+        "totalSupply": "10000000000000000000000000",
+        "bytecodeBytes": 1891
+      },
+      {
+        "address": "0xB995060d1c2b58A423582Ea8fe8162c72042f19e",
+        "symbol": "pSIRIO",
+        "decimals": 18,
+        "totalSupply": "1350000029999999999998541",
+        "bytecodeBytes": 2563
+      },
+      {
+        "address": "0xdbBc63B4D657C0A0968C7aa46D563D3AC0cd7A1A",
+        "symbol": "pUSDm",
+        "decimals": 18,
+        "totalSupply": "1067499999999999970",
+        "bytecodeBytes": 2563
+      },
+      {
+        "address": "0x63a60513Fd17694a189954cCfAC37dB6d1992b4e",
+        "symbol": "fUSDm",
+        "decimals": 18,
+        "totalSupply": "1067499999999999970",
+        "bytecodeBytes": 2563
+      },
+      {
+        "address": "0xA4cF723dC2366533767a750731C6bDaB2E82d79E",
+        "symbol": "fSIRIO",
+        "decimals": 18,
+        "totalSupply": "1350000029999999999998541",
+        "bytecodeBytes": 2563
+      },
+      {
+        "address": "0xcCcc62962d17b8914c62D74FfB843d73B2a3cccC",
+        "symbol": "cUSD",
+        "decimals": 18,
+        "totalSupply": "226963885323000000000000",
+        "bytecodeBytes": 163
+      },
+      {
+        "address": "0xf7d2F0d0b0517CBDbf87C86910ce10FaAab3589D",
+        "symbol": "CROWN",
+        "decimals": 18,
+        "totalSupply": "274171289410485821294809903",
+        "bytecodeBytes": 3387
+      },
+      {
+        "address": "0x6ff1ED39E3C9a7097CcedB2b177857bB6c3a0b1d",
+        "symbol": "rrx",
+        "decimals": 18,
+        "totalSupply": "1000000000000000000000000000",
+        "bytecodeBytes": 4191
+      },
+      {
+        "address": "0xB9D748a36DF4A229083F09b77483444f215a7b1d",
+        "symbol": "metox",
+        "decimals": 18,
+        "totalSupply": "1000000000000000000000000000",
+        "bytecodeBytes": 4191
+      },
+      {
+        "address": "0x7d01C31A12dB0AB45b736586A21D76d6B9228b1d",
+        "symbol": "MMMA",
+        "decimals": 18,
+        "totalSupply": "1000000000000000000000000000",
+        "bytecodeBytes": 4191
+      },
+      {
+        "address": "0x0Cfb8eA2609f485211Bd743FDc83c0B300fCEb1d",
+        "symbol": "test",
+        "decimals": 18,
+        "totalSupply": "1000000000000000000000000000",
+        "bytecodeBytes": 4191
+      },
+      {
+        "address": "0x28B7E77f82B25B95953825F1E3eA0E36c1c29861",
+        "symbol": "MEGA",
+        "decimals": 18,
+        "totalSupply": "10000000000000000000000000000",
+        "bytecodeBytes": 5601
+      },
+      {
+        "address": "0x2A3a4c92ce37ABd7239fB010BC390710f4062407",
+        "symbol": "FLUFFEY",
+        "decimals": 18,
+        "totalSupply": "1000000000000000000000000000",
+        "bytecodeBytes": 6218
+      },
+      {
+        "address": "0x92AE20C79de901354dE69e5723e9942670E6992f",
+        "symbol": "CENT",
+        "decimals": 18,
+        "totalSupply": "23725583400000000000000000",
+        "bytecodeBytes": 2082
+      },
+      {
+        "address": "0x8228F9a5b58733f13FCde4058b6437330AfBd943",
+        "symbol": "AETH",
+        "decimals": 18,
+        "totalSupply": "610951355570639125624021089",
+        "bytecodeBytes": 2822
+      },
+      {
+        "address": "0x15B271D9012b5820FC42b1c495B4C1e206547De5",
+        "symbol": "wiTRY",
+        "decimals": 18,
+        "totalSupply": "211804883818042000000000000",
+        "bytecodeBytes": 14636
+      }
+    ]
+  },
+  "findings": [
+    {
+      "severity": "high",
+      "id": "P1",
+      "title": "Factory owner is an EOA, not a multisig",
+      "detail": "factory.owner() = 0x68915D1eA12Eb987956e4e647289611e31a982F7 has no contract code. A single private key controls fee-tier governance (enableFeeAmount + setOwner). If compromised, attacker can add malicious fee tiers permanently."
+    },
+    {
+      "severity": "high",
+      "id": "P2",
+      "title": "16/44 pools (36%) are dead-on-arrival",
+      "detail": "Listed pools with zero liquidity are visual decoys. Attackers can seed 1 wei at a chosen price to trap users who confuse pool existence for legitimacy."
+    },
+    {
+      "severity": "high",
+      "id": "P3",
+      "title": "7 pool(s) pair a known scam-template token",
+      "detail": "Pools whose tokens match the curated scam-bytecode list: 0x216A3C6BDab182EBaF083AF9204BfF9086A68c71, 0x29c92e9A2418F8A8C164F91dDFd04CC159cc1248, 0xcdE1CD1964A2606540bAA873C107Bde4b38027F2, 0x8369a90B50f0B6B68d3a0038931462dAd560c61d, 0xcF816d3E3AeC077f6CD161a0F416Bd7CF3fCd703, …"
+    },
+    {
+      "severity": "medium",
+      "id": "P4",
+      "title": "36/44 pools (82%) have oracle cardinality = 1",
+      "detail": "TWAP is unavailable; downstream protocols using these as price oracles are vulnerable to single-block manipulation."
+    },
+    {
+      "severity": "medium",
+      "id": "P5",
+      "title": "15 pool(s) pair a token with mint() selector",
+      "detail": "Token supply can be inflated by an admin; users who hold the token are exposed to dilution risk."
+    },
+    {
+      "severity": "info",
+      "id": "P9",
+      "title": "4 pool(s) are usable for downstream oracles",
+      "detail": "Cardinality ≥ 10 + clean risk score. These are the only pools fit-for-purpose for lending/derivatives that need a manipulation-resistant TWAP."
+    }
+  ]
+}

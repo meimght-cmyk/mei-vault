@@ -1,0 +1,2239 @@
+{
+  "protocol": "kumbaya",
+  "chainId": 6343,
+  "scannedAt": "2026-05-08T17:42:24.042Z",
+  "blockHeight": 18551618,
+  "setup": {
+    "factory": "0x53447989580f541bc138d29A0FcCf72AfbBE1355",
+    "factoryOwner": "0xA6E9ca903eb048da8Bb7b2F620b6947121731dA5",
+    "factoryOwnerKind": "EOA",
+    "positionManager": "0x367f9db1F974eA241ba046b77B87C58e2947d8dF",
+    "universalRouter": "0x7E6c4Ada91e432efe5F01FbCb3492Bd3eb7ccD2E",
+    "feeTiers": [
+      {
+        "fee": 100,
+        "tickSpacing": 1,
+        "enabled": true
+      },
+      {
+        "fee": 500,
+        "tickSpacing": 10,
+        "enabled": true
+      },
+      {
+        "fee": 3000,
+        "tickSpacing": 60,
+        "enabled": true
+      },
+      {
+        "fee": 10000,
+        "tickSpacing": 200,
+        "enabled": true
+      }
+    ]
+  },
+  "pools": {
+    "total": 108,
+    "feeDistribution": [
+      {
+        "fee": 10000,
+        "count": 67
+      },
+      {
+        "fee": 3000,
+        "count": 41
+      }
+    ],
+    "averageRiskBps": 1306,
+    "healthyCount": 0,
+    "deadCount": 2,
+    "perPool": [
+      {
+        "pool": "0xA62F7867cefE6b853B4D6cF7Bfe149Aa79aC7062",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 5500,
+        "reasons": [
+          "liquidity is 0 (effectively dead)",
+          "shallow oracle cardinality: 1",
+          "pool likely too new for TVL drift signal"
+        ],
+        "liquidity": "0",
+        "cardinality": 1,
+        "blockCreated": 17828550
+      },
+      {
+        "pool": "0xb41bd83A1527cF6016E5B54a0df861E3D5f8fA7B",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 5500,
+        "reasons": [
+          "liquidity is 0 (effectively dead)",
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "0",
+        "cardinality": 1,
+        "blockCreated": 18087813
+      },
+      {
+        "pool": "0xbe6FEE754f329d35d8B960dC314725b25cC00A08",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 3500,
+        "reasons": [
+          "shallow oracle cardinality: 1",
+          "token 0x2027211C…: vanity-suffix address with suspiciously round 1e27 supply (memecoin/scam shape)"
+        ],
+        "liquidity": "34611436903955972",
+        "cardinality": 1,
+        "blockCreated": 17563427
+      },
+      {
+        "pool": "0xfC55f08a7cE4A7D847d7c11cE592333Ed2c9e173",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 3500,
+        "reasons": [
+          "shallow oracle cardinality: 1",
+          "token 0x0f785B0a…: vanity-suffix address with suspiciously round 1e27 supply (memecoin/scam shape)"
+        ],
+        "liquidity": "277844410403637824356",
+        "cardinality": 1,
+        "blockCreated": 17563459
+      },
+      {
+        "pool": "0x33579a7b21B2fDA3a40a5490Ab3cD352962235ef",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 3500,
+        "reasons": [
+          "shallow oracle cardinality: 1",
+          "token 0x41cA9579…: vanity-suffix address with suspiciously round 1e27 supply (memecoin/scam shape)"
+        ],
+        "liquidity": "277844410403637824356",
+        "cardinality": 1,
+        "blockCreated": 17563958
+      },
+      {
+        "pool": "0xF334b1F62DC3F726b35F4c6BBE2cf1048837E28f",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 3500,
+        "reasons": [
+          "shallow oracle cardinality: 1",
+          "token 0x171ecaB6…: vanity-suffix address with suspiciously round 1e27 supply (memecoin/scam shape)"
+        ],
+        "liquidity": "3975819879658270866730",
+        "cardinality": 1,
+        "blockCreated": 17564124
+      },
+      {
+        "pool": "0x5f05B91823287b615ec9BD54e100F83d13A04E52",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 3500,
+        "reasons": [
+          "shallow oracle cardinality: 1",
+          "token 0x15992630…: vanity-suffix address with suspiciously round 1e27 supply (memecoin/scam shape)"
+        ],
+        "liquidity": "277844410403637824356",
+        "cardinality": 1,
+        "blockCreated": 17676889
+      },
+      {
+        "pool": "0x115dAE5424e873Bf5bE939211aD88324da23e556",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 3500,
+        "reasons": [
+          "shallow oracle cardinality: 1",
+          "token 0x0F71AEBd…: vanity-suffix address with suspiciously round 1e27 supply (memecoin/scam shape)"
+        ],
+        "liquidity": "132622519434487172496807",
+        "cardinality": 1,
+        "blockCreated": 17686222
+      },
+      {
+        "pool": "0x615317064B18DbdbB14120aA36c717D1BB4126c0",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 3500,
+        "reasons": [
+          "shallow oracle cardinality: 1",
+          "token 0x2a821892…: vanity-suffix address with suspiciously round 1e27 supply (memecoin/scam shape)"
+        ],
+        "liquidity": "872491535966129211383",
+        "cardinality": 1,
+        "blockCreated": 17739113
+      },
+      {
+        "pool": "0x86B9F21c48318B72a17a19C669F27990B1b9AE04",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 3500,
+        "reasons": [
+          "shallow oracle cardinality: 1",
+          "token 0x0F9b25e5…: vanity-suffix address with suspiciously round 1e27 supply (memecoin/scam shape)"
+        ],
+        "liquidity": "10338989640850221202037",
+        "cardinality": 1,
+        "blockCreated": 17936582
+      },
+      {
+        "pool": "0x872F4c8b1E03D59458F1687AE66d8dd828652606",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 3500,
+        "reasons": [
+          "shallow oracle cardinality: 1",
+          "token 0x25Dd2151…: vanity-suffix address with suspiciously round 1e27 supply (memecoin/scam shape)"
+        ],
+        "liquidity": "277844410403637824356",
+        "cardinality": 1,
+        "blockCreated": 18254006
+      },
+      {
+        "pool": "0xeb6F4F8eA4caeBB654a3FFFa3725a07ddC3c1E33",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 3500,
+        "reasons": [
+          "shallow oracle cardinality: 1",
+          "token 0x1dD4B7d5…: vanity-suffix address with suspiciously round 1e27 supply (memecoin/scam shape)"
+        ],
+        "liquidity": "277844410403637824356",
+        "cardinality": 1,
+        "blockCreated": 18412906
+      },
+      {
+        "pool": "0x87755e62FB0DED5fD1ef09acFFE25f8680687898",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 2500,
+        "reasons": [
+          "shallow oracle cardinality: 1",
+          "token 0xE9DD0b1d…: mint(address,uint256) selector present — supply may be inflated by an admin"
+        ],
+        "liquidity": "31622776000000000000",
+        "cardinality": 1,
+        "blockCreated": 17722113
+      },
+      {
+        "pool": "0x78C38CA2448119281be3D20E7787455Bca7FfaEc",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 2500,
+        "reasons": [
+          "shallow oracle cardinality: 1",
+          "token 0x32358c46…: mint(address,uint256) selector present — supply may be inflated by an admin",
+          "token 0xB641fB1A…: mint(address,uint256) selector present — supply may be inflated by an admin"
+        ],
+        "liquidity": "58771987876958021112299093",
+        "cardinality": 1,
+        "blockCreated": 17794449
+      },
+      {
+        "pool": "0x1eC0535B3529D5Ef3125916D435873EcD0FD4807",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 2500,
+        "reasons": [
+          "shallow oracle cardinality: 1",
+          "token 0x9ea2192A…: mint(address,uint256) selector present — supply may be inflated by an admin"
+        ],
+        "liquidity": "100000000000000000000",
+        "cardinality": 1,
+        "blockCreated": 17829424
+      },
+      {
+        "pool": "0xBEa3610a2E319C1d11e7Bc0E182e4a4a0d33B4f3",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 2500,
+        "reasons": [
+          "shallow oracle cardinality: 1",
+          "token 0x0AB95e46…: mint(address,uint256) selector present — supply may be inflated by an admin",
+          "token 0x32358c46…: mint(address,uint256) selector present — supply may be inflated by an admin"
+        ],
+        "liquidity": "25000000000000000001360",
+        "cardinality": 1,
+        "blockCreated": 17888670
+      },
+      {
+        "pool": "0x2B3A5dA314d7B3ab8b95c0bCd8A2225b48E9f871",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 2500,
+        "reasons": [
+          "shallow oracle cardinality: 1",
+          "token 0x32358c46…: mint(address,uint256) selector present — supply may be inflated by an admin",
+          "token 0xA98B4AaC…: mint(address,uint256) selector present — supply may be inflated by an admin"
+        ],
+        "liquidity": "25000000000000000001360",
+        "cardinality": 1,
+        "blockCreated": 17889306
+      },
+      {
+        "pool": "0x4E2C3879177138dC27E77f52655D47703d9ef154",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 2500,
+        "reasons": [
+          "shallow oracle cardinality: 1",
+          "token 0x32358c46…: mint(address,uint256) selector present — supply may be inflated by an admin",
+          "token 0xcC6FfC60…: mint(address,uint256) selector present — supply may be inflated by an admin"
+        ],
+        "liquidity": "25000000000000000001360",
+        "cardinality": 1,
+        "blockCreated": 17889454
+      },
+      {
+        "pool": "0x1b36f7a1b88492EED1A383e537Ef02262019EfD6",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 2500,
+        "reasons": [
+          "shallow oracle cardinality: 1",
+          "token 0x32358c46…: mint(address,uint256) selector present — supply may be inflated by an admin",
+          "token 0x595d2147…: mint(address,uint256) selector present — supply may be inflated by an admin"
+        ],
+        "liquidity": "25000000000000000001360",
+        "cardinality": 1,
+        "blockCreated": 17889576
+      },
+      {
+        "pool": "0xc581F37D4088aC306e218277Cd78Ed9073Ea1da8",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 2500,
+        "reasons": [
+          "shallow oracle cardinality: 1",
+          "token 0x32358c46…: mint(address,uint256) selector present — supply may be inflated by an admin",
+          "token 0xEb4aA219…: mint(address,uint256) selector present — supply may be inflated by an admin"
+        ],
+        "liquidity": "25000000000000000001360",
+        "cardinality": 1,
+        "blockCreated": 17889668
+      },
+      {
+        "pool": "0x966D32D73B80b4664d3e982F9AeB21ae4F04720F",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 2500,
+        "reasons": [
+          "shallow oracle cardinality: 1",
+          "token 0x32358c46…: mint(address,uint256) selector present — supply may be inflated by an admin",
+          "token 0xcc00588a…: mint(address,uint256) selector present — supply may be inflated by an admin"
+        ],
+        "liquidity": "25000000000000000001360",
+        "cardinality": 1,
+        "blockCreated": 17891615
+      },
+      {
+        "pool": "0xA2Bec506AC55B22cb94d3B74A6af1b9D5d7Cb045",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 2500,
+        "reasons": [
+          "shallow oracle cardinality: 1",
+          "token 0x32358c46…: mint(address,uint256) selector present — supply may be inflated by an admin",
+          "token 0xE0046903…: mint(address,uint256) selector present — supply may be inflated by an admin"
+        ],
+        "liquidity": "25000000000000000001360",
+        "cardinality": 1,
+        "blockCreated": 17892050
+      },
+      {
+        "pool": "0xBf53E4e5CD9dbb76BfB1a9b6015aC671B3acE16e",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 2500,
+        "reasons": [
+          "shallow oracle cardinality: 1",
+          "token 0x15F306af…: mint(address,uint256) selector present — supply may be inflated by an admin",
+          "token 0x32358c46…: mint(address,uint256) selector present — supply may be inflated by an admin"
+        ],
+        "liquidity": "25000000000000000001360",
+        "cardinality": 1,
+        "blockCreated": 17914794
+      },
+      {
+        "pool": "0x5a3A4825C64fE4282D7923Ddb57c0Ee1242D852D",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 2500,
+        "reasons": [
+          "shallow oracle cardinality: 1",
+          "token 0x13f57399…: mint(address,uint256) selector present — supply may be inflated by an admin",
+          "token 0x32358c46…: mint(address,uint256) selector present — supply may be inflated by an admin"
+        ],
+        "liquidity": "25000000000000000001360",
+        "cardinality": 1,
+        "blockCreated": 17920230
+      },
+      {
+        "pool": "0x2547ffa5B1D74E264ca49A9D4B4eb57497bA1787",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 2500,
+        "reasons": [
+          "shallow oracle cardinality: 1",
+          "token 0x1eB24B9F…: mint(address,uint256) selector present — supply may be inflated by an admin",
+          "token 0x32358c46…: mint(address,uint256) selector present — supply may be inflated by an admin"
+        ],
+        "liquidity": "25000000000000000001360",
+        "cardinality": 1,
+        "blockCreated": 17930817
+      },
+      {
+        "pool": "0xDF22E2c4C9d6A10660641283602AF62363E9c53f",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 2500,
+        "reasons": [
+          "shallow oracle cardinality: 1",
+          "token 0x2b04D6C2…: mint(address,uint256) selector present — supply may be inflated by an admin",
+          "token 0x32358c46…: mint(address,uint256) selector present — supply may be inflated by an admin"
+        ],
+        "liquidity": "25000000000000000001360",
+        "cardinality": 1,
+        "blockCreated": 17933359
+      },
+      {
+        "pool": "0x4C2d1B6eDa2ce0365f442A6b9b0F674c87b7B851",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 2500,
+        "reasons": [
+          "shallow oracle cardinality: 1",
+          "token 0x32358c46…: mint(address,uint256) selector present — supply may be inflated by an admin",
+          "token 0x48c27516…: mint(address,uint256) selector present — supply may be inflated by an admin"
+        ],
+        "liquidity": "25000000000000000001360",
+        "cardinality": 1,
+        "blockCreated": 17934980
+      },
+      {
+        "pool": "0x4eaf5cA7204e96a3E5B3B1577AD9286cbc652acB",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 2500,
+        "reasons": [
+          "shallow oracle cardinality: 1",
+          "token 0x32358c46…: mint(address,uint256) selector present — supply may be inflated by an admin",
+          "token 0x6025b184…: mint(address,uint256) selector present — supply may be inflated by an admin"
+        ],
+        "liquidity": "25000000000000000001360",
+        "cardinality": 1,
+        "blockCreated": 17945067
+      },
+      {
+        "pool": "0xad7D3a5F21aEd8aab9a9BC5bEfFA162E4008F1c4",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 2500,
+        "reasons": [
+          "shallow oracle cardinality: 1",
+          "token 0xC7c24d13…: mint(address,uint256) selector present — supply may be inflated by an admin"
+        ],
+        "liquidity": "79825414551278",
+        "cardinality": 1,
+        "blockCreated": 18052277
+      },
+      {
+        "pool": "0x3c3809dF7925F16AF56b334503F23ba1419bDae2",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 2500,
+        "reasons": [
+          "shallow oracle cardinality: 1",
+          "token 0xfC705837…: mint(address,uint256) selector present — supply may be inflated by an admin"
+        ],
+        "liquidity": "47780905288190537254820",
+        "cardinality": 1,
+        "blockCreated": 18143232
+      },
+      {
+        "pool": "0x971D260bECBF27C3e9e486b315a30747b93835b9",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 2500,
+        "reasons": [
+          "shallow oracle cardinality: 1",
+          "token 0xb8b368CC…: mint(address,uint256) selector present — supply may be inflated by an admin",
+          "token 0xfC705837…: mint(address,uint256) selector present — supply may be inflated by an admin"
+        ],
+        "liquidity": "251783073795174483",
+        "cardinality": 1,
+        "blockCreated": 18449398
+      },
+      {
+        "pool": "0x653C900EcD02268cF91388BD9B59d6Deb0CD3deD",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 2000,
+        "reasons": [
+          "token 0x32358c46…: mint(address,uint256) selector present — supply may be inflated by an admin",
+          "token 0xd43276B0…: mint(address,uint256) selector present — supply may be inflated by an admin"
+        ],
+        "liquidity": "529346870838724547930009",
+        "cardinality": 57700,
+        "blockCreated": 17831417
+      },
+      {
+        "pool": "0x1e681253a83D4Dd8B91BB068Bb4375e7E6bCEFC0",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 2000,
+        "reasons": [
+          "token 0x32358c46…: mint(address,uint256) selector present — supply may be inflated by an admin",
+          "token 0x9eB56420…: mint(address,uint256) selector present — supply may be inflated by an admin"
+        ],
+        "liquidity": "27128470526276814660974",
+        "cardinality": 19600,
+        "blockCreated": 17921539
+      },
+      {
+        "pool": "0xFCBFE7366803c87242DbEBf4c86982bDB55ea20d",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 2000,
+        "reasons": [
+          "token 0x32358c46…: mint(address,uint256) selector present — supply may be inflated by an admin",
+          "token 0x37a67bD9…: mint(address,uint256) selector present — supply may be inflated by an admin"
+        ],
+        "liquidity": "25909740730833208731308",
+        "cardinality": 19600,
+        "blockCreated": 17926966
+      },
+      {
+        "pool": "0xc5bbfdE45a93E703425c0c6e098A7168584c729f",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 2000,
+        "reasons": [
+          "token 0x32358c46…: mint(address,uint256) selector present — supply may be inflated by an admin",
+          "token 0xA912bf8f…: mint(address,uint256) selector present — supply may be inflated by an admin"
+        ],
+        "liquidity": "2269675090611064500243249",
+        "cardinality": 19600,
+        "blockCreated": 17928210
+      },
+      {
+        "pool": "0x93aB4DEd1ad9E06bc0E38EC77AB64000fEe17F9e",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 2000,
+        "reasons": [
+          "token 0x32358c46…: mint(address,uint256) selector present — supply may be inflated by an admin",
+          "token 0x7Df1455c…: mint(address,uint256) selector present — supply may be inflated by an admin"
+        ],
+        "liquidity": "25381674255826096807239",
+        "cardinality": 19600,
+        "blockCreated": 17932145
+      },
+      {
+        "pool": "0x71F2854f2c51d2be69aD257d0E11588b51F9D2cE",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 2000,
+        "reasons": [
+          "token 0x32358c46…: mint(address,uint256) selector present — supply may be inflated by an admin",
+          "token 0xB99F1348…: mint(address,uint256) selector present — supply may be inflated by an admin"
+        ],
+        "liquidity": "44467909234351032973272",
+        "cardinality": 19600,
+        "blockCreated": 17937008
+      },
+      {
+        "pool": "0x9Adf9066f03C1bA2d11083b39A7d085F5F682422",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "31575306805198358471808",
+        "cardinality": 1,
+        "blockCreated": 17590456
+      },
+      {
+        "pool": "0x4B5798f0daC19fE10675eE8124F54eaFbF2e67e4",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "28226716384186750446",
+        "cardinality": 1,
+        "blockCreated": 17595962
+      },
+      {
+        "pool": "0x850715ba58eBd2e8e02E30482a0851A7d61b9812",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "176920704961262023",
+        "cardinality": 1,
+        "blockCreated": 17596125
+      },
+      {
+        "pool": "0xa170513c700187BE440Fe757bbD9CE9Ae3c3eC3c",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "8645733869821958614",
+        "cardinality": 1,
+        "blockCreated": 17596191
+      },
+      {
+        "pool": "0x096D41602A2CC5D49aBE38B358764e5d96DeF675",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "6317076446983671440",
+        "cardinality": 1,
+        "blockCreated": 17596273
+      },
+      {
+        "pool": "0xC7Ef984c7BF70962d5A073FeaC8826A3300CC24B",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "5986993330447376937",
+        "cardinality": 1,
+        "blockCreated": 17604099
+      },
+      {
+        "pool": "0xeA5cF5DFB31062dD22085444A1bef816f960f12d",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "7005518656182543798",
+        "cardinality": 1,
+        "blockCreated": 17604504
+      },
+      {
+        "pool": "0x13cD85c70867Bd8b8eaf23b5b721Fb68FEaC7F8d",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "449598237007738997",
+        "cardinality": 1,
+        "blockCreated": 17604562
+      },
+      {
+        "pool": "0x1d9377c11022644A66a765C4a7F9751a6D829DaC",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "886544987360078692413",
+        "cardinality": 1,
+        "blockCreated": 17604801
+      },
+      {
+        "pool": "0x8BA941B04903778c60E59Df470503c1370f18463",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "505601226141",
+        "cardinality": 1,
+        "blockCreated": 17604907
+      },
+      {
+        "pool": "0x1f4977e103e617a67DB70Eccc18480540dc5D71B",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "2210766706171413276",
+        "cardinality": 1,
+        "blockCreated": 17605030
+      },
+      {
+        "pool": "0x4d5F28675B8215FD79945e7Fe7992b7ef1DfBc7f",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "7718239824626121132",
+        "cardinality": 1,
+        "blockCreated": 17605085
+      },
+      {
+        "pool": "0x9e7182Fe16eb5e8129c953C4286c546484AB50C3",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "8465629449404385676",
+        "cardinality": 1,
+        "blockCreated": 17605140
+      },
+      {
+        "pool": "0x35815C793f14D73FbA85Ce87188fAca252b35e06",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "5550711879892800307",
+        "cardinality": 1,
+        "blockCreated": 17605234
+      },
+      {
+        "pool": "0x0367C0575fAbDA0337582d0219410358A5080BA4",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "9520984310870556317108",
+        "cardinality": 1,
+        "blockCreated": 17652907
+      },
+      {
+        "pool": "0x6982aD7243F876b2352A6C0aFACe9aC92d6948D1",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "10338989640850221202037",
+        "cardinality": 1,
+        "blockCreated": 17676962
+      },
+      {
+        "pool": "0xCcF281BFab408FEec6FFe41e23d46Af62FE760f0",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "44834675782080823566271",
+        "cardinality": 1,
+        "blockCreated": 17684532
+      },
+      {
+        "pool": "0x38573601f88645057cBBd004Ae51fF270269B40d",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "872491535966129211383",
+        "cardinality": 1,
+        "blockCreated": 17684624
+      },
+      {
+        "pool": "0xe5ec746D3C5BEe53303D00FbaDF7fF57da6DbA22",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "568456344134419403201",
+        "cardinality": 1,
+        "blockCreated": 17686160
+      },
+      {
+        "pool": "0x846D87fd0fFA38B50E9D0657593A829a78a552F2",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "44834675782080823566271",
+        "cardinality": 1,
+        "blockCreated": 17716640
+      },
+      {
+        "pool": "0x952e14cE29C2f4966617798946A32790bb638b5A",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "568456344134419403201",
+        "cardinality": 1,
+        "blockCreated": 17717201
+      },
+      {
+        "pool": "0xCb8e551B7503dac481bED5265aC4fBEc14a7866E",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "3975819879658270866730",
+        "cardinality": 1,
+        "blockCreated": 17763619
+      },
+      {
+        "pool": "0x5B0662AaA56178Ba7cf334F264ff5cC916CAbaa3",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "9520984310870556317108",
+        "cardinality": 1,
+        "blockCreated": 17771889
+      },
+      {
+        "pool": "0x2455F66a7eBe1179477f2D974385A3e98cbAcc3a",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "277844410403637824356",
+        "cardinality": 1,
+        "blockCreated": 17808592
+      },
+      {
+        "pool": "0xCbB1Bb8181823F9f9E71f485C92F8D3a3D82C1C3",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "1887928775983597350057",
+        "cardinality": 1,
+        "blockCreated": 17825032
+      },
+      {
+        "pool": "0x5cf1456e3B913B8f041F165E69d5D722eB2db60D",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "27761079406476838929327",
+        "cardinality": 1,
+        "blockCreated": 17850853
+      },
+      {
+        "pool": "0xCE3CE225698701b83Aa86DEf83C4c1061b965D6b",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "1581138830084189719464",
+        "cardinality": 1,
+        "blockCreated": 17867244
+      },
+      {
+        "pool": "0x323CB3dfE7F75e51193f1145d52986921a77f223",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "1581138830084189719464",
+        "cardinality": 1,
+        "blockCreated": 17868833
+      },
+      {
+        "pool": "0x68C18608E8609474a0E6dC1D72653791913Ca410",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "1581138830084189719464",
+        "cardinality": 1,
+        "blockCreated": 17870316
+      },
+      {
+        "pool": "0xBAdeb0F4e3941d47002e3aF910ec879cA308d42c",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "1581138830084189719464",
+        "cardinality": 1,
+        "blockCreated": 17870416
+      },
+      {
+        "pool": "0x919459aed68f14f708a2685A9346B148581905fF",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "1581138830084189719464",
+        "cardinality": 1,
+        "blockCreated": 17870482
+      },
+      {
+        "pool": "0xAe0349037b67A579dbB606e1d60596846CEECCad",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "1581138830084189719464",
+        "cardinality": 1,
+        "blockCreated": 17870843
+      },
+      {
+        "pool": "0xe332cFf976A541Db3b121cc8c180080f23D19607",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "1581138830084189719464",
+        "cardinality": 1,
+        "blockCreated": 17871249
+      },
+      {
+        "pool": "0xf7d1f1355653fA794c40cC8ef8B8959B1F0877D2",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "1581138830084",
+        "cardinality": 1,
+        "blockCreated": 17872093
+      },
+      {
+        "pool": "0x412a38151Bc183102b900C0A248619D63B61a7C9",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "277844410403637824356",
+        "cardinality": 1,
+        "blockCreated": 17903038
+      },
+      {
+        "pool": "0x57A1B5201c2bAe9f5cD5d75957d8EE68cF213d81",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "277844410403637824356",
+        "cardinality": 1,
+        "blockCreated": 17903393
+      },
+      {
+        "pool": "0x293ab68B221D3809f0e522181fE9418c5BdA3FF6",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "46837397799889094598",
+        "cardinality": 1,
+        "blockCreated": 17918366
+      },
+      {
+        "pool": "0xFa7da0E44823726aE07170f2E0F51E0F3B74B760",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "87604010331750539",
+        "cardinality": 1,
+        "blockCreated": 17918461
+      },
+      {
+        "pool": "0xDC200026fD2169b71b8734a1cB46cB9937A93481",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "5037765974952040212",
+        "cardinality": 1,
+        "blockCreated": 17918508
+      },
+      {
+        "pool": "0x006F636589b7563dF19E2c9752275B3Ac15636B7",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "11189705217123174500",
+        "cardinality": 1,
+        "blockCreated": 17918569
+      },
+      {
+        "pool": "0x3a6c9F5Cc8Bf4ff0b9d3269B2d20A1b794fb1e10",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "562271402051004455",
+        "cardinality": 1,
+        "blockCreated": 17918630
+      },
+      {
+        "pool": "0x9f0b325F0d9Cd9d016Ec3f2e9C2F06AeAEa51409",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "2567806609544099544",
+        "cardinality": 1,
+        "blockCreated": 17918676
+      },
+      {
+        "pool": "0x0BAdB7CEbF5fd7A5FB720c3874E25332cdee5620",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "2229520026055458992",
+        "cardinality": 1,
+        "blockCreated": 17918723
+      },
+      {
+        "pool": "0xE9BE0e988be19923348Fd1D1d4dC1ABE70C070db",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "3636140442573223405217",
+        "cardinality": 1,
+        "blockCreated": 17918781
+      },
+      {
+        "pool": "0x65152D538E0d0088AF49956F60178e058D28DCf5",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "9943667062960",
+        "cardinality": 1,
+        "blockCreated": 17918830
+      },
+      {
+        "pool": "0xC939f87De34cC3dF967f041a3163d478dBA7e868",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "3307785876653933384",
+        "cardinality": 1,
+        "blockCreated": 17918880
+      },
+      {
+        "pool": "0x46B2Ca47aECCD87DA8B1E83671CF282D2DcBF888",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "2166306943219",
+        "cardinality": 1,
+        "blockCreated": 17918964
+      },
+      {
+        "pool": "0x72C3ECb9Ca1DdAbcc544303428d810De6E2Cd3fA",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "2156389836058677016",
+        "cardinality": 1,
+        "blockCreated": 17919035
+      },
+      {
+        "pool": "0xF754D2f0b864887F7118a2ab2DA628FA672183F0",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "24586673957625703",
+        "cardinality": 1,
+        "blockCreated": 17929298
+      },
+      {
+        "pool": "0x943A97A0EDcc0D7Ce7cD58F3e69981E3D25a2F7a",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "22351521779659730",
+        "cardinality": 1,
+        "blockCreated": 17931427
+      },
+      {
+        "pool": "0x881f5069C7F9426f17C592E631c6Ad8fca47Fa1f",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "37154677555996753523215",
+        "cardinality": 1,
+        "blockCreated": 18086823
+      },
+      {
+        "pool": "0x65aa542C9FBf3125eC87137Dbe59db98E302858C",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "93487433144853670153",
+        "cardinality": 1,
+        "blockCreated": 18119049
+      },
+      {
+        "pool": "0x47A9e6AF8bbae43B49318a12B15bFBbccBF2B4D5",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "93487433144853670153",
+        "cardinality": 1,
+        "blockCreated": 18120419
+      },
+      {
+        "pool": "0x2865F4eA3dAe55fC99AAf8fbf58Bb15dc962E1D5",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "277844410403637824356",
+        "cardinality": 1,
+        "blockCreated": 18252231
+      },
+      {
+        "pool": "0x86d538e83D66484FaF9a3A581d062990F7F44d68",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "277844410403637824356",
+        "cardinality": 1,
+        "blockCreated": 18252832
+      },
+      {
+        "pool": "0xe4E4C5E282b149A1CFA44c0b0e28970349fb7F9E",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "22166085844294206324086",
+        "cardinality": 1,
+        "blockCreated": 18254277
+      },
+      {
+        "pool": "0x6364e1437F324395c2D4cB88a789244a3Ed45015",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "277844410403637824356",
+        "cardinality": 1,
+        "blockCreated": 18254358
+      },
+      {
+        "pool": "0x65C83C3ed2B06af56dDBe13c1150Baaa1AC23374",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "277844410403637824356",
+        "cardinality": 1,
+        "blockCreated": 18316989
+      },
+      {
+        "pool": "0x1EE2f89CD8a025D3262eC8C7e817AAB42Bc61a75",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "277844410403637824356",
+        "cardinality": 1,
+        "blockCreated": 18317210
+      },
+      {
+        "pool": "0x9f7Eb874e7d3c285e690441aA637fD8D13226dFA",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "875737895625528177611",
+        "cardinality": 1,
+        "blockCreated": 18371536
+      },
+      {
+        "pool": "0x3ca95bDa71e347a607A66149243a87C255d1FCaD",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "277844410403637824356",
+        "cardinality": 1,
+        "blockCreated": 18406722
+      },
+      {
+        "pool": "0x16F684F14806c108655DeD3db6bfC7a297Db1859",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "277844410403637824356",
+        "cardinality": 1,
+        "blockCreated": 18408787
+      },
+      {
+        "pool": "0xeD33171Eaf21b62bb532A6E523DF40b17C172fF9",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "141508833646449309354",
+        "cardinality": 1,
+        "blockCreated": 18420705
+      },
+      {
+        "pool": "0x540849B6DB7f534BF7666d9F3E63F657e0ED75b9",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "166215787181903879052",
+        "cardinality": 1,
+        "blockCreated": 18421592
+      },
+      {
+        "pool": "0x0F4F2f051d6ea4F27167D532fD9D3f6cf352BB41",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "157344573470589744815",
+        "cardinality": 1,
+        "blockCreated": 18423293
+      },
+      {
+        "pool": "0x2D083bEa1fddF7D61D75E42195Ce36DA17602ca2",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "157344573470589744815",
+        "cardinality": 1,
+        "blockCreated": 18423575
+      },
+      {
+        "pool": "0x82bCbF7135bB51912b060F6541f1C8C67aEf6EFd",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "29302607319387512242131",
+        "cardinality": 1,
+        "blockCreated": 18431738
+      },
+      {
+        "pool": "0xAD10258debc0Ad1899982c4Fe2c5836355e4600B",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "64150750901783625877964",
+        "cardinality": 1,
+        "blockCreated": 18433471
+      },
+      {
+        "pool": "0xb4a4cfE3A65660901Cd56b079cA1e4C1cC992464",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "64189158932573647918324",
+        "cardinality": 1,
+        "blockCreated": 18433491
+      },
+      {
+        "pool": "0xAf6A035452daA3e3874EA88285f519ef3Db16f65",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "64150750901783625877964",
+        "cardinality": 1,
+        "blockCreated": 18445122
+      },
+      {
+        "pool": "0x8AF4B6cD3DC0fbc2E1a27eC9967732DcCdbC0C40",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "64189158932573647918324",
+        "cardinality": 1,
+        "blockCreated": 18445476
+      }
+    ]
+  },
+  "tokens": {
+    "unique": 116,
+    "survey": [
+      {
+        "address": "0x2027211CDEDe85183bbFf52eeaf84d002812f888",
+        "symbol": "26",
+        "decimals": 18,
+        "totalSupply": "1000000000000000000000000000",
+        "bytecodeBytes": 6218
+      },
+      {
+        "address": "0x75139A9559c9CD1aD69B7E239C216151D2c81e6f",
+        "symbol": "USDC",
+        "decimals": 6,
+        "totalSupply": "100000000000000",
+        "bytecodeBytes": 2551
+      },
+      {
+        "address": "0x0f785B0a311091011Fa5F4f783c019036c438888",
+        "symbol": "MONDAY",
+        "decimals": 18,
+        "totalSupply": "1000000000000000000000000000",
+        "bytecodeBytes": 6218
+      },
+      {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "totalSupply": "3289436284768445560310",
+        "bytecodeBytes": 2846
+      },
+      {
+        "address": "0x41cA95793df1f8C9561a4CD0b721670CD5c58888",
+        "symbol": "FRESH",
+        "decimals": 18,
+        "totalSupply": "1000000000000000000000000000",
+        "bytecodeBytes": 6218
+      },
+      {
+        "address": "0x171ecaB6c5B401C116cCC2e9355a039AF33FD888",
+        "symbol": "28",
+        "decimals": 18,
+        "totalSupply": "1000000000000000000000000000",
+        "bytecodeBytes": 6218
+      },
+      {
+        "address": "0xAb9FEe8B254067310fFc7E7d50C27df638b57a8F",
+        "symbol": "ZAZ",
+        "decimals": 18,
+        "totalSupply": "1000000000000000000000000000",
+        "bytecodeBytes": 3850
+      },
+      {
+        "address": "0x8Be9f3E28dafd191ED5fcbc11bf5f71020E56994",
+        "symbol": "tUSDm",
+        "decimals": 6,
+        "totalSupply": "100000000000000000",
+        "bytecodeBytes": 1785
+      },
+      {
+        "address": "0xf8Acd8598Ae5294244621fdC8dA73b3d1EC340ec",
+        "symbol": "t1INCH",
+        "decimals": 18,
+        "totalSupply": "100000000000000000000000000",
+        "bytecodeBytes": 1785
+      },
+      {
+        "address": "0x44BCcd4D5ecFA224C18636981A74840419cf8910",
+        "symbol": "tAAVE",
+        "decimals": 18,
+        "totalSupply": "1000000000000000000000000",
+        "bytecodeBytes": 1785
+      },
+      {
+        "address": "0x2796c3263516A7135680e12d609E8BF382B73E27",
+        "symbol": "tADA",
+        "decimals": 18,
+        "totalSupply": "100000000000000000000000000",
+        "bytecodeBytes": 1785
+      },
+      {
+        "address": "0x47ddE98a6c7897dC6582a601cB444732d869608B",
+        "symbol": "tARB",
+        "decimals": 18,
+        "totalSupply": "100000000000000000000000000",
+        "bytecodeBytes": 1785
+      },
+      {
+        "address": "0x7c53daB1c32aca984e9861374f8b81500Fa8E26a",
+        "symbol": "tARKM",
+        "decimals": 18,
+        "totalSupply": "100000000000000000000000000",
+        "bytecodeBytes": 1785
+      },
+      {
+        "address": "0x803A105708Cc8E6Ace3F909530c3ffE23329d2Fb",
+        "symbol": "tAVNT",
+        "decimals": 18,
+        "totalSupply": "100000000000000000000000000",
+        "bytecodeBytes": 1785
+      },
+      {
+        "address": "0x70AcAd5Be9f9Bc1e58A49CA44d8e01a38E679367",
+        "symbol": "tBNB",
+        "decimals": 18,
+        "totalSupply": "1000000000000000000000000",
+        "bytecodeBytes": 1785
+      },
+      {
+        "address": "0xEd1a192Ae8A54De694e0bE8acc18895F175d4a04",
+        "symbol": "tBONK",
+        "decimals": 18,
+        "totalSupply": "10000000000000000000000000000000000000",
+        "bytecodeBytes": 1785
+      },
+      {
+        "address": "0x994Ea0053519c62BD22978C5E66feD28Bf51B07A",
+        "symbol": "tBTC",
+        "decimals": 8,
+        "totalSupply": "1000000000000",
+        "bytecodeBytes": 1785
+      },
+      {
+        "address": "0xe89D27f3d795990119fb9ed91cbA74a7dA68f7a0",
+        "symbol": "tCAKE",
+        "decimals": 18,
+        "totalSupply": "10000000000000000000000000",
+        "bytecodeBytes": 1785
+      },
+      {
+        "address": "0xDBfA3F211205414b8E4cdFC9e077f8FfF6Efdecb",
+        "symbol": "tCOW",
+        "decimals": 18,
+        "totalSupply": "100000000000000000000000000",
+        "bytecodeBytes": 1785
+      },
+      {
+        "address": "0xb0dC4c8BC8366a55E413909EE045B6a1934080D7",
+        "symbol": "tCRV",
+        "decimals": 18,
+        "totalSupply": "100000000000000000000000000",
+        "bytecodeBytes": 1785
+      },
+      {
+        "address": "0xFD7159448d517ec39D3fBF0820d9c620bbf46711",
+        "symbol": "tDOGE",
+        "decimals": 18,
+        "totalSupply": "1000000000000000000000000000",
+        "bytecodeBytes": 1785
+      },
+      {
+        "address": "0x373807d45Da5A798D2b70A53d58f2a346AF67069",
+        "symbol": "GTE",
+        "decimals": 18,
+        "totalSupply": "1000000000000000000000000000",
+        "bytecodeBytes": 6218
+      },
+      {
+        "address": "0x159926300936d61a2E399e71951De7580a2B3888",
+        "symbol": "TOMJERY",
+        "decimals": 18,
+        "totalSupply": "1000000000000000000000000000",
+        "bytecodeBytes": 6218
+      },
+      {
+        "address": "0x1B86516706B16BEC4DD75B5fFF90d69A5b04B420",
+        "symbol": "TOM",
+        "decimals": 18,
+        "totalSupply": "1000000000000000000000000000",
+        "bytecodeBytes": 6218
+      },
+      {
+        "address": "0x0f3a212872ee319934c15c8B5A43471495197420",
+        "symbol": "MOONTICKET",
+        "decimals": 18,
+        "totalSupply": "1000000000000000000000000000",
+        "bytecodeBytes": 6218
+      },
+      {
+        "address": "0x20331804Da7cC259d424E2e29e5847EcCf017069",
+        "symbol": "MOONTICKET",
+        "decimals": 18,
+        "totalSupply": "1000000000000000000000000000",
+        "bytecodeBytes": 6218
+      },
+      {
+        "address": "0x35e2c259d1bC827C17E5f6D65735F9d4a3709420",
+        "symbol": "AETHELGARD",
+        "decimals": 18,
+        "totalSupply": "1000000000000000000000000000",
+        "bytecodeBytes": 6218
+      },
+      {
+        "address": "0x0F71AEBdD654cF8f6ef3b45925cA4DC8E36DD888",
+        "symbol": "AETHELGARD",
+        "decimals": 18,
+        "totalSupply": "1000000000000000000000000000",
+        "bytecodeBytes": 6218
+      },
+      {
+        "address": "0x00d7b0e5cD81c0dDC1871a59CE03184260FCa069",
+        "symbol": "29",
+        "decimals": 18,
+        "totalSupply": "1000000000000000000000000000",
+        "bytecodeBytes": 6218
+      },
+      {
+        "address": "0x0bA0A4E36Fe2B73138c19663b9ae963450007069",
+        "symbol": "30",
+        "decimals": 18,
+        "totalSupply": "1000000000000000000000000000",
+        "bytecodeBytes": 6218
+      },
+      {
+        "address": "0xE9DD0b1d726aa8927a0fC556917a1b5e15Ff816B",
+        "symbol": "FOO",
+        "decimals": 18,
+        "totalSupply": "1000100000000000000000000",
+        "bytecodeBytes": 2082
+      },
+      {
+        "address": "0x2a821892508732DbBa8a24F075833620d9D9b888",
+        "symbol": "1000",
+        "decimals": 18,
+        "totalSupply": "1000000000000000000000000000",
+        "bytecodeBytes": 6218
+      },
+      {
+        "address": "0x3D4E62572441562EaA8cf959e422bbbf7e3B8420",
+        "symbol": "SYBAU",
+        "decimals": 18,
+        "totalSupply": "1000000000000000000000000000",
+        "bytecodeBytes": 6218
+      },
+      {
+        "address": "0x3726a8Ae9a13A4BF043eB4e326Cfc56310Cee420",
+        "symbol": "NINJA",
+        "decimals": 18,
+        "totalSupply": "1000000000000000000000000000",
+        "bytecodeBytes": 6218
+      },
+      {
+        "address": "0x32358c46eC9e7E380B57B46328E07a9B49E57577",
+        "symbol": "mUSDM",
+        "decimals": 18,
+        "totalSupply": "5800235000000000000000000000",
+        "bytecodeBytes": 2620
+      },
+      {
+        "address": "0xB641fB1A785f34d2aF7C374661760689Eca7412C",
+        "symbol": "RBT",
+        "decimals": 18,
+        "totalSupply": "50948454453435676681455131",
+        "bytecodeBytes": 3773
+      },
+      {
+        "address": "0x0a4Ad7b26Dd27dA3599e8F03008450B75183a420",
+        "symbol": "NOTDARE",
+        "decimals": 18,
+        "totalSupply": "1000000000000000000000000000",
+        "bytecodeBytes": 6218
+      },
+      {
+        "address": "0x096b8BFEcc1C14367B6054E32034D2225688B069",
+        "symbol": "AA",
+        "decimals": 18,
+        "totalSupply": "1000000000000000000000000000",
+        "bytecodeBytes": 6218
+      },
+      {
+        "address": "0xA72C6EF04667119d43d1D7C203AD4FDE23D39dE9",
+        "symbol": "MTK",
+        "decimals": 18,
+        "totalSupply": "1000000000000000000000000000",
+        "bytecodeBytes": 6218
+      },
+      {
+        "address": "0x9ea2192A71201CaF0fE4E743d4cabf04258b8891",
+        "symbol": "CENT",
+        "decimals": 18,
+        "totalSupply": "1000100000000000000000000",
+        "bytecodeBytes": 2082
+      },
+      {
+        "address": "0xd43276B04889B42B50E71AaA3BbB34EF8c87B6AF",
+        "symbol": "RBT",
+        "decimals": 18,
+        "totalSupply": "211526185440592424185993",
+        "bytecodeBytes": 3773
+      },
+      {
+        "address": "0x2C9689d277bAcfCD511ec4048a9c15a6DFB8B069",
+        "symbol": "YEET",
+        "decimals": 18,
+        "totalSupply": "1000000000000000000000000000",
+        "bytecodeBytes": 6218
+      },
+      {
+        "address": "0x807339b9A8D04C83446E626D65b1977648960c3d",
+        "symbol": "$MEGACORE",
+        "decimals": 18,
+        "totalSupply": "1000000000000000000000000000",
+        "bytecodeBytes": 4875
+      },
+      {
+        "address": "0x54D85e73eB6F511F0eFE047492febaca5a865894",
+        "symbol": "$MEGACORE",
+        "decimals": 18,
+        "totalSupply": "1000000000000000000000000000",
+        "bytecodeBytes": 5069
+      },
+      {
+        "address": "0x4C6AF54b85a4c615b9034D5f03C8eaA8db4520af",
+        "symbol": "TT_22",
+        "decimals": 18,
+        "totalSupply": "1000000000000000000000000000",
+        "bytecodeBytes": 2655
+      },
+      {
+        "address": "0x5C0960992A7e8F87bf2cC2F5050a39D02Cb6d6E7",
+        "symbol": "TT_20",
+        "decimals": 18,
+        "totalSupply": "1000000000000000000000000000",
+        "bytecodeBytes": 2655
+      },
+      {
+        "address": "0x6a994C8A6ED592BD441fd7af0F48e170aF8E2eb5",
+        "symbol": "TT_02",
+        "decimals": 18,
+        "totalSupply": "1000000000000000000000000000",
+        "bytecodeBytes": 2655
+      },
+      {
+        "address": "0x6F1d7E37177977a1ce88D38843b5B51D0b442ab0",
+        "symbol": "MC20",
+        "decimals": 18,
+        "totalSupply": "1000000000000000000000000000",
+        "bytecodeBytes": 4392
+      },
+      {
+        "address": "0x7b6d1dF20b96F3942931D1bdA788135358E3ea11",
+        "symbol": "$MEGACORE",
+        "decimals": 18,
+        "totalSupply": "1000000000000000000000000000",
+        "bytecodeBytes": 5090
+      },
+      {
+        "address": "0x41B14127a5B866d46802f77A10ee586b93127da1",
+        "symbol": "$MEGACORE",
+        "decimals": 18,
+        "totalSupply": "1000000000000000000000000000",
+        "bytecodeBytes": 5451
+      },
+      {
+        "address": "0x0AB95e461d355837D66Ef9Eb6eB6D0C35CC4a40c",
+        "symbol": "RBT",
+        "decimals": 18,
+        "totalSupply": "25001000000000000000000",
+        "bytecodeBytes": 3773
+      },
+      {
+        "address": "0xA98B4AaC52F4e17BaA591beE00d8cD37e7d0d530",
+        "symbol": "RBT",
+        "decimals": 18,
+        "totalSupply": "25001000000000000000000",
+        "bytecodeBytes": 3773
+      },
+      {
+        "address": "0xcC6FfC60349c0882D947B79A3C2d9558515b4503",
+        "symbol": "RBT",
+        "decimals": 18,
+        "totalSupply": "25001000000000000000000",
+        "bytecodeBytes": 3773
+      },
+      {
+        "address": "0x595d214768d14Eed495FbA68346a9179058792D5",
+        "symbol": "RBT",
+        "decimals": 18,
+        "totalSupply": "25001000000000000000000",
+        "bytecodeBytes": 3773
+      },
+      {
+        "address": "0xEb4aA21977F05e5103F2892387dc661B5cfA08d7",
+        "symbol": "RBT",
+        "decimals": 18,
+        "totalSupply": "25001000000000000000000",
+        "bytecodeBytes": 3773
+      },
+      {
+        "address": "0xcc00588a39bF3a997B272FbcE0D169573aae575E",
+        "symbol": "RBT",
+        "decimals": 18,
+        "totalSupply": "25001000000000000000000",
+        "bytecodeBytes": 3773
+      },
+      {
+        "address": "0xE0046903b2cdCfFf1C15C6c42d899B2FBB097Eb0",
+        "symbol": "RBT",
+        "decimals": 18,
+        "totalSupply": "25001000000000000000000",
+        "bytecodeBytes": 3773
+      },
+      {
+        "address": "0x1355C8c061193BE025036Cf754070561E0aaE069",
+        "symbol": "NOTDARE",
+        "decimals": 18,
+        "totalSupply": "1000000000000000000000000000",
+        "bytecodeBytes": 6218
+      },
+      {
+        "address": "0x198182c3518A57B09A950E0d0C9933E3CD688420",
+        "symbol": "FRESH",
+        "decimals": 18,
+        "totalSupply": "1000000000000000000000000000",
+        "bytecodeBytes": 6218
+      },
+      {
+        "address": "0x15F306af320B91D1c1aC34b7eA1454837Ff05D05",
+        "symbol": "RBT",
+        "decimals": 18,
+        "totalSupply": "25001000000000000000000",
+        "bytecodeBytes": 3773
+      },
+      {
+        "address": "0x5BAA7934B7a16486C5E4e29f41BDB58dE6612651",
+        "symbol": "tESP",
+        "decimals": 18,
+        "totalSupply": "1000000000000000000000000000",
+        "bytecodeBytes": 1785
+      },
+      {
+        "address": "0x1cc46f6167b2C8BA96176ae58DE2d1521B610E6a",
+        "symbol": "tETH",
+        "decimals": 18,
+        "totalSupply": "100000000000000000000000",
+        "bytecodeBytes": 1785
+      },
+      {
+        "address": "0xB5BFf81c2D4CDA3Db89243A4804b51EFA2450102",
+        "symbol": "tGMX",
+        "decimals": 18,
+        "totalSupply": "10000000000000000000000000",
+        "bytecodeBytes": 1785
+      },
+      {
+        "address": "0xad9630691776d7b44DF464EC8705F6bB2ec6ce5e",
+        "symbol": "tLDO",
+        "decimals": 18,
+        "totalSupply": "100000000000000000000000000",
+        "bytecodeBytes": 1785
+      },
+      {
+        "address": "0x47410a6f34e160189b9973b67a597F90f71d8283",
+        "symbol": "tLINK",
+        "decimals": 18,
+        "totalSupply": "1000000000000000000000000",
+        "bytecodeBytes": 1785
+      },
+      {
+        "address": "0x88617DC752a48E0992d77cF5B941674a8aEf6346",
+        "symbol": "tMORPHO",
+        "decimals": 18,
+        "totalSupply": "10000000000000000000000000",
+        "bytecodeBytes": 1785
+      },
+      {
+        "address": "0x68353324898Ff9063d2035f9D5015Be43FE7b748",
+        "symbol": "tPENDLE",
+        "decimals": 18,
+        "totalSupply": "10000000000000000000000000",
+        "bytecodeBytes": 1785
+      },
+      {
+        "address": "0xb68738Aaa14621AfF1e6311a4C5759FBBbd36C70",
+        "symbol": "tPEPE",
+        "decimals": 18,
+        "totalSupply": "10000000000000000000000000000000000",
+        "bytecodeBytes": 1785
+      },
+      {
+        "address": "0x51C203F3BBD1988EC2eaff7f577e52183c123AeF",
+        "symbol": "tSOL",
+        "decimals": 9,
+        "totalSupply": "100000000000000",
+        "bytecodeBytes": 1785
+      },
+      {
+        "address": "0x6f1786D490619AeA9bd05DaEd025b0ABa90F4E89",
+        "symbol": "tUNI",
+        "decimals": 18,
+        "totalSupply": "10000000000000000000000000",
+        "bytecodeBytes": 1785
+      },
+      {
+        "address": "0xa6375e34A7092e96660386c9275d732687f1E068",
+        "symbol": "tXRP",
+        "decimals": 6,
+        "totalSupply": "30000000000000",
+        "bytecodeBytes": 1785
+      },
+      {
+        "address": "0xEC287ffa85070Ab29e9D7774FCb131ECbC198C03",
+        "symbol": "tZRO",
+        "decimals": 18,
+        "totalSupply": "10000000000000000000000000",
+        "bytecodeBytes": 1785
+      },
+      {
+        "address": "0x13f57399c9aCb10683a26Ca0E4f8D0dc33df5d28",
+        "symbol": "RBT",
+        "decimals": 18,
+        "totalSupply": "25001000000000000000000",
+        "bytecodeBytes": 3773
+      },
+      {
+        "address": "0x9eB56420e4556F1c2337Dad7bFA159d23b80F5C0",
+        "symbol": "RBT",
+        "decimals": 18,
+        "totalSupply": "74150458823346000874426",
+        "bytecodeBytes": 3773
+      },
+      {
+        "address": "0x37a67bD9bbD82f5b8c429BD6C7cC6301029B1eb4",
+        "symbol": "RBT",
+        "decimals": 18,
+        "totalSupply": "74836959062434034593249",
+        "bytecodeBytes": 3773
+      },
+      {
+        "address": "0xA912bf8f1a7353F43d662a632C074cE4b87a6530",
+        "symbol": "RBT",
+        "decimals": 18,
+        "totalSupply": "73423257478788730181686109",
+        "bytecodeBytes": 3773
+      },
+      {
+        "address": "0xe0F71925A528FD0d5f759CC72427130908fC2c14",
+        "symbol": "MLE2E",
+        "decimals": 18,
+        "totalSupply": "1000000000000000000000000",
+        "bytecodeBytes": 1786
+      },
+      {
+        "address": "0x1eB24B9F70552a7da4633c97b2AdAB1a1605f779",
+        "symbol": "RBT",
+        "decimals": 18,
+        "totalSupply": "32426297000000000000000",
+        "bytecodeBytes": 3773
+      },
+      {
+        "address": "0x70d92e25B426952d4bf079c285F7C06C22343E0F",
+        "symbol": "MLE2E",
+        "decimals": 18,
+        "totalSupply": "1000000000000000000000000",
+        "bytecodeBytes": 1786
+      },
+      {
+        "address": "0x7Df1455cAc02f0e3c88A33118E84BeE7D8D6522b",
+        "symbol": "RBT",
+        "decimals": 18,
+        "totalSupply": "84663895365138328543527",
+        "bytecodeBytes": 3773
+      },
+      {
+        "address": "0x2b04D6C21A2385B6DDC25E66276647e12B76bF2f",
+        "symbol": "RBT",
+        "decimals": 18,
+        "totalSupply": "76148740875501908000000",
+        "bytecodeBytes": 3773
+      },
+      {
+        "address": "0x48c27516d60cD3E9e33d8B6CFC9E93544dB6d132",
+        "symbol": "RBT",
+        "decimals": 18,
+        "totalSupply": "455178005262072331011593",
+        "bytecodeBytes": 3773
+      },
+      {
+        "address": "0x0F9b25e50f91Db0Ce4Bf7E30D397678Bd201c888",
+        "symbol": "DARE",
+        "decimals": 18,
+        "totalSupply": "1000000000000000000000000000",
+        "bytecodeBytes": 6218
+      },
+      {
+        "address": "0xB99F1348A567e07319EAD28be5be0E65B8733844",
+        "symbol": "RBT",
+        "decimals": 18,
+        "totalSupply": "1503745895074797215613402",
+        "bytecodeBytes": 3773
+      },
+      {
+        "address": "0x6025b1843cE76ddbDdE8597E64927dA6f7B2ba7F",
+        "symbol": "RBT",
+        "decimals": 18,
+        "totalSupply": "25001000000000000000000",
+        "bytecodeBytes": 3773
+      },
+      {
+        "address": "0xC7c24d135e6936Cb32807848305189b6c02E7265",
+        "symbol": "tUSDC",
+        "decimals": 6,
+        "totalSupply": "38841262289022",
+        "bytecodeBytes": 1669
+      },
+      {
+        "address": "0xd591F086D3f6303Ed80A80CDAafEdae3DC99dee2",
+        "symbol": "MEGASHOT",
+        "decimals": 18,
+        "totalSupply": "1000000000000000000000000000",
+        "bytecodeBytes": 4180
+      },
+      {
+        "address": "0x0183c796C1CD1d6F5597F6dD301dB349a6234Fd2",
+        "symbol": "TT1",
+        "decimals": 18,
+        "totalSupply": "1000000000000000000000000000",
+        "bytecodeBytes": 1592
+      },
+      {
+        "address": "0x052132F57E2AF48cf1eDc5F478DDb5B31E26A7c3",
+        "symbol": "mcETH",
+        "decimals": 18,
+        "totalSupply": "1670000000000000000000",
+        "bytecodeBytes": 1540
+      },
+      {
+        "address": "0x7273E5f4B0900901E02d32D6A5397752D1d137F9",
+        "symbol": "MC501113",
+        "decimals": 18,
+        "totalSupply": "334446775997283234152649",
+        "bytecodeBytes": 45
+      },
+      {
+        "address": "0xEAdda8b4F3cc7FaBa7B089Ef5d5c8EC3E31E612C",
+        "symbol": "MC248121",
+        "decimals": 18,
+        "totalSupply": "334446775997283234152649",
+        "bytecodeBytes": 45
+      },
+      {
+        "address": "0xfC705837d7F3E2944759f779bAC9114Fe8D4F41A",
+        "symbol": "tUSDm",
+        "decimals": 18,
+        "totalSupply": "26281477962408666030027524",
+        "bytecodeBytes": 1669
+      },
+      {
+        "address": "0x1bD25cED21cdcc05E387C7C34a3c602EC5338420",
+        "symbol": "INITBUY",
+        "decimals": 18,
+        "totalSupply": "1000000000000000000000000000",
+        "bytecodeBytes": 6218
+      },
+      {
+        "address": "0x329B6f39Eb1441A9107768689bff9a31C9ADC420",
+        "symbol": "INTIAMOUNT",
+        "decimals": 18,
+        "totalSupply": "1000000000000000000000000000",
+        "bytecodeBytes": 6218
+      },
+      {
+        "address": "0x25Dd21514AC9c578229458c9C10A93098C250888",
+        "symbol": "QAQA",
+        "decimals": 18,
+        "totalSupply": "1000000000000000000000000000",
+        "bytecodeBytes": 6218
+      },
+      {
+        "address": "0x233BE33e9A46737341eeD6DaC4FBCDafb7A59069",
+        "symbol": "31",
+        "decimals": 18,
+        "totalSupply": "1000000000000000000000000000",
+        "bytecodeBytes": 6218
+      },
+      {
+        "address": "0x2a158f0212cB1b96CBA8091703cF200471eEC069",
+        "symbol": "32",
+        "decimals": 18,
+        "totalSupply": "1000000000000000000000000000",
+        "bytecodeBytes": 6218
+      },
+      {
+        "address": "0x08A72D64bc590cb97DaBc1f7A8973FD5B9eE9069",
+        "symbol": "INIT2",
+        "decimals": 18,
+        "totalSupply": "1000000000000000000000000000",
+        "bytecodeBytes": 6218
+      },
+      {
+        "address": "0x1b996560Ba6b41b2FD09448715E69Dacc99DC420",
+        "symbol": "INIT3",
+        "decimals": 18,
+        "totalSupply": "1000000000000000000000000000",
+        "bytecodeBytes": 6218
+      },
+      {
+        "address": "0xa28a1f3B31aC3e8352e2624146e785229E6b507E",
+        "symbol": "OHLC4877",
+        "decimals": 18,
+        "totalSupply": "496614160534000000000000",
+        "bytecodeBytes": 45
+      },
+      {
+        "address": "0x16B5D8faD32305F049544e69859e43E9C1E33420",
+        "symbol": "VIEW",
+        "decimals": 18,
+        "totalSupply": "1000000000000000000000000000",
+        "bytecodeBytes": 6218
+      },
+      {
+        "address": "0x3ffFA75c2a9C8c80346c521C8D24237A737D2420",
+        "symbol": "ANIMAL",
+        "decimals": 18,
+        "totalSupply": "1000000000000000000000000000",
+        "bytecodeBytes": 6218
+      },
+      {
+        "address": "0x1dD4B7d501369384Fe229a9744D5472848Db0888",
+        "symbol": "MEME",
+        "decimals": 18,
+        "totalSupply": "1000000000000000000000000000",
+        "bytecodeBytes": 6218
+      },
+      {
+        "address": "0x25817Bf0c9481155f936DBb43Ca50717786883eC",
+        "symbol": "mcETH",
+        "decimals": 18,
+        "totalSupply": "160000000000000000000",
+        "bytecodeBytes": 1540
+      },
+      {
+        "address": "0x2D7d296f8495C6AEb6DC304CE21Dc208c7846191",
+        "symbol": "FRESH738",
+        "decimals": 18,
+        "totalSupply": "435397357094118226490908",
+        "bytecodeBytes": 45
+      },
+      {
+        "address": "0x845E3D6a6F86002645C9291388DA0D81a3aFdeDe",
+        "symbol": "KT035288",
+        "decimals": 18,
+        "totalSupply": "498783614817478474236924",
+        "bytecodeBytes": 45
+      },
+      {
+        "address": "0xea194FB60A122624603B1cAF3dAa0Aa83b7F0eE7",
+        "symbol": "KT736111",
+        "decimals": 18,
+        "totalSupply": "472809914834296349000549",
+        "bytecodeBytes": 45
+      },
+      {
+        "address": "0x437fB061C54C02Fa3F15Cb7e041A1228F3DBDaD2",
+        "symbol": "KT017567",
+        "decimals": 18,
+        "totalSupply": "472809914834296349000549",
+        "bytecodeBytes": 45
+      },
+      {
+        "address": "0x992D9ca762B6430fbBd0a6c3AD344f38b9f0cAB0",
+        "symbol": "MC189839",
+        "decimals": 18,
+        "totalSupply": "999836532680635259236823791",
+        "bytecodeBytes": 45
+      },
+      {
+        "address": "0x2a3abd499Af1111B19a7d04bf24118C0a6905419",
+        "symbol": "mcETH",
+        "decimals": 18,
+        "totalSupply": "150000000000000000000",
+        "bytecodeBytes": 1543
+      },
+      {
+        "address": "0xF571a0cA96d98b6646aef8CC0853295549E516DF",
+        "symbol": "MC921735",
+        "decimals": 18,
+        "totalSupply": "998358169689219940617155345",
+        "bytecodeBytes": 45
+      },
+      {
+        "address": "0xb5B3484EF47b4f3b0fbf22c3B7257Ccf50a18E00",
+        "symbol": "KT934882",
+        "decimals": 18,
+        "totalSupply": "998603704890661767551852982",
+        "bytecodeBytes": 45
+      },
+      {
+        "address": "0xa1E36b6D1455d74639CAf7D4d0Fff1024007F84A",
+        "symbol": "mcETH",
+        "decimals": 18,
+        "totalSupply": "150000000000000000000",
+        "bytecodeBytes": 1543
+      },
+      {
+        "address": "0xFD7A6CD029A421535d566dd53B89E4547a3C22B1",
+        "symbol": "MC573288",
+        "decimals": 18,
+        "totalSupply": "998358169689219940617155345",
+        "bytecodeBytes": 45
+      },
+      {
+        "address": "0xf6e00241b9E470BDB360D7F4eB17F11715C3576D",
+        "symbol": "KT919150",
+        "decimals": 18,
+        "totalSupply": "998603704890661767551852982",
+        "bytecodeBytes": 45
+      },
+      {
+        "address": "0xb8b368CCD09bfcE2DB4bE267CA52AAe3b7d86DBd",
+        "symbol": "tWBTC",
+        "decimals": 8,
+        "totalSupply": "13337236090",
+        "bytecodeBytes": 1669
+      }
+    ]
+  },
+  "findings": [
+    {
+      "severity": "high",
+      "id": "P1",
+      "title": "Factory owner is an EOA, not a multisig",
+      "detail": "factory.owner() = 0xA6E9ca903eb048da8Bb7b2F620b6947121731dA5 has no contract code. A single private key controls fee-tier governance (enableFeeAmount + setOwner). If compromised, attacker can add malicious fee tiers permanently."
+    },
+    {
+      "severity": "medium",
+      "id": "P4",
+      "title": "102/108 pools (94%) have oracle cardinality = 1",
+      "detail": "TWAP is unavailable; downstream protocols using these as price oracles are vulnerable to single-block manipulation."
+    },
+    {
+      "severity": "medium",
+      "id": "P5",
+      "title": "25 pool(s) pair a token with mint() selector",
+      "detail": "Token supply can be inflated by an admin; users who hold the token are exposed to dilution risk."
+    }
+  ]
+}

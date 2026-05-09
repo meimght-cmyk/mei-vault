@@ -1,0 +1,95 @@
+{
+  "generatedAt": "2026-05-08T17:47:15.486Z",
+  "thresholds": {
+    "MAX_RISK_BPS": 0,
+    "MIN_LIQUIDITY": "1000000000000000000",
+    "MIN_CARDINALITY": 10
+  },
+  "inputAudits": [
+    {
+      "protocol": "prism",
+      "total": 44,
+      "healthy": 4,
+      "dead": 16,
+      "avgBps": 3727,
+      "topFindings": [
+        "[high] P1 Factory owner is an EOA, not a multisig",
+        "[high] P2 16/44 pools (36%) are dead-on-arrival",
+        "[high] P3 7 pool(s) pair a known scam-template token",
+        "[medium] P4 36/44 pools (82%) have oracle cardinality = 1",
+        "[medium] P5 15 pool(s) pair a token with mint() selector"
+      ]
+    },
+    {
+      "protocol": "kumbaya",
+      "total": 108,
+      "healthy": 0,
+      "dead": 2,
+      "avgBps": 1306,
+      "topFindings": [
+        "[high] P1 Factory owner is an EOA, not a multisig",
+        "[medium] P4 102/108 pools (94%) have oracle cardinality = 1",
+        "[medium] P5 25 pool(s) pair a token with mint() selector"
+      ]
+    },
+    {
+      "protocol": "kumbaya",
+      "total": 680,
+      "healthy": 1,
+      "dead": 52,
+      "avgBps": 1765,
+      "topFindings": [
+        "[medium] P4 673/680 pools (99%) have oracle cardinality = 1",
+        "[medium] P5 35 pool(s) pair a token with mint() selector"
+      ]
+    }
+  ],
+  "whitelist": [
+    {
+      "pool": "0xC2FaC0B5B6C075819E654bcFbBBCda2838609d32",
+      "fee": 3000,
+      "tickSpacing": 60,
+      "riskBps": 0,
+      "reasons": [],
+      "liquidity": "167635009493907629956080",
+      "cardinality": 2000,
+      "blockCreated": 7847497,
+      "protocol": "prism",
+      "chainId": 4326,
+      "rationale": "riskBps=0, cardinality=2000 (mature TWAP), deep liquidity"
+    },
+    {
+      "pool": "0x41cB3DD6824Bb9c4cFC0cc4E15675F7a2E6aF869",
+      "fee": 100,
+      "tickSpacing": 1,
+      "riskBps": 0,
+      "reasons": [],
+      "liquidity": "4292227237343696860635",
+      "cardinality": 2000,
+      "blockCreated": 7848502,
+      "protocol": "prism",
+      "chainId": 4326,
+      "rationale": "riskBps=0, cardinality=2000 (mature TWAP), deep liquidity"
+    },
+    {
+      "pool": "0x6bD9eeF21c2419FeffafbF4850153A3b3A74A5E1",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 0,
+      "reasons": [],
+      "liquidity": "398134912017050790482087",
+      "cardinality": 100,
+      "blockCreated": 14533755,
+      "protocol": "kumbaya",
+      "chainId": 4326,
+      "rationale": "riskBps=0, cardinality=100 (mature TWAP), deep liquidity"
+    }
+  ],
+  "rejectedSummary": {
+    "total": 824,
+    "byProtocol": {
+      "prism": 38,
+      "kumbaya": 786
+    }
+  }
+}

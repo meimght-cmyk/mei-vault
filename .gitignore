@@ -1,0 +1,17 @@
+# OS noise
+.DS_Store
+
+# editor
+.vscode/
+.idea/
+
+# log files written by launchd / runners
+ledger/logs/
+*.log
+
+# pre-migration backups from migrate-ledger-schema
+*.jsonl.bak
+
+# bun / node
+node_modules/
+bun.lockb

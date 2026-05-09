@@ -1,0 +1,74 @@
+# mei-vault
+
+Mei's agentic DeFi build log. The end goal is a vault that accumulates MEI + XER tokens into a treasury, deploying capital only into pools that pass a `riskclaw-daemon` audit and only holding positions while every per-pool signal stays green.
+
+The vault doesn't exist yet. The data does. **Every test, every result, public.** Holders can watch, fork, or join the run.
+
+## Status
+
+- **Phase 1 — read-only safety oracle:** live since 2026-05-08. Daily score-ledger probe over ~100 ranked safest pools on MegaETH (kumbaya + prism). Strategy module produces dry-run intents.
+- **Phase 2 — Base decoders:** queued, gated on upstream answers.
+- **Phase 3 — polling vault-exiter port:** queued.
+- **Phase 4 — vault contract:** hard-floored on ≥90 days of ledger data + measured ALLOW false-negative ≤2%, BLOCK precision ≥70%, plus an external audit. **Earliest unlock: 2026-08-07.**
+
+## Layout
+
+```
+mei-vault/
+├── docs/
+│   ├── integration.md   — design doc (vault thesis, phased plan, upstream questions)
+│   └── handoff.md       — Truu→Mei structural charter (KPIs, blockers, phase gates)
+├── scripts/             — Mei-side TS: rank-pools, whitelist, preflight-ledger,
+│                          strategy-passive-lp, backfill-outcomes, migrate-ledger-schema
+├── ops/                 — launchd plists + bash runners
+├── ledger/              — score-*.jsonl probe rows + outcome-patches.jsonl
+├── whitelist/           — daily approved-pools snapshots (strict riskBps=0)
+├── intents/             — dry-run strategy proposals (one file per intent)
+└── audits/              — ranked.json + day-zero protocol baselines
+```
+
+## How to read the ledger
+
+Each row in `ledger/score-YYYY-MM-DD.jsonl` is a probe of one pool at one moment:
+
+```json
+{
+  "ts": "...",
+  "protocol": "kumbaya",
+  "pool": "0x...",
+  "decision": "ALLOW" | "WARN" | "BLOCK" | "PROBE" | "ERROR",
+  "riskBps": 0,
+  "action_taken": null,
+  "outcome_7d": null,
+  "outcome_30d": null,
+  "_probe": { "auditRiskBps": ..., "liveRiskBps": ..., "components": {...} }
+}
+```
+
+`outcome_7d` and `outcome_30d` are filled in by `scripts/backfill-outcomes.ts` — for each row older than 7d/30d, it re-scores the pool and decides whether the pool experienced a loss event (riskBps jump to ≥5000 from ≤2000, became unreachable, depeg >10%, +50% additional TVL drift). Patches land in `ledger/outcome-patches.jsonl`, joined to original rows by `(pool, ts_original, horizon)`.
+
+The Phase 4 capital-deploy gates (false-negative rate, BLOCK precision) get computed from this joined view — see `docs/handoff.md` §4.
+
+## Cold-pickup
+
+```bash
+# verify upstream daemon is running
+curl -s http://localhost:4242/api/integrations
+
+# refresh state
+cd ~/Desktop/mei-vault
+bun run scripts/rank-pools.ts > audits/ranked.md
+bun run scripts/whitelist.ts
+bun run scripts/strategy-passive-lp.ts
+
+# manually trigger a ledger probe
+bash ops/run-ledger.sh
+```
+
+## Dependencies
+
+The upstream `riskclaw-daemon` (https://github.com/Truunik/riskclaw-daemon) provides the `/api/score`, `/api/audit`, `/api/preflight-raw` endpoints this repo consumes. By default, scripts assume it's running locally on `:4242` and that the source clone lives at `~/Desktop/Trading/riskclaw-daemon`. Override with `RISKCLAW_DAEMON_DIR` and `RISKCLAW_SERVER` env vars.
+
+## License
+
+MIT. Same as upstream.
