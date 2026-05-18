@@ -7,7 +7,7 @@ The vault doesn't exist yet. The data does. **Every test, every result, public.*
 ## Status
 
 - **Phase 1 — read-only safety oracle:** live since 2026-05-08. 6-hourly probe of 100 safest + 50 riskiest pools on MegaETH (kumbaya + prism). Strategy module produces dry-run intents.
-- **Phase 2 — Base decoders:** queued, gated on upstream answers.
+- **Phase 2 — Base decoders:** **viable end-to-end as of 2026-05-18.** `uniswap-v3-base` decoder works; first Base audit landed (306/314 pools scored, 1 healthy). Integration into the live probe pipeline still pending. See [docs/upstream-base-changes.md](docs/upstream-base-changes.md).
 - **Phase 3 — polling vault-exiter port:** queued.
 - **Phase 4 — vault contract:** hard-floored on ≥90 days of ledger data + ALLOW false-negative ≤2%, BLOCK precision ≥70%, plus an external audit. **Earliest unlock: 2026-08-07.**
 
