@@ -1,6 +1,6 @@
 # Phase 4 readiness
 
-_Updated: 2026-05-18T07:42:40.867Z_
+_Updated: 2026-05-18T19:51:15.473Z_
 
 Phase 4 (vault contract deploy) unlocks only after ≥90 days of probe data **with** the safety floors holding. This dashboard is the public scorecard.
 
@@ -8,13 +8,13 @@ Phase 4 (vault contract deploy) unlocks only after ≥90 days of probe data **wi
 
 - 90-day clock started: **2026-05-09** (day 9 of 90)
 - Earliest unlock: **2026-08-07** (80 days away)
-- Probe rows collected: **5,389**
-- Outcome patches resolved: **1,139**
+- Probe rows collected: **5,689**
+- Outcome patches resolved: **1,639**
 
 ## Phase 4 floors (7-day horizon)
 
-- ✅ **ALLOW false-negative rate**: 0.82% (n=1100) — floor ≤ 2%
-- ❌ **BLOCK precision**: 0.00% (n=4) _(n=4 < 100 required)_ — floor ≥ 70%
+- ✅ **ALLOW false-negative rate**: 0.93% (n=1499) — floor ≤ 2%
+- ❌ **BLOCK precision**: 0.00% (n=14) _(n=14 < 100 required)_ — floor ≥ 70%
 
 **Overall: ❌ floors not yet met**
 
@@ -23,9 +23,9 @@ Phase 4 (vault contract deploy) unlocks only after ≥90 days of probe data **wi
 ### 7-day horizon
 | cohort | ALLOW | WARN | BLOCK | ERROR |
 |---|---|---|---|---|
-| safe  |   n=1100  loss=  9  rate=0.82% |   n=  25  loss=  0  rate=0.00% |   n=   4  loss=  0  rate=0.00% |   n=  10  loss= 10  rate=100.00% |
-| risky |   n=0 |   n=0 |   n=0 |   n=0 |
-| **all** | **  n=1100  loss=  9  rate=0.82%** | **  n=  25  loss=  0  rate=0.00%** | **  n=   4  loss=  0  rate=0.00%** | **  n=  10  loss= 10  rate=100.00%** |
+| safe  |   n=1499  loss= 14  rate=0.93% |   n=  25  loss=  0  rate=0.00% |   n=   4  loss=  0  rate=0.00% |   n=  11  loss= 10  rate=90.91% |
+| risky |   n=0 |   n=  89  loss=  0  rate=0.00% |   n=  10  loss=  0  rate=0.00% |   n=   1  loss=  1  rate=100.00% |
+| **all** | **  n=1499  loss= 14  rate=0.93%** | **  n= 114  loss=  0  rate=0.00%** | **  n=  14  loss=  0  rate=0.00%** | **  n=  12  loss= 11  rate=91.67%** |
 
 ### 30-day horizon (window opens 2026-06-08)
 | cohort | ALLOW | WARN | BLOCK | ERROR |
