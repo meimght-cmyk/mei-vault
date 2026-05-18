@@ -11,7 +11,9 @@ The vault doesn't exist yet. The data does. **Every test, every result, public.*
 - **Phase 3 — polling vault-exiter port:** queued.
 - **Phase 4 — vault contract:** hard-floored on ≥90 days of ledger data + ALLOW false-negative ≤2%, BLOCK precision ≥70%, plus an external audit. **Earliest unlock: 2026-08-07.**
 
-📊 **Live Phase 4 scorecard: [metrics/README.md](metrics/README.md)** — updated daily.
+📊 **Live dashboards:**
+- [Phase 4 readiness](metrics/README.md) — ALLOW false-neg / BLOCK precision vs floors
+- [Sim-trade P&L](metrics/simtrade.md) — what real capital would have done following the signals
 
 ## Layout
 

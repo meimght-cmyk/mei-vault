@@ -32,6 +32,10 @@ echo "[$(date -u +%FT%TZ)] computing metrics" >> "${LOG}"
 /opt/homebrew/bin/bun run scripts/compute-metrics.ts >> "${LOG}" 2>&1 \
   || echo "[$(date -u +%FT%TZ)] metrics non-zero exit, proceeding" >> "${LOG}"
 
+echo "[$(date -u +%FT%TZ)] computing sim-trade P&L" >> "${LOG}"
+/opt/homebrew/bin/bun run scripts/compute-simtrade-pnl.ts >> "${LOG}" 2>&1 \
+  || echo "[$(date -u +%FT%TZ)] simtrade non-zero exit, proceeding" >> "${LOG}"
+
 # auto-publish: commit + push outcome patches and metrics
 if [[ -n "$(git status --porcelain ledger metrics 2>/dev/null)" ]]; then
   git add ledger metrics >> "${LOG}" 2>&1

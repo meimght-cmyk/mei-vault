@@ -1,0 +1,91 @@
+{
+  "computed_at": "2026-05-18T08:05:05.689Z",
+  "model": {
+    "horizon_days": 7,
+    "loss_pnl_bps": -5000,
+    "error_pnl_bps": -2000,
+    "fee_assumption": "none (conservative — no ungrounded gains)",
+    "drift_model": "pnl_bps = -(tvlDriftBps_TN - tvlDriftBps_T)"
+  },
+  "totals": {
+    "probe_rows": 5389,
+    "real_intents": 1,
+    "hypothetical_entries": 3996
+  },
+  "real_intents": [
+    {
+      "source": "intent",
+      "intent_id": "passive-lp-kumbaya-2026-05-08-001",
+      "pool": "0x6bD9eeF21c2419FeffafbF4850153A3b3A74A5E1",
+      "protocol": "kumbaya",
+      "cohort": "safe",
+      "entry_ts": "2026-05-09T17:13:19.613Z",
+      "entry_decision": "ALLOW",
+      "entry_riskBps": 0,
+      "entry_tvlDriftBps": -98,
+      "age_days": 8.6,
+      "resolved": true,
+      "outcome_ts": "2026-05-16T22:45:15.588Z",
+      "outcome_decision": "ALLOW",
+      "outcome_riskBps": 0,
+      "outcome_tvlDriftBps": 1,
+      "loss_flagged": false,
+      "pnl_bps": -99,
+      "pnl_label": "TVL drift down"
+    }
+  ],
+  "hypothetical_summary": {
+    "all": {
+      "count": 3996,
+      "resolved_count": 1300,
+      "loss_flagged_count": 9,
+      "win_count": 3714,
+      "win_rate": 0.9294294294294294,
+      "avg_pnl_bps": -11.957457457457457,
+      "avg_pnl_pct": "-0.12%",
+      "median_pnl_bps": 0,
+      "worst_pnl_bps": -5000,
+      "best_pnl_bps": 550,
+      "total_pnl_bps": -47782
+    },
+    "safe_cohort": {
+      "count": 3984,
+      "resolved_count": 1300,
+      "loss_flagged_count": 9,
+      "win_count": 3702,
+      "win_rate": 0.9292168674698795,
+      "avg_pnl_bps": -12.060491967871487,
+      "avg_pnl_pct": "-0.12%",
+      "median_pnl_bps": 0,
+      "worst_pnl_bps": -5000,
+      "best_pnl_bps": 550,
+      "total_pnl_bps": -48049
+    },
+    "risky_cohort": {
+      "count": 12,
+      "resolved_count": 0,
+      "loss_flagged_count": 0,
+      "win_count": 12,
+      "win_rate": 1,
+      "avg_pnl_bps": 22.25,
+      "avg_pnl_pct": "0.22%",
+      "median_pnl_bps": 0,
+      "worst_pnl_bps": 0,
+      "best_pnl_bps": 267,
+      "total_pnl_bps": 267
+    }
+  },
+  "real_summary": {
+    "count": 1,
+    "resolved_count": 1,
+    "loss_flagged_count": 0,
+    "win_count": 0,
+    "win_rate": 0,
+    "avg_pnl_bps": -99,
+    "avg_pnl_pct": "-0.99%",
+    "median_pnl_bps": -99,
+    "worst_pnl_bps": -99,
+    "best_pnl_bps": -99,
+    "total_pnl_bps": -99
+  }
+}
