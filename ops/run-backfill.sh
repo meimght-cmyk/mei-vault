@@ -28,9 +28,13 @@ echo "[$(date -u +%FT%TZ)] running outcome backfill" >> "${LOG}"
 /opt/homebrew/bin/bun run scripts/backfill-outcomes.ts >> "${LOG}" 2>&1 \
   || echo "[$(date -u +%FT%TZ)] backfill non-zero exit, proceeding to publish whatever data did land" >> "${LOG}"
 
-# auto-publish: commit + push any new outcome patches
-if [[ -n "$(git status --porcelain ledger 2>/dev/null)" ]]; then
-  git add ledger >> "${LOG}" 2>&1
+echo "[$(date -u +%FT%TZ)] computing metrics" >> "${LOG}"
+/opt/homebrew/bin/bun run scripts/compute-metrics.ts >> "${LOG}" 2>&1 \
+  || echo "[$(date -u +%FT%TZ)] metrics non-zero exit, proceeding" >> "${LOG}"
+
+# auto-publish: commit + push outcome patches and metrics
+if [[ -n "$(git status --porcelain ledger metrics 2>/dev/null)" ]]; then
+  git add ledger metrics >> "${LOG}" 2>&1
   if git commit -m "data: backfill $(date -u +%Y-%m-%dT%H:%MZ)" >> "${LOG}" 2>&1; then
     git push >> "${LOG}" 2>&1 \
       && echo "[$(date -u +%FT%TZ)] published" >> "${LOG}" \

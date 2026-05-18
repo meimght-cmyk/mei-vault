@@ -6,10 +6,12 @@ The vault doesn't exist yet. The data does. **Every test, every result, public.*
 
 ## Status
 
-- **Phase 1 — read-only safety oracle:** live since 2026-05-08. Daily score-ledger probe over ~100 ranked safest pools on MegaETH (kumbaya + prism). Strategy module produces dry-run intents.
+- **Phase 1 — read-only safety oracle:** live since 2026-05-08. 6-hourly probe of 100 safest + 50 riskiest pools on MegaETH (kumbaya + prism). Strategy module produces dry-run intents.
 - **Phase 2 — Base decoders:** queued, gated on upstream answers.
 - **Phase 3 — polling vault-exiter port:** queued.
-- **Phase 4 — vault contract:** hard-floored on ≥90 days of ledger data + measured ALLOW false-negative ≤2%, BLOCK precision ≥70%, plus an external audit. **Earliest unlock: 2026-08-07.**
+- **Phase 4 — vault contract:** hard-floored on ≥90 days of ledger data + ALLOW false-negative ≤2%, BLOCK precision ≥70%, plus an external audit. **Earliest unlock: 2026-08-07.**
+
+📊 **Live Phase 4 scorecard: [metrics/README.md](metrics/README.md)** — updated daily.
 
 ## Layout
 
