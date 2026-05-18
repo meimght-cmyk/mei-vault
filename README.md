@@ -14,6 +14,7 @@ The vault doesn't exist yet. The data does. **Every test, every result, public.*
 📊 **Live dashboards:**
 - [Phase 4 readiness](metrics/README.md) — ALLOW false-neg / BLOCK precision vs floors
 - [Sim-trade P&L](metrics/simtrade.md) — what real capital would have done following the signals
+- [Wallet harness](metrics/harness.md) — would-sign / would-skip verdicts per intent, signer-less
 
 ## Layout
 
@@ -21,7 +22,8 @@ The vault doesn't exist yet. The data does. **Every test, every result, public.*
 mei-vault/
 ├── docs/
 │   ├── integration.md   — design doc (vault thesis, phased plan, upstream questions)
-│   └── handoff.md       — Truu→Mei structural charter (KPIs, blockers, phase gates)
+│   ├── handoff.md       — Truu→Mei structural charter (KPIs, blockers, phase gates)
+│   └── kewe.md          — Kewe ERC-8004 binding + Phase 4 Mei agent card draft
 ├── scripts/             — Mei-side TS: rank-pools, whitelist, preflight-ledger,
 │                          strategy-passive-lp, backfill-outcomes, migrate-ledger-schema
 ├── ops/                 — launchd plists + bash runners
