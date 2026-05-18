@@ -26,6 +26,7 @@ const MAX_RISK_BPS = Number(process.env.STRATEGY_MAX_RISK_BPS ?? 2000);
 const MIN_LIQUIDITY = BigInt(process.env.STRATEGY_MIN_LIQ ?? '1000000000000000000');
 const MIN_CARDINALITY = Number(process.env.STRATEGY_MIN_CARD ?? 10);
 const TARGET_CHAIN = Number(process.env.STRATEGY_CHAIN_ID ?? 4326);
+const TOP_N = Number(process.env.STRATEGY_TOP_N ?? 3);
 
 interface Pool {
   protocol: string; chainId: number; pool: string; fee: number;
@@ -63,71 +64,86 @@ if (!eligible.length) {
   process.exit(0);
 }
 
-const target = eligible[0]!;
-
 const today = new Date().toISOString().slice(0, 10);
 const intentDir = join(INTENTS_DIR, today);
 if (!existsSync(intentDir)) mkdirSync(intentDir, { recursive: true });
-const seq = readdirSync(intentDir).filter(f => f.startsWith(STRATEGY_NAME)).length + 1;
-const intentId = `${STRATEGY_NAME}-${today}-${String(seq).padStart(3, '0')}`;
 
-const intent = {
-  id: intentId,
-  strategy: STRATEGY_NAME,
-  status: 'dry-run',
-  createdAt: new Date().toISOString(),
-  target: {
+// idempotency: if today already has any intent for this strategy, skip.
+// (filter out .harness-result.json sidecars so the count is honest)
+const existingForToday = readdirSync(intentDir)
+  .filter(f => f.startsWith(STRATEGY_NAME) && f.endsWith('.json') && !f.endsWith('.harness-result.json'));
+if (existingForToday.length > 0) {
+  console.log(`today already has ${existingForToday.length} intent(s) for ${STRATEGY_NAME}, skipping`);
+  process.exit(0);
+}
+
+const targets = eligible.slice(0, TOP_N);
+console.log(`picking top-${TOP_N}: ${targets.length} target(s) from ${eligible.length} eligible`);
+
+const ledgerPath = join(LEDGER_DIR, `decisions-${today}.jsonl`);
+const writtenPaths: string[] = [];
+
+for (let i = 0; i < targets.length; i++) {
+  const target = targets[i]!;
+  const intentId = `${STRATEGY_NAME}-${today}-${String(i + 1).padStart(3, '0')}`;
+  const intent = {
+    id: intentId,
+    strategy: STRATEGY_NAME,
+    status: 'dry-run',
+    createdAt: new Date().toISOString(),
+    rank: i + 1,
+    target: {
+      protocol: target.protocol,
+      chainId: target.chainId,
+      pool: target.pool,
+      fee: target.fee,
+      auditRiskBps: target.riskBps,
+      liquidity: target.liquidity,
+      cardinality: target.cardinality,
+    },
+    position: {
+      type: 'passive-lp',
+      tickRange: 'wide',
+      sizeUsd: null,
+      notes: 'sizing deferred to capital allocator (Phase 3+)',
+    },
+    gates: {
+      protocol_match: target.protocol === TARGET_PROTOCOL,
+      chain_match: target.chainId === TARGET_CHAIN,
+      riskBps_le_threshold: { value: target.riskBps, threshold: MAX_RISK_BPS, pass: target.riskBps <= MAX_RISK_BPS },
+      cardinality_ok: { value: target.cardinality, threshold: MIN_CARDINALITY, pass: target.cardinality >= MIN_CARDINALITY },
+      liquidity_ok: { value: target.liquidity, threshold: MIN_LIQUIDITY.toString(), pass: BigInt(target.liquidity) >= MIN_LIQUIDITY },
+    },
+    rationale: `rank-${i + 1} ${TARGET_PROTOCOL} pool on chain ${TARGET_CHAIN}: riskBps=${target.riskBps}, liquidity=${target.liquidity}, cardinality=${target.cardinality}. Selected from ${eligible.length} eligible candidate(s) under handoff §7.5 strategy, top-${TOP_N} diversification.`,
+    next_steps: [
+      'wallet harness: re-check pool state at would-sign time',
+      'on harness ALLOW: route to bounded-delegation signer (Phase 4+)',
+      'on harness WARN/BLOCK: do not sign, log full reasons',
+    ],
+  };
+
+  const intentPath = join(intentDir, `${intentId}.json`);
+  writeFileSync(intentPath, JSON.stringify(intent, null, 2));
+  writtenPaths.push(intentPath);
+
+  appendFileSync(ledgerPath, JSON.stringify({
+    ts: intent.createdAt,
+    strategy: STRATEGY_NAME,
+    intentId,
+    rank: i + 1,
     protocol: target.protocol,
     chainId: target.chainId,
     pool: target.pool,
-    fee: target.fee,
-    auditRiskBps: target.riskBps,
-    liquidity: target.liquidity,
-    cardinality: target.cardinality,
-  },
-  position: {
-    type: 'passive-lp',
-    tickRange: 'wide',
-    sizeUsd: null,
-    notes: 'sizing deferred to capital allocator (Phase 3+)',
-  },
-  gates: {
-    protocol_match: target.protocol === TARGET_PROTOCOL,
-    chain_match: target.chainId === TARGET_CHAIN,
-    riskBps_le_threshold: { value: target.riskBps, threshold: MAX_RISK_BPS, pass: target.riskBps <= MAX_RISK_BPS },
-    cardinality_ok: { value: target.cardinality, threshold: MIN_CARDINALITY, pass: target.cardinality >= MIN_CARDINALITY },
-    liquidity_ok: { value: target.liquidity, threshold: MIN_LIQUIDITY.toString(), pass: BigInt(target.liquidity) >= MIN_LIQUIDITY },
-  },
-  rationale: `highest-scoring ${TARGET_PROTOCOL} pool on chain ${TARGET_CHAIN}: riskBps=${target.riskBps}, liquidity=${target.liquidity}, cardinality=${target.cardinality}. Selected from ${eligible.length} eligible candidate(s) under handoff §7.5 strategy.`,
-  next_steps: [
-    'human review of intent',
-    'construct concrete LP calldata (positionManager.mint with chosen tick range + amounts)',
-    'POST /api/preflight-raw with calldata before any signer call',
-    'on ALLOW: route to bounded-delegation signer (Phase 3+)',
-    'on WARN/BLOCK: do not sign, log full reasons',
-  ],
-};
+    decision: 'ALLOW',
+    riskBps: target.riskBps,
+    action_taken: 'proposed',
+    outcome_7d: null,
+    outcome_30d: null,
+    notes: `dry-run intent (rank ${i + 1}/${TOP_N}) — see ${intentPath}`,
+  }) + '\n');
 
-const intentPath = join(intentDir, `${intentId}.json`);
-writeFileSync(intentPath, JSON.stringify(intent, null, 2));
+  console.log(`  rank ${i + 1}: ${target.pool}  fee=${target.fee} riskBps=${target.riskBps}`);
+}
 
-const ledgerPath = join(LEDGER_DIR, `decisions-${today}.jsonl`);
-appendFileSync(ledgerPath, JSON.stringify({
-  ts: intent.createdAt,
-  strategy: STRATEGY_NAME,
-  intentId,
-  protocol: target.protocol,
-  chainId: target.chainId,
-  pool: target.pool,
-  decision: 'ALLOW',
-  riskBps: target.riskBps,
-  action_taken: 'proposed',
-  outcome_7d: null,
-  outcome_30d: null,
-  notes: `dry-run intent — see ${intentPath}`,
-}) + '\n');
-
-console.log(`\nselected: ${target.pool}`);
-console.log(`           fee=${target.fee} riskBps=${target.riskBps} liq=${target.liquidity} card=${target.cardinality}`);
-console.log(`\nintent written:    ${intentPath}`);
+console.log(`\nwrote ${writtenPaths.length} intent(s) to ${intentDir}`);
 console.log(`decisions ledger:  ${ledgerPath}`);

@@ -28,6 +28,14 @@ echo "[$(date -u +%FT%TZ)] running outcome backfill" >> "${LOG}"
 /opt/homebrew/bin/bun run scripts/backfill-outcomes.ts >> "${LOG}" 2>&1 \
   || echo "[$(date -u +%FT%TZ)] backfill non-zero exit, proceeding to publish whatever data did land" >> "${LOG}"
 
+echo "[$(date -u +%FT%TZ)] generating strategy intents (idempotent, top-N)" >> "${LOG}"
+/opt/homebrew/bin/bun run scripts/strategy-passive-lp.ts >> "${LOG}" 2>&1 \
+  || echo "[$(date -u +%FT%TZ)] strategy non-zero exit, proceeding" >> "${LOG}"
+
+echo "[$(date -u +%FT%TZ)] running wallet harness" >> "${LOG}"
+/opt/homebrew/bin/bun run scripts/wallet-harness.ts >> "${LOG}" 2>&1 \
+  || echo "[$(date -u +%FT%TZ)] harness non-zero exit, proceeding" >> "${LOG}"
+
 echo "[$(date -u +%FT%TZ)] computing metrics" >> "${LOG}"
 /opt/homebrew/bin/bun run scripts/compute-metrics.ts >> "${LOG}" 2>&1 \
   || echo "[$(date -u +%FT%TZ)] metrics non-zero exit, proceeding" >> "${LOG}"
@@ -36,9 +44,9 @@ echo "[$(date -u +%FT%TZ)] computing sim-trade P&L" >> "${LOG}"
 /opt/homebrew/bin/bun run scripts/compute-simtrade-pnl.ts >> "${LOG}" 2>&1 \
   || echo "[$(date -u +%FT%TZ)] simtrade non-zero exit, proceeding" >> "${LOG}"
 
-# auto-publish: commit + push outcome patches and metrics
-if [[ -n "$(git status --porcelain ledger metrics 2>/dev/null)" ]]; then
-  git add ledger metrics >> "${LOG}" 2>&1
+# auto-publish: commit + push outcome patches, intents/harness results, and metrics
+if [[ -n "$(git status --porcelain ledger intents metrics 2>/dev/null)" ]]; then
+  git add ledger intents metrics >> "${LOG}" 2>&1
   if git commit -m "data: backfill $(date -u +%Y-%m-%dT%H:%MZ)" >> "${LOG}" 2>&1; then
     git push >> "${LOG}" 2>&1 \
       && echo "[$(date -u +%FT%TZ)] published" >> "${LOG}" \
