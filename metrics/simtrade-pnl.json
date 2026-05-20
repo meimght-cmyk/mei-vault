@@ -1,5 +1,5 @@
 {
-  "computed_at": "2026-05-19T20:37:49.292Z",
+  "computed_at": "2026-05-20T21:22:05.551Z",
   "model": {
     "horizon_days": 7,
     "loss_pnl_bps": -5000,
@@ -8,9 +8,9 @@
     "drift_model": "pnl_bps = -(tvlDriftBps_TN - tvlDriftBps_T)"
   },
   "totals": {
-    "probe_rows": 6289,
-    "real_intents": 3,
-    "hypothetical_entries": 4594
+    "probe_rows": 6949,
+    "real_intents": 4,
+    "hypothetical_entries": 4943
   },
   "real_intents": [
     {
@@ -23,19 +23,19 @@
       "entry_decision": "ALLOW",
       "entry_riskBps": 0,
       "entry_tvlDriftBps": -3,
-      "age_days": 1.4,
+      "age_days": 2.4,
       "resolved": false,
-      "outcome_ts": "2026-05-19T18:50:38.733Z",
+      "outcome_ts": "2026-05-20T19:36:43.866Z",
       "outcome_decision": "ALLOW",
       "outcome_riskBps": 0,
-      "outcome_tvlDriftBps": 1,
+      "outcome_tvlDriftBps": 0,
       "loss_flagged": false,
-      "pnl_bps": -4,
+      "pnl_bps": -3,
       "pnl_label": "TVL drift down"
     },
     {
       "source": "intent",
-      "intent_id": "passive-lp-kumbaya-2026-05-19-001",
+      "intent_id": "passive-lp-kumbaya-2026-05-20-001",
       "pool": "0x6bD9eeF21c2419FeffafbF4850153A3b3A74A5E1",
       "protocol": "kumbaya",
       "cohort": "safe",
@@ -43,7 +43,7 @@
       "entry_decision": "ALLOW",
       "entry_riskBps": 0,
       "entry_tvlDriftBps": 1,
-      "age_days": 11.2,
+      "age_days": 12.2,
       "resolved": true,
       "outcome_ts": "2026-05-15T21:58:31.425Z",
       "outcome_decision": "ALLOW",
@@ -51,6 +51,26 @@
       "outcome_tvlDriftBps": -3,
       "loss_flagged": false,
       "pnl_bps": 4,
+      "pnl_label": "stable/up"
+    },
+    {
+      "source": "intent",
+      "intent_id": "passive-lp-kumbaya-2026-05-19-001",
+      "pool": "0x6bD9eeF21c2419FeffafbF4850153A3b3A74A5E1",
+      "protocol": "kumbaya",
+      "cohort": "safe",
+      "entry_ts": "2026-05-20T01:02:39.370Z",
+      "entry_decision": "ALLOW",
+      "entry_riskBps": 0,
+      "entry_tvlDriftBps": 0,
+      "age_days": 0.8,
+      "resolved": false,
+      "outcome_ts": "2026-05-20T19:36:43.866Z",
+      "outcome_decision": "ALLOW",
+      "outcome_riskBps": 0,
+      "outcome_tvlDriftBps": 0,
+      "loss_flagged": false,
+      "pnl_bps": 0,
       "pnl_label": "stable/up"
     },
     {
@@ -63,7 +83,7 @@
       "entry_decision": "ALLOW",
       "entry_riskBps": 0,
       "entry_tvlDriftBps": -98,
-      "age_days": 10.1,
+      "age_days": 11.2,
       "resolved": true,
       "outcome_ts": "2026-05-16T22:45:15.588Z",
       "outcome_decision": "ALLOW",
@@ -76,38 +96,38 @@
   ],
   "hypothetical_summary": {
     "all": {
-      "count": 4594,
-      "resolved_count": 1897,
-      "loss_flagged_count": 19,
-      "win_count": 4178,
-      "win_rate": 0.9094471049194601,
-      "avg_pnl_bps": -24.98215063125816,
-      "avg_pnl_pct": "-0.25%",
+      "count": 4943,
+      "resolved_count": 2294,
+      "loss_flagged_count": 24,
+      "win_count": 4516,
+      "win_rate": 0.9136152134331378,
+      "avg_pnl_bps": -26.069391058061907,
+      "avg_pnl_pct": "-0.26%",
       "median_pnl_bps": 0,
       "worst_pnl_bps": -5000,
-      "best_pnl_bps": 550,
-      "total_pnl_bps": -114768
+      "best_pnl_bps": 465,
+      "total_pnl_bps": -128861
     },
     "safe_cohort": {
-      "count": 4576,
-      "resolved_count": 1897,
-      "loss_flagged_count": 19,
-      "win_count": 4161,
-      "win_rate": 0.9093094405594405,
-      "avg_pnl_bps": -25.08020104895105,
-      "avg_pnl_pct": "-0.25%",
+      "count": 4920,
+      "resolved_count": 2294,
+      "loss_flagged_count": 24,
+      "win_count": 4494,
+      "win_rate": 0.9134146341463415,
+      "avg_pnl_bps": -26.191056910569106,
+      "avg_pnl_pct": "-0.26%",
       "median_pnl_bps": 0,
       "worst_pnl_bps": -5000,
-      "best_pnl_bps": 550,
-      "total_pnl_bps": -114767
+      "best_pnl_bps": 465,
+      "total_pnl_bps": -128860
     },
     "risky_cohort": {
-      "count": 18,
+      "count": 23,
       "resolved_count": 0,
       "loss_flagged_count": 0,
-      "win_count": 17,
-      "win_rate": 0.9444444444444444,
-      "avg_pnl_bps": -0.05555555555555555,
+      "win_count": 22,
+      "win_rate": 0.9565217391304348,
+      "avg_pnl_bps": -0.043478260869565216,
       "avg_pnl_pct": "-0.00%",
       "median_pnl_bps": 0,
       "worst_pnl_bps": -268,
@@ -116,16 +136,16 @@
     }
   },
   "real_summary": {
-    "count": 3,
+    "count": 4,
     "resolved_count": 2,
     "loss_flagged_count": 0,
-    "win_count": 1,
-    "win_rate": 0.3333333333333333,
-    "avg_pnl_bps": -33,
-    "avg_pnl_pct": "-0.33%",
-    "median_pnl_bps": -4,
+    "win_count": 2,
+    "win_rate": 0.5,
+    "avg_pnl_bps": -24.5,
+    "avg_pnl_pct": "-0.24%",
+    "median_pnl_bps": -1.5,
     "worst_pnl_bps": -99,
     "best_pnl_bps": 4,
-    "total_pnl_bps": -99
+    "total_pnl_bps": -98
   }
 }

@@ -1,6 +1,6 @@
 # Sim-trade P&L
 
-_Updated: 2026-05-19T20:37:49.292Z_
+_Updated: 2026-05-20T21:22:05.551Z_
 
 Conservative simulation of "what would real capital have done if it had followed our signals." No fees assumed — we don't claim ungrounded gains.
 
@@ -20,42 +20,43 @@ These are the strategy intents the system actually produced. Equal-weight $1 per
 
 | intent | protocol | pool | entry decision | age | P&L | label |
 |---|---|---|---|---|---|---|
-| `passive-lp-kumbaya-2026-05-18-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 1.4d | -0.04% | TVL drift down |
-| `passive-lp-kumbaya-2026-05-19-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 11.2d | 0.04% | stable/up |
-| `passive-lp-kumbaya-2026-05-08-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 10.1d | -0.99% | TVL drift down |
+| `passive-lp-kumbaya-2026-05-18-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 2.4d | -0.03% | TVL drift down |
+| `passive-lp-kumbaya-2026-05-20-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 12.2d | 0.04% | stable/up |
+| `passive-lp-kumbaya-2026-05-19-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 0.8d | 0.00% | stable/up |
+| `passive-lp-kumbaya-2026-05-08-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 11.2d | -0.99% | TVL drift down |
 
-- count: **3** (2 resolved at 7d, 0 loss-flagged)
-- avg P&L per entry: **-0.33%**
-- median P&L per entry: **-0.04%**
-- win rate (P&L ≥ 0): **33.3%** (1 wins)
+- count: **4** (2 resolved at 7d, 0 loss-flagged)
+- avg P&L per entry: **-0.24%**
+- median P&L per entry: **-0.01%**
+- win rate (P&L ≥ 0): **50.0%** (2 wins)
 - worst entry: -0.99% · best entry: 0.04%
-- equal-weight portfolio: starting $1 per entry → **-0.33% return**
+- equal-weight portfolio: starting $1 per entry → **-0.24% return**
 
 ## Hypothetical: every ALLOW probe as an entry
 
 Counterfactual portfolio — if we'd been more aggressive and entered every ALLOW signal at every probe cycle.
 
 ### All entries
-- count: **4594** (1897 resolved at 7d, 19 loss-flagged)
-- avg P&L per entry: **-0.25%**
+- count: **4943** (2294 resolved at 7d, 24 loss-flagged)
+- avg P&L per entry: **-0.26%**
 - median P&L per entry: **0.00%**
-- win rate (P&L ≥ 0): **90.9%** (4178 wins)
-- worst entry: -50.00% · best entry: 5.50%
-- equal-weight portfolio: starting $1 per entry → **-0.25% return**
+- win rate (P&L ≥ 0): **91.4%** (4516 wins)
+- worst entry: -50.00% · best entry: 4.65%
+- equal-weight portfolio: starting $1 per entry → **-0.26% return**
 
 ### Safe cohort only
-- count: **4576** (1897 resolved at 7d, 19 loss-flagged)
-- avg P&L per entry: **-0.25%**
+- count: **4920** (2294 resolved at 7d, 24 loss-flagged)
+- avg P&L per entry: **-0.26%**
 - median P&L per entry: **0.00%**
-- win rate (P&L ≥ 0): **90.9%** (4161 wins)
-- worst entry: -50.00% · best entry: 5.50%
-- equal-weight portfolio: starting $1 per entry → **-0.25% return**
+- win rate (P&L ≥ 0): **91.3%** (4494 wins)
+- worst entry: -50.00% · best entry: 4.65%
+- equal-weight portfolio: starting $1 per entry → **-0.26% return**
 
 ### Risky cohort only
-- count: **18** (0 resolved at 7d, 0 loss-flagged)
+- count: **23** (0 resolved at 7d, 0 loss-flagged)
 - avg P&L per entry: **-0.00%**
 - median P&L per entry: **0.00%**
-- win rate (P&L ≥ 0): **94.4%** (17 wins)
+- win rate (P&L ≥ 0): **95.7%** (22 wins)
 - worst entry: -2.68% · best entry: 2.67%
 - equal-weight portfolio: starting $1 per entry → **-0.00% return**
 
