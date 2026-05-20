@@ -9,6 +9,8 @@ set -euo pipefail
 
 RISKCLAW_DAEMON_DIR="${RISKCLAW_DAEMON_DIR:-${HOME}/Desktop/Trading/riskclaw-daemon}"
 MEI_VAULT_DIR="${MEI_VAULT_DIR:-${HOME}/Desktop/mei-vault}"
+# Public mainnet.base.org rate-limits hard; use publicnode for Base reads.
+export BASE_RPC_URL="${BASE_RPC_URL:-https://base.publicnode.com}"
 LOG_DIR="${MEI_VAULT_DIR}/ledger/logs"
 mkdir -p "${LOG_DIR}"
 LOG="${LOG_DIR}/backfill-$(date -u +%Y-%m-%d).log"

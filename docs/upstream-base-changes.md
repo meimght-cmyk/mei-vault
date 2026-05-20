@@ -79,7 +79,17 @@ Result: 314 pools discovered in 200k blocks (~4 days), 306 scored OK (97.5%), 1 
 
 2. **Aerodrome decoder.** UniV3 Base covers a lot of Base liquidity but the dominant Base DEX by volume is Aerodrome (Solidly fork — different pool math). Required if MEI's main pool is on Aerodrome rather than UniV3. Next decoder to write if so.
 
-3. **mei-vault probe integration.** Currently `preflight-ledger.ts` probes only MegaETH (kumbaya + prism). To probe Base UniV3 pools through the same pipeline, we need:
-   - Add `uniswap-v3-base` to `SCORE_PROTOCOLS` set in `preflight-ledger.ts`
-   - Either merge Base pools into `audits/ranked.json` (rebuild via rank-pools) or maintain a parallel `audits/ranked-base.json` and probe both
-   - Per-pool POST needs `chainId: 8453` for Base entries
+3. ~~mei-vault probe integration~~ **DONE 2026-05-20.** Probe pipeline now includes Base UniV3 pools alongside MegaETH. Changes:
+   - `scripts/preflight-ledger.ts` — added `uniswap-v3-base` to `SCORE_PROTOCOLS`. ChainId per pool already flowed from `ranked.json` to the request body.
+   - `ops/run-ledger.sh` + `ops/run-backfill.sh` — export `BASE_RPC_URL=https://base.publicnode.com` so launchd-fired servers don't fall back to rate-limited `mainnet.base.org`.
+   - `audits/ranked.json` regenerated — 1133 pools total (679 kumbaya mainnet + 306 Base + 108 kumbaya testnet + 40 prism).
+   - First live cross-chain probe: 2026-05-20, top-10 cohort included the Base pool `0xbe7B4299…` which the May-18 audit had flagged as healthy. Two days later the probe correctly returned `WARN (riskBps=5000, liquidity is 0)` — the pool had been drained. **Cross-chain safety oracle working as designed.**
+
+4. **MEI venue is Uniswap V4, not V3.** Confirmed 2026-05-20 by hunting Initialize events on the V4 PoolManager `0x498581fF…`. Three MEI pools exist:
+   - `0x515e72aF…/MEI` fee=10000 tickSpacing=200 hooks=0x0
+   - `MEI/USDC` fee=880000 tickSpacing=17600 hooks=0x0
+   - `MEI/USDC` fee=800000 tickSpacing=16000 hooks=0x0
+
+   All three have `hooks=0x0` (no V4 hook callbacks). Math is still concentrated-liquidity, but storage layout is fundamentally different from V3 — single `PoolManager` contract, pools tracked by `bytes32 poolId` keys, state read via `extsload` rather than per-pool `slot0()` calls. **UniV3 Base decoder does not cover MEI.** Need a separate UniV4 decoder for MEI-specific positions; UniV3 Base remains useful for treasury swap gating (WETH/USDC, WBTC/USDC, etc.).
+
+5. **Trader Joe Liquidity Book token (LBT) appears in MEI's recent transfer logs.** The recipient `0x7B43440F1A7982c8D95aEf3936cca12FB83b3A9a` is an LBT (TJ's LP position token). Could indicate MEI also has TJ Liquidity Book pools. Worth confirming once V4 decoder is in flight — LB has its own (Solidly-style bin) math and would need its own decoder.

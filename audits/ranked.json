@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-08T17:47:15.469Z",
+  "generatedAt": "2026-05-20T16:39:09.253Z",
   "protocols": [
     {
       "protocol": "prism",
@@ -13,6 +13,18 @@
         "[high] P3 7 pool(s) pair a known scam-template token",
         "[medium] P4 36/44 pools (82%) have oracle cardinality = 1",
         "[medium] P5 15 pool(s) pair a token with mint() selector"
+      ]
+    },
+    {
+      "protocol": "uniswap-v3-base",
+      "total": 314,
+      "healthy": 1,
+      "dead": 151,
+      "avgBps": 3049,
+      "topFindings": [
+        "[high] P2 151/314 pools (48%) are dead-on-arrival",
+        "[medium] P4 304/314 pools (97%) have oracle cardinality = 1",
+        "[medium] P5 19 pool(s) pair a token with mint() selector"
       ]
     },
     {
@@ -87,6 +99,18 @@
       "blockCreated": 7848813,
       "protocol": "prism",
       "chainId": 4326
+    },
+    {
+      "pool": "0xbe7B4299C29A02d41df65d0b197D146AB15a6879",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 0,
+      "reasons": [],
+      "liquidity": "46826144899815164770359",
+      "cardinality": 20,
+      "blockCreated": 46080887,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
     },
     {
       "pool": "0x6bD9eeF21c2419FeffafbF4850153A3b3A74A5E1",
@@ -254,6 +278,2048 @@
       "blockCreated": 15084682,
       "protocol": "prism",
       "chainId": 4326
+    },
+    {
+      "pool": "0x2Cd249b7328a6A474BB22E555D26d248d42C7FB5",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "30145360274860300597197",
+      "cardinality": 1,
+      "blockCreated": 45953985,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xBEB91F34B42D49E97FF2E26EF639C56abc2A9A2f",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "30024778833760859394809",
+      "cardinality": 1,
+      "blockCreated": 45954000,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x520Aa47F6cdf1db0A5246797F6C2d15F83cEe5c3",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "30024778833760859394809",
+      "cardinality": 1,
+      "blockCreated": 45954203,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x164F5488A1F3a76a10F253c2C5e1Faaa8B4cb005",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "30145360274860300597197",
+      "cardinality": 1,
+      "blockCreated": 45954474,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x08AFB94628CD71F48505F18D884B816Cb8e8014D",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "30024778833760859394809",
+      "cardinality": 1,
+      "blockCreated": 45954838,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x8b5a4e4CB4500eCAf0Fa7e1adAc87De2b143333F",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "30145360274860300597197",
+      "cardinality": 1,
+      "blockCreated": 45955104,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x5774F5689c5f588deE2aFC12599e1eFE0D0CB432",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "30145360274860300597197",
+      "cardinality": 1,
+      "blockCreated": 45956143,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xEddB5baD58078C48F99378ea9dB76d8BAD58889c",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "30145360274860300597197",
+      "cardinality": 1,
+      "blockCreated": 45956534,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x97a1Ecd19dBB94Dd1106E23f415Cd65C59C23a61",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "30024778833760859394809",
+      "cardinality": 1,
+      "blockCreated": 45956671,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x62bB13C8535d5E895BD0c9377147725D99838E96",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "30145360274860300597197",
+      "cardinality": 1,
+      "blockCreated": 45957009,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xF04beA49B752881F2296cc87DAAdFCD9ADf7F9b1",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "30145360274860300597197",
+      "cardinality": 1,
+      "blockCreated": 45957169,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xc59740B9dd42f62AA4325c0EdA3CA98d0A20B156",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "30145360274860300597197",
+      "cardinality": 1,
+      "blockCreated": 45957298,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x9C44EffA4a349D31eBD409A89A6A8D7aBA45A5CA",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "30145360274860300597197",
+      "cardinality": 1,
+      "blockCreated": 45957583,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x9628ECf84Cb6dfa404Be86E39f1B95168aB71bb6",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "30145360274860300597197",
+      "cardinality": 1,
+      "blockCreated": 45957844,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x832bb57155a19C6e6d7B143739F2a91E2325dd6C",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "30145360274860300597197",
+      "cardinality": 1,
+      "blockCreated": 45958014,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x450d2b6189d1b810F41cA8E18545AA63558eEe66",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "30145360274860300597197",
+      "cardinality": 1,
+      "blockCreated": 45958203,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xB3D34fb8297a69C62b891599DB4C92d8DD92Fa9C",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "30145360274860300597197",
+      "cardinality": 1,
+      "blockCreated": 45958518,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xE2931Dd18D1Cb4A855F0BC16f9d647cbAf7FBda2",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "30145360274860300597197",
+      "cardinality": 1,
+      "blockCreated": 45958530,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xeE05EeE49796592A338C9B0aaA66377fd1fAFcfE",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "30145360274860300597197",
+      "cardinality": 1,
+      "blockCreated": 45958760,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x9fCDb92bcC2c2e492EE386d1B16451c77fa236F3",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "30145360274860300597197",
+      "cardinality": 1,
+      "blockCreated": 45958898,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x912eb508fa965fAdC1768bDe207bB4C500DD3e59",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "30024778833760859394809",
+      "cardinality": 1,
+      "blockCreated": 45959206,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xB7737b6629eeD4183BAdd146EE0d045f89c5C74b",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "30145360274860300597197",
+      "cardinality": 1,
+      "blockCreated": 45959529,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xc45EcB3f076D46B6ebdCFed81a8e5CF855aff188",
+      "fee": 100,
+      "tickSpacing": 1,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "9860441471251120",
+      "cardinality": 1,
+      "blockCreated": 45959596,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xb2Ce7493Abe8f303E78f842a72D396bB9A1F0dDa",
+      "fee": 3000,
+      "tickSpacing": 60,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "7260495075064140616",
+      "cardinality": 1,
+      "blockCreated": 45961820,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x98A51928442fC5fd8D0B02Cf75ACa062A2a0e119",
+      "fee": 3000,
+      "tickSpacing": 60,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "10033457504748201202",
+      "cardinality": 1,
+      "blockCreated": 45961993,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x83237E5D18767DC0A26220c818e9Ab58571999c7",
+      "fee": 3000,
+      "tickSpacing": 60,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "9075460205277337115",
+      "cardinality": 1,
+      "blockCreated": 45962693,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x463A8e0d378cC489628B547940A269aD3AAB5c39",
+      "fee": 3000,
+      "tickSpacing": 60,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "8044847809304156303",
+      "cardinality": 1,
+      "blockCreated": 45963379,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x93e6214CC2f0979f0af3388022Af506BCc86cB3D",
+      "fee": 3000,
+      "tickSpacing": 60,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "7403016516478259477",
+      "cardinality": 1,
+      "blockCreated": 45963458,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xE1F3A5a69e913D07dDf565E1a353e21B73cc76FE",
+      "fee": 3000,
+      "tickSpacing": 60,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "10316416236149311890",
+      "cardinality": 1,
+      "blockCreated": 45963591,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xA41e283E7D28346b07E0245dE047A71C36e2f48B",
+      "fee": 3000,
+      "tickSpacing": 60,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1"
+      ],
+      "liquidity": "1636748280345971518",
+      "cardinality": 1,
+      "blockCreated": 45963897,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x29f3980E9C8FC0e2724D254986A449be63189A4a",
+      "fee": 3000,
+      "tickSpacing": 60,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "7267307865962783534",
+      "cardinality": 1,
+      "blockCreated": 45963979,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x7BD988EBb90825faD4f630C66Df385BE8f13d4E7",
+      "fee": 3000,
+      "tickSpacing": 60,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1"
+      ],
+      "liquidity": "5816471873429237153",
+      "cardinality": 1,
+      "blockCreated": 45964076,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x7c661B5556B7B5eE3c799487132c0156886B0c9F",
+      "fee": 3000,
+      "tickSpacing": 60,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "7833082300579803209",
+      "cardinality": 1,
+      "blockCreated": 45964135,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x09d0E2FFE3F3aA20d403A310EddcED4dFFaA4c68",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "5693746709937699283188",
+      "cardinality": 1,
+      "blockCreated": 45966204,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xb54F837C7e25d9e285Ab819C622d54AC5Fc98Af5",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "2283994881024108587765",
+      "cardinality": 1,
+      "blockCreated": 45966608,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x4AC4B49da3d462e7B7C6F8cec10fEA0F7B4ad36D",
+      "fee": 3000,
+      "tickSpacing": 60,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "2055804106630",
+      "cardinality": 1,
+      "blockCreated": 45971863,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x82a351b4382Bb62fCE4f628f1D5dc14605cdfb06",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "794817997307930241399574",
+      "cardinality": 1,
+      "blockCreated": 45973952,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x12D3EEb1Dfd3623150eAb0B8592868418c7fb68A",
+      "fee": 3000,
+      "tickSpacing": 60,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "10148802431408432135",
+      "cardinality": 1,
+      "blockCreated": 45982212,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x9F4EFd73229D87387737314E485c7767243a1c99",
+      "fee": 3000,
+      "tickSpacing": 60,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "6972001120254712313",
+      "cardinality": 1,
+      "blockCreated": 45982739,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x9c30Bd703eB88e5Ae23499c5A73d7dC9FE0A8f3d",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "30024778833760859394809",
+      "cardinality": 1,
+      "blockCreated": 45984056,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xE4B9a6f436FA32D09be0512245764492df37B421",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "30145360274860300597197",
+      "cardinality": 1,
+      "blockCreated": 45985397,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xC4F8829938B903fb5e7d9770C996322cB4EE213B",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1"
+      ],
+      "liquidity": "214204627136372401999",
+      "cardinality": 1,
+      "blockCreated": 45985974,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x242fb7eE4BDe78f6806Ef1EC8E76506f369097e1",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "30145360274860300597197",
+      "cardinality": 1,
+      "blockCreated": 45988062,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x2ff38CA5B0AA1d0817cC3c43eA94D739328Ba36F",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "30145360274860300597197",
+      "cardinality": 1,
+      "blockCreated": 45988556,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xA16D12A3A3d826c382eFf7206Cb395e063946D09",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "794817997307930241399574",
+      "cardinality": 1,
+      "blockCreated": 45992219,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x5082F210847Ae71EE7A0331ca2f31ED1410B92fd",
+      "fee": 100,
+      "tickSpacing": 1,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "99995154584628661",
+      "cardinality": 1,
+      "blockCreated": 45993516,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xdf5D1d34230340a0f6474Cf2D8b445caA17113aE",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "30145360274860300597197",
+      "cardinality": 1,
+      "blockCreated": 45995138,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x067F773B096E696812D25318654335af50E732Ae",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "30024778833760859394809",
+      "cardinality": 1,
+      "blockCreated": 45995313,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x3AEA6e77edB795C38C8C447d614ef15d4abcC2f5",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "30145360274860300597197",
+      "cardinality": 1,
+      "blockCreated": 45995451,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x3492F311DAF51C5085EA388CEfEe563E587f423d",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "30024778833760859394809",
+      "cardinality": 1,
+      "blockCreated": 45996733,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x9a028D20ea3EAe9637cee88dBCE684Ff6bb13691",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1"
+      ],
+      "liquidity": "30145360274860300597197",
+      "cardinality": 1,
+      "blockCreated": 45998718,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xef49B79590B2D88B51c217B3c68323A0a6fF268A",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "30145360274860300597197",
+      "cardinality": 1,
+      "blockCreated": 45999085,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x6fB1ED50F803e830C0F2Ca56d16e4F1F7E21eAFC",
+      "fee": 3000,
+      "tickSpacing": 60,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "31622776646324",
+      "cardinality": 1,
+      "blockCreated": 46000633,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xCF13e507CC916311E6c077C65262D4cE108455A7",
+      "fee": 3000,
+      "tickSpacing": 60,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "42426071011848872982995",
+      "cardinality": 1,
+      "blockCreated": 46001193,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x99E86B200Caf80853a64559227F34FeB79b91Fd2",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1"
+      ],
+      "liquidity": "1000000000000000000054407",
+      "cardinality": 1,
+      "blockCreated": 46002396,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x3E94BD68Be47679752E005D8629392655f77e507",
+      "fee": 3000,
+      "tickSpacing": 60,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "17008262599760721569",
+      "cardinality": 1,
+      "blockCreated": 46005654,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x5c38F8e751023555690770738f1494D8382AFAaC",
+      "fee": 3000,
+      "tickSpacing": 60,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "10000000000000",
+      "cardinality": 1,
+      "blockCreated": 46007447,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xdd746B5a59Cc589B9ea41a1C48DC9eF1a6FB8008",
+      "fee": 3000,
+      "tickSpacing": 60,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1"
+      ],
+      "liquidity": "511363465149097953851",
+      "cardinality": 1,
+      "blockCreated": 46007596,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x9B02F7cC5B83CBEDCdFf7a692C1E96D20beef982",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "1004311033770190170",
+      "cardinality": 1,
+      "blockCreated": 46012741,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x92d0d85B9733C4e3A7D3027A6F00c0e0dE45C6C1",
+      "fee": 3000,
+      "tickSpacing": 60,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "223606797749978969",
+      "cardinality": 1,
+      "blockCreated": 46017134,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x576B3fc7a1B4F600db45b26fcd721aaE12a4b5AC",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "4242640687119285146",
+      "cardinality": 1,
+      "blockCreated": 46018952,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x5BAAeD3eEdd49d607d6A290c7159376438793604",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "4242640687119285146",
+      "cardinality": 1,
+      "blockCreated": 46019018,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xCbF5504ad98cf54d67F51Ba2a3d40AD3512bc907",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "30145360274860300597197",
+      "cardinality": 1,
+      "blockCreated": 46020859,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xe5564C3BdA4841acb568eA615cC09255Ba2Ec9B8",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "30145360274860300597197",
+      "cardinality": 1,
+      "blockCreated": 46021407,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x820B710D585675913Af090570C50b33B17534D68",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "4242640687119285146",
+      "cardinality": 1,
+      "blockCreated": 46022344,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x3d0851Da12bd299d37c8e0e1c9Db9d40766B96bE",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "4242640687119285146",
+      "cardinality": 1,
+      "blockCreated": 46023319,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x04b3933c7f8f60315e7b4b03646d05213cd597E8",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "4242640687119285146",
+      "cardinality": 1,
+      "blockCreated": 46023480,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x64CB6EB798ed3861f29ce28B743fDF14d8007af1",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "4242640687119285146",
+      "cardinality": 1,
+      "blockCreated": 46023607,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x707d4ac7675814fDc43ee9CE1786e598477327de",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "794817997307930241399574",
+      "cardinality": 1,
+      "blockCreated": 46024530,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x3558eea62c750A1E3f13523d875F67dDe6c88Fa4",
+      "fee": 100,
+      "tickSpacing": 1,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1"
+      ],
+      "liquidity": "58309518948453004708741",
+      "cardinality": 1,
+      "blockCreated": 46024880,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xa077D940021f17785F04e2cb43EE29544956b080",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "4242640687119285146",
+      "cardinality": 1,
+      "blockCreated": 46025478,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x2201f9b61a4A9be3cc529b04536B59824F1711AF",
+      "fee": 100,
+      "tickSpacing": 1,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1"
+      ],
+      "liquidity": "57445626465380286598506",
+      "cardinality": 1,
+      "blockCreated": 46026236,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x0Ee4398a264E63AEb36C8C3DA4c3997747F47b81",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "4242640687119285146",
+      "cardinality": 1,
+      "blockCreated": 46026268,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xcf8BD9f1fe5c170d26dF093DE11D1E75AFa45641",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "4242640687119285146",
+      "cardinality": 1,
+      "blockCreated": 46027475,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x7b5bDD5150A4C52B1bd86Eb8856D79976a7Aaf14",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "4242640687119285146",
+      "cardinality": 1,
+      "blockCreated": 46027663,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x5EE5371042bEFd0f9f468415dB93E3EDbCAdd29E",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "30145360274860300597197",
+      "cardinality": 1,
+      "blockCreated": 46027720,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x8cC6D9D0750D501C325d98780c7EF6bE5908CFDb",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "4242640687119285146",
+      "cardinality": 1,
+      "blockCreated": 46027868,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xb445FA00F01e5f5BFB93426DE626a4B3689de2b1",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "161015524495274644444",
+      "cardinality": 1,
+      "blockCreated": 46029147,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xfDA0be33Fdd28E4bC50753e0f69A42DF6a6a74B2",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "4242640687119285146",
+      "cardinality": 1,
+      "blockCreated": 46030269,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xee20978b564421FEecf2CC0f40EbF01Cd9d8b6c6",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "30145360274860300597197",
+      "cardinality": 1,
+      "blockCreated": 46030281,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x92Fe806e8178C2b4e2347CceDc190412Af444893",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1"
+      ],
+      "liquidity": "1008391183113024150425358",
+      "cardinality": 1,
+      "blockCreated": 46030356,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xe1137a105F434551E3a7d84A9D424C27854E2f74",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "30145360274860300597197",
+      "cardinality": 1,
+      "blockCreated": 46030707,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xD9Ca9F859fd0CC3359CBD13d8d4De413fcD509AF",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "30145360274860300597197",
+      "cardinality": 1,
+      "blockCreated": 46031870,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xB6E68D3c1d293a578b1353459Edefd54C92E5723",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "100000154223379382662",
+      "cardinality": 1,
+      "blockCreated": 46034155,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xd0809e40fc8B2fF1772b67288b2C313bE76b9616",
+      "fee": 3000,
+      "tickSpacing": 60,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "26267851073126990968501061",
+      "cardinality": 1,
+      "blockCreated": 46034790,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x7d4f2aDBEC75B2F2BAa2b6fc24dFBa2ba283318b",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "30145360274860300597197",
+      "cardinality": 1,
+      "blockCreated": 46036916,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x1fc213Bdc7F04666C508A114B515D91E60189295",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "30145360274860300597197",
+      "cardinality": 1,
+      "blockCreated": 46036994,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x17Fa656070bF8E486fe212CFc51bc6Df17Bf93A4",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "30145360274860300597197",
+      "cardinality": 1,
+      "blockCreated": 46041844,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x6fcE5d0F67fDcBbD1a5bF7200901273ed567776D",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "4242640687119285146",
+      "cardinality": 1,
+      "blockCreated": 46042094,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x57EECF490a7B951ea8d73C32DD4AF0BA56882021",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "30145360274860300597197",
+      "cardinality": 1,
+      "blockCreated": 46042185,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x3Dd9538614039Eea51566901F3d329f2FD0a65B0",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "4242640687119285146",
+      "cardinality": 1,
+      "blockCreated": 46042560,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xa16082a3b8786b54E8159eFf2A5FB59dE8Df1f9F",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "30145360274860300597197",
+      "cardinality": 1,
+      "blockCreated": 46043282,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x93824b59Addaa4dFB1316CaCB76366213Cd3a860",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "30145360274860300597197",
+      "cardinality": 1,
+      "blockCreated": 46043413,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x698AAB12110476EACa388334ECf58D75dAa9fb40",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "4242640687119285146",
+      "cardinality": 1,
+      "blockCreated": 46044833,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x5e5E44bd89C520e3b503cfa287d1Fb4E1EFBBAc6",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "4242640687119285146",
+      "cardinality": 1,
+      "blockCreated": 46045300,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x4dad1eA9d64160159C6Db2e474c39605a8Ecb33C",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "4242640687119285146",
+      "cardinality": 1,
+      "blockCreated": 46045480,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x5076255b36394F7850b4e92C91D9e7dca72FebB4",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "30145360274860300597197",
+      "cardinality": 1,
+      "blockCreated": 46046656,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x5639d9B1CbCedD07A357FA15429f18e71fc4eC03",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "2592574637455890777113",
+      "cardinality": 1,
+      "blockCreated": 46046844,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x3BD608Dfb713BA66A987cB9b8C89C403acE049e3",
+      "fee": 100,
+      "tickSpacing": 1,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "44721359549995793928183",
+      "cardinality": 1,
+      "blockCreated": 46052713,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xB286FFd5D9879c3f74F41B6C745cEcB8A17dD42d",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1"
+      ],
+      "liquidity": "7505312163423434809029",
+      "cardinality": 1,
+      "blockCreated": 46054709,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xe228e5490d2ceb4C62f0CA130C2Bdfe819edebe4",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "794817997307930241399574",
+      "cardinality": 1,
+      "blockCreated": 46062006,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xa14F0cE65A628B28F5B9bFB5C54fbE3E285f4520",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "30145360274860300597197",
+      "cardinality": 1,
+      "blockCreated": 46072271,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x1682Fa5dac0A7E0C19654bfCc1Dd7eE752721ED5",
+      "fee": 100,
+      "tickSpacing": 1,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1"
+      ],
+      "liquidity": "1309429495788879765780625",
+      "cardinality": 1,
+      "blockCreated": 46077343,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xcd1F59ACa667bCA4428590Fafc6FDD2DDA53e48E",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "30145360274860300597197",
+      "cardinality": 1,
+      "blockCreated": 46080330,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xCc9809A189Be8d52175AC81f3ba06948feF66644",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "30145360274860300597197",
+      "cardinality": 1,
+      "blockCreated": 46080445,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x684fe78f78e7A760F5801696FaFA80C7A8F5F922",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1"
+      ],
+      "liquidity": "2537724703021323751",
+      "cardinality": 1,
+      "blockCreated": 46081343,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x4669f1620cefe0207C43a35E9b431470C0a4Ec31",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "4647205924502",
+      "cardinality": 1,
+      "blockCreated": 46082147,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x445D73A2786fCF6fBD164c40d231bb0764dcafe6",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "3162275221685340688",
+      "cardinality": 1,
+      "blockCreated": 46089751,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x1423c61993B3A73172FA3c983Ae29247d3083f80",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "14491376746189438573",
+      "cardinality": 1,
+      "blockCreated": 46092277,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x547225BF1d035cE989FB2A95e30D2A453774eF7d",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "14491376746189438573",
+      "cardinality": 1,
+      "blockCreated": 46092766,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x82CdD7B384377f8e93cC60b1EEc7E2537a37096a",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "14491376746189438573",
+      "cardinality": 1,
+      "blockCreated": 46093280,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x263C2945699c24Ad26236784B15b2240c9231273",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "14491376746189438573",
+      "cardinality": 1,
+      "blockCreated": 46093434,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xD800E87Caa9c6B47bf1433CF70BcD9fA884025B9",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "14491376746189438573",
+      "cardinality": 1,
+      "blockCreated": 46093568,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xa54c879E270a12774ECE1DfbB0e05B90F6df0462",
+      "fee": 3000,
+      "tickSpacing": 60,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "2710330571975222290",
+      "cardinality": 1,
+      "blockCreated": 46093811,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xD31680a78D9E61A105bAe09c033A43cB80d3Dd70",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "31690866724818211737594",
+      "cardinality": 1,
+      "blockCreated": 46093956,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x85e6544C709D2153DD060979881994E2c993bb36",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "30145360274860300597197",
+      "cardinality": 1,
+      "blockCreated": 46094805,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x40AeB478e50e5Da77aAEDD12A0D1aA4F859350c9",
+      "fee": 100,
+      "tickSpacing": 1,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "56568542494923801952067",
+      "cardinality": 1,
+      "blockCreated": 46096427,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x76f2212e782542a2A85FE0474Ab45bC115F080f8",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "14491376746189438573",
+      "cardinality": 1,
+      "blockCreated": 46101544,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x247fcF0f89Df1ad5CC11441BA66d9F5Bf780EE06",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "4734736233700722922026",
+      "cardinality": 1,
+      "blockCreated": 46102017,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x0019b1EA197B08b9471b5644226f1651429E126F",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "794817997307930241399574",
+      "cardinality": 1,
+      "blockCreated": 46108390,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xb5E80d671Ab434b8bf13A8FB73e02CBc275eB63D",
+      "fee": 3000,
+      "tickSpacing": 60,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "99999867808719",
+      "cardinality": 1,
+      "blockCreated": 46116688,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xc6822075D5Ef55ADCe2E37585b44b5F104f4D975",
+      "fee": 500,
+      "tickSpacing": 10,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1"
+      ],
+      "liquidity": "2857157003526724547518",
+      "cardinality": 1,
+      "blockCreated": 46118965,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xBa1Bd7547f1a850B6A73fE1AA0CF6925D2073Cf2",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "30145360274860300597197",
+      "cardinality": 1,
+      "blockCreated": 46130094,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x73CDc1E3427d48d0fd498Dc2B26dd49FB739830A",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "157709860186386",
+      "cardinality": 1,
+      "blockCreated": 46132321,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x1687FEC3f8E8dF8EC24f2c6adE6Db48e18D4E9D1",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "95288412613622170213",
+      "cardinality": 1,
+      "blockCreated": 46132321,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xf5CCc513646d60Be0a270D299D75F24A01627a65",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "962350984120834315346242294908",
+      "cardinality": 1,
+      "blockCreated": 46132321,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x57728E8cb776BeAdC6178aa66e246a8Cc7F33B80",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "157709860186386",
+      "cardinality": 1,
+      "blockCreated": 46132892,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xAafB1638107FE5b9aCD534eFA1985f184deba914",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "95290142931077603489",
+      "cardinality": 1,
+      "blockCreated": 46132892,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x528F7A103699f6370b248e616023b197d5798416",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "962350901743808750064275832887",
+      "cardinality": 1,
+      "blockCreated": 46132892,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xab27B60405ac292C1A7A7695750eEBBA6E434623",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "30145360274860300597197",
+      "cardinality": 1,
+      "blockCreated": 46133362,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xE4467fa7ae8A80F153F8e9eEC4777C1F9FB5EDc8",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "30145360274860300597197",
+      "cardinality": 1,
+      "blockCreated": 46134038,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xf328632C1b7B24bF93D4c259a281fbb7Da81449e",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "1548085495793370",
+      "cardinality": 1,
+      "blockCreated": 46136428,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xace8C089AaCAb1eb1D72F911038511dbF1C1FB02",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "30145360274860300597197",
+      "cardinality": 1,
+      "blockCreated": 46138364,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x7c8f87ceB1EFF8AA08f7F4276CA4Cc25E0cbAfC4",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "30145360274860300597197",
+      "cardinality": 1,
+      "blockCreated": 46138424,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x24A1337A380087d070631e8859C047E8dD73377D",
+      "fee": 3000,
+      "tickSpacing": 60,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "105982758340852541484528",
+      "cardinality": 1,
+      "blockCreated": 46141790,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xAc5693F540b190F07185911f1Aa90380983FbAeF",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "13909933837103274983861141",
+      "cardinality": 1,
+      "blockCreated": 46146484,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x7Cd300E78a4CE1B8EBd382387BEbaf43c60733e7",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "30145360274860300597197",
+      "cardinality": 1,
+      "blockCreated": 46152175,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
     },
     {
       "pool": "0x9Adf9066f03C1bA2d11083b39A7d085F5F682422",
@@ -7508,6 +9574,214 @@
       "chainId": 4326
     },
     {
+      "pool": "0x1eD44878360ef1b40eB0006abdaBAC40F9D8909D",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 2500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\").",
+        "token 0xF4d97F2d…: mint(address,uint256) selector present — supply may be inflated by an admin"
+      ],
+      "liquidity": "339758030709996146152",
+      "cardinality": 1,
+      "blockCreated": 45986985,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xc453525baF085491523a4c5d70422b908de6cce1",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 2500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal",
+        "token 0x451ce453…: mint(address,uint256) selector present — supply may be inflated by an admin"
+      ],
+      "liquidity": "7759248042",
+      "cardinality": 1,
+      "blockCreated": 46009511,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xD48C0B36356010B914559De4b807745847FB5C95",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 2500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\").",
+        "token 0x0Ec20bc3…: mint(address,uint256) selector present — supply may be inflated by an admin"
+      ],
+      "liquidity": "7759248042",
+      "cardinality": 1,
+      "blockCreated": 46009705,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x9625B9cBcC4a3102f8F6d49Bd9c6101e3bD26E8C",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 2500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal",
+        "token 0x9aEbe102…: mint(address,uint256) selector present — supply may be inflated by an admin"
+      ],
+      "liquidity": "7759248042",
+      "cardinality": 1,
+      "blockCreated": 46009805,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x29F0B8e1B25B19B82bd72e60630A51Bb593bCa24",
+      "fee": 300,
+      "tickSpacing": 6,
+      "riskBps": 2500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal",
+        "token 0x73dC6250…: mint(address,uint256) selector present — supply may be inflated by an admin"
+      ],
+      "liquidity": "768447812621632700255308",
+      "cardinality": 1,
+      "blockCreated": 46071130,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x150718e82C85492FC8666439F749565e856528f6",
+      "fee": 100,
+      "tickSpacing": 1,
+      "riskBps": 2500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal",
+        "token 0x4F050220…: mint(address,uint256) selector present — supply may be inflated by an admin"
+      ],
+      "liquidity": "17993960526702991601545018",
+      "cardinality": 1,
+      "blockCreated": 46071561,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x3e6167a9ad54447D018A15C2bF30B972c4175318",
+      "fee": 300,
+      "tickSpacing": 6,
+      "riskBps": 2500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\").",
+        "token 0x0fe3d412…: mint(address,uint256) selector present — supply may be inflated by an admin"
+      ],
+      "liquidity": "26074076963543809291904956",
+      "cardinality": 1,
+      "blockCreated": 46072077,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xbf8f1E51ce26c18B7251973a3d81ed6A97Ae7E27",
+      "fee": 300,
+      "tickSpacing": 6,
+      "riskBps": 2500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal",
+        "token 0xCAF12749…: mint(address,uint256) selector present — supply may be inflated by an admin"
+      ],
+      "liquidity": "1422053081602736390302414",
+      "cardinality": 1,
+      "blockCreated": 46126037,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xE4226Fc22F795845fDf4CdBb2d3369298b18354C",
+      "fee": 300,
+      "tickSpacing": 6,
+      "riskBps": 2500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\").",
+        "token 0x399ce275…: mint(address,uint256) selector present — supply may be inflated by an admin"
+      ],
+      "liquidity": "16440769889552982090481",
+      "cardinality": 1,
+      "blockCreated": 46126750,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xd4B60737a178537AFAe44dfD42fB2e9B2f822C1c",
+      "fee": 300,
+      "tickSpacing": 6,
+      "riskBps": 2500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\").",
+        "token 0x33F3Ac94…: mint(address,uint256) selector present — supply may be inflated by an admin"
+      ],
+      "liquidity": "247183101541630428816180",
+      "cardinality": 1,
+      "blockCreated": 46129568,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x5d46aACc92266202d8eAcD1cb8555094c545060d",
+      "fee": 100,
+      "tickSpacing": 1,
+      "riskBps": 2500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal",
+        "token 0xD2A38758…: mint(address,uint256) selector present — supply may be inflated by an admin"
+      ],
+      "liquidity": "782873795520869048090066",
+      "cardinality": 1,
+      "blockCreated": 46130239,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xEA7B5E77e6C8856a5e2DD8c0dE3695AB194Be7f3",
+      "fee": 300,
+      "tickSpacing": 6,
+      "riskBps": 2500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal",
+        "token 0x5d59350D…: mint(address,uint256) selector present — supply may be inflated by an admin"
+      ],
+      "liquidity": "131849455973961734168949",
+      "cardinality": 1,
+      "blockCreated": 46150267,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x35158C153CDb2aA70EA4139f4862c3953a1BdA1d",
+      "fee": 300,
+      "tickSpacing": 6,
+      "riskBps": 2500,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\").",
+        "token 0x160bD133…: mint(address,uint256) selector present — supply may be inflated by an admin"
+      ],
+      "liquidity": "7827958608987276756929964",
+      "cardinality": 1,
+      "blockCreated": 46150923,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
       "pool": "0x87755e62FB0DED5fD1ef09acFFE25f8680687898",
       "fee": 10000,
       "tickSpacing": 200,
@@ -10809,6 +13083,76 @@
       "chainId": 4326
     },
     {
+      "pool": "0xB952cc281cE03bb936b384D3b3b4748B5ddA20b7",
+      "fee": 500,
+      "tickSpacing": 10,
+      "riskBps": 4000,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal",
+        "token 0xF5cA55f3…: mint(address,uint256) selector present — supply may be inflated by an admin",
+        "token 0xF5cA55f3…: pause() selector present — admin can freeze transfers"
+      ],
+      "liquidity": "454181681640500",
+      "cardinality": 1,
+      "blockCreated": 46078985,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x360b53CFdfe493edbbc6717a9fC3B87ce3595C0e",
+      "fee": 500,
+      "tickSpacing": 10,
+      "riskBps": 4000,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal",
+        "token 0x7D12a82E…: mint(address,uint256) selector present — supply may be inflated by an admin",
+        "token 0x7D12a82E…: pause() selector present — admin can freeze transfers",
+        "token 0xF5cA55f3…: mint(address,uint256) selector present — supply may be inflated by an admin",
+        "token 0xF5cA55f3…: pause() selector present — admin can freeze transfers"
+      ],
+      "liquidity": "203445478012688032034",
+      "cardinality": 1,
+      "blockCreated": 46080003,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x1988E7507C0502c68B2DCbEC4C38CF8787680d6D",
+      "fee": 3000,
+      "tickSpacing": 60,
+      "riskBps": 4000,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal",
+        "token 0x7D12a82E…: mint(address,uint256) selector present — supply may be inflated by an admin",
+        "token 0x7D12a82E…: pause() selector present — admin can freeze transfers"
+      ],
+      "liquidity": "100021951948876",
+      "cardinality": 1,
+      "blockCreated": 46080013,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x1a91574315574562c7BcD6f93DE710A2291a0539",
+      "fee": 3000,
+      "tickSpacing": 60,
+      "riskBps": 4000,
+      "reasons": [
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\").",
+        "token 0x1B67F3ab…: mint(address,uint256) selector present — supply may be inflated by an admin",
+        "token 0x1B67F3ab…: pause() selector present — admin can freeze transfers"
+      ],
+      "liquidity": "1509925",
+      "cardinality": 1,
+      "blockCreated": 46110706,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
       "pool": "0x82a6c8B8193298f6D586b848bb89c35A1A8F995f",
       "fee": 3000,
       "tickSpacing": 60,
@@ -10870,6 +13214,2355 @@
       "blockCreated": 14867863,
       "protocol": "prism",
       "chainId": 4326
+    },
+    {
+      "pool": "0x80FC727b08355F3A70c3b8928ba411ccEb05Af70",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 45953907,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xF614c9867667995009322bA413Db44D821cBad3c",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 45954041,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x94b43a1e61C02ec9a9b1d277832eD42380Dcf7de",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 45955093,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x630DDD3e6F42aBC2D8c83C5d1c7fbdd56c4C55AC",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 45955140,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x6026Ca23A288637de447b1CAE9f15A79A8713984",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 45955623,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x967ec68620cce5e66fd4AfF39e0A8856e1Dea138",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 45956141,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xAF16D54a08B48aFc63301c131bECc5bB7D0000C1",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 45956186,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xECdCfA9F07c873594422c9c28f49DD79828EA8f6",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 45957248,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xf32450E40853360Cdf239Ae101A22B87c017E4fe",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 45957694,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x7Bd8fEAD7D0FD91aaF393D8dece2aEAe2E7B19FA",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 45957772,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x534dd504b6816cA83deAdEa4C3614d6e9952d673",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 45958099,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x50c8c30f8432af40C16a5128F1023013b2b41D90",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 45958304,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xBC8716F0A73766abAE6250EF843E6aFD0950B441",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 45958698,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x999dee124c6d5Df9C2D382Ac10Df0e349A0487C2",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 45958770,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x93D992Bec95B593efE6042e2d466746771E4C8b3",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 45959085,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xbFAf842aBdf681324D23321f80c99893b6d252A0",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 45959459,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xdc9d1B6b08ce6c6295d266141041E126748f79A4",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 45960214,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xF74b1704929eCC20451a858fA6dbf3DEf16EB524",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 45960233,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xc02bf5204846Fe92EC062444015F40fF0dd10CF4",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 45960372,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x21e1a4fddAA09d8d778c2Fc6E7109AdF1b9D214b",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 45960897,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x3b0642B1842B0b61CAE94fDaEFE0B447df35dC68",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 45960985,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x8c437C47F4ff4674a66A7619C6aa8F96B730a588",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 45961814,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xAF1577c66f55A981901e9638203d5c87C63d2038",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 45964021,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xD906B06f5F3CE1709Dc62b2b77307Fef02D31c0b",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 45964475,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x561aE1d955ad0f772b07D48Fba6774cdE11B2fe2",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 45969567,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x369ADEe33D0D5c5C4cBAabF75965976c60909451",
+      "fee": 100,
+      "tickSpacing": 1,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 45972890,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xBB7e9ec3b129b3665EabA4CcB831eEcc998348a3",
+      "fee": 100,
+      "tickSpacing": 1,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 45974705,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x20E01EFCc62f0e622BC24729413d01f51ed52Edb",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 45980475,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xb3fBD88422D4D99c20a605eF42E122e18B7BF74b",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 45980979,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x0AeF690Ea1e1dbaa87A7968D1Ccb696386e117cc",
+      "fee": 100,
+      "tickSpacing": 1,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 45981509,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x061Fbb35b402764a52362e61e082780e74dfac58",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 45984249,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x2D03Bcc18B95943DF6F779F53B41E562ab56C34f",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 45984829,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x86518e94EAEb5a3423c39FFF93EBf139B52C459d",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 45985118,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x74B6dDC242EE224B92A08EA822783C36DDb0d0Aa",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 45985981,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xa55f0cD018d5B55042ED3731097DC38FF09aadfB",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 45986086,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xBD6040c23dD91286c2dcE5885086e7531aBe3C62",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 45986193,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x361e75D2c614FAd523aA1A55102B57605682B7F1",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 45986442,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x0dC3c8F32326fCF85A0919Dcea13b9fCaa138793",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 45986510,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xAcc23E5a40352F8731127A697573E20138d36Ac1",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 45987297,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xB4e4591d8d63487145159497f2FDEA90C92Ca174",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 45987419,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x32410C51EecD02A9EE5dcc32d219a59342E7e266",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 45987801,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xB46d9bb25D68Ee346f80194f6e62B2f1206d07b5",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 45988269,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xbF45999fF079f7D685c57f38Aa3db03C5a8a1Ec3",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 45988389,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x9186648c00d5800Ce6411fdFA465c504f120F153",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 45988415,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xaFadFca21E2e39373FefB46a563b4481A68De351",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 45988728,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xd7CdA3987Ae1e2d13E4AF80f41cCE649ca8fbdfd",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 45988938,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xce372FC8828237399Cc16006dCA001f8D70c58e1",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 45989035,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xf4f5354Be576BF679Fd7B29cb7E6AC9E6faaAA96",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 45989065,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x02a4C601c220E904F2B5276E8aF7a3EbD3FA956b",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 45989079,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x003b449F35dcf36815DCcF265934a55283Fd7Cdc",
+      "fee": 100,
+      "tickSpacing": 1,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 45990173,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x31e1e53dED2896371fDb6c3d9B757b66ebE10a4d",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 45990316,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x4ba127bD99a786De7F007Cd9A0a94647976A7b97",
+      "fee": 100,
+      "tickSpacing": 1,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 45990840,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x3c495C8C95a10C830CFc4Acab934BE23ee864cb8",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 45990936,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xd88eFe372E140aC89778de7ad5F75E72686A2F3b",
+      "fee": 3000,
+      "tickSpacing": 60,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 45994164,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x76d9a8ee9cF6AD0BAeb87F175e4C80d6330e7b0e",
+      "fee": 3000,
+      "tickSpacing": 60,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 45994287,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x934EC2F6575aA8a00B4122EA13ceA1DDb34F1135",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 45999424,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x9cffC1e972e5F7936A5Ce116fccb7844b50D5dD9",
+      "fee": 100,
+      "tickSpacing": 1,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 45999718,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xEE65aEA727981ad530B8B2dEc5d60903aAB14c36",
+      "fee": 3000,
+      "tickSpacing": 60,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46004807,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xe9f5b875CA072073fF66A8596935Ec08cA1222BF",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46009385,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xa72b21315A0Eb5bf492afd8dE9f047B5F969f216",
+      "fee": 3000,
+      "tickSpacing": 60,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46014097,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xEf589A984e621C12CFDF317cbEb731F9A0625a7e",
+      "fee": 100,
+      "tickSpacing": 1,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46015223,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xAC5AA5C1e29e0A9753fa9D265cb915Def02e22a7",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46025428,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x17E06ceb3424833D31125c886643F32224177A37",
+      "fee": 500,
+      "tickSpacing": 10,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46026350,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x8C165f5264A257Ba98D48f306009bDC1bB7Bbc08",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46031014,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xDdB3AdB0f135e12b15c41746858B77ecCD22813B",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46034164,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x144e9aD2384643676F16F07F67A646f329f8fc82",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46034849,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x6Ca857920F1E0fd38131f051f83bB6bf879FFac7",
+      "fee": 3000,
+      "tickSpacing": 60,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46034865,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xDcAF5dF6e6a927aC45FffD3Ba16B90b2d9d8A89A",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46035504,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xf080a5A1A78B10a34CD0eeC5Ef95e766F2b9258c",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46035519,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x6db7492007b835cEc94D87c3eC5e0DFe947b71B2",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46035594,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x5e081Ea78D8b33d144a1a85a53123B9616913822",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46036544,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x0bACf110d11734848BB9299d677Cc0b71E847e39",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46037070,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x32bCE1F2c8324ca243391833a44D79dE5e3D6C69",
+      "fee": 400,
+      "tickSpacing": 8,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46037678,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xa8e763f8A1A3e404d6B18160c527B4b0E85BdF75",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46037785,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x28C1e54d2d3Ac12A8cf07f84D45Fc6b0220C04E4",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46037920,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x3Dd5566B2d45Db4b5dC368925bd7ED6e7f8A943a",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46038112,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xeBfBD62F7b6D253d265aD00D43af4AD2BDBE45d8",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46038139,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x441D0bE923860a2d37DBA63AF638AfD858D54fEb",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46039350,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x9711dFE43E7d665BC138763B02cd742EB251bC01",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46040078,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x79CA7549AB70c732d5Bca540BBeE6632b2655f73",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46040389,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xb8F074B928255Ef5AF0766364c7FC104152b1BAB",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46040876,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xfAe457d6FcfB2ab616025F27a9276EF7e5BC01F5",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46040951,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x8b2AF9e77147AD52ce436ebF47940691A89fA964",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46041663,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xD742Cd3Fa617c2F38AEF967eB6125b32c1e75065",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46042231,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x543c732dF3aAc44cD5e8386632e2CbA9E8c2a440",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46042280,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x6b634a010DB55b75DcCbeEACb5e20b3B81AEa5c9",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46042383,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x7bD0A3Ba990406333EF167727bFE0397214C0b41",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46042992,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x3C50E1E190996Ccb304114e801E0CBbedBEcBE3F",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46043354,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x1751fe383f83e2ac16d4b529711dFE00865397ee",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46044423,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x4c3A424d8a4cC4B123bb140212B3e9278191Aee3",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46046031,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xcF42852A7bdea8402E23DF3eEe8cDaDcC31E441C",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46046972,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x3E3a10DAB7B1CfE6Efa2a7A80D8A94455CE01D58",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46047360,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xb02AfA9ADb6DC62d5227C332C84976E226014e8B",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46048045,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x071f9416f390777a0a107170A06926a5a2E07D10",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46050259,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x0A3fbbeae35B0c1c8b1Cd5c3239d6354414F4DF6",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46053212,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x283e30054CE4c30e8B12C87D469085459e979868",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46054691,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x917D4630b886f4deC18B64D586A96d28D0D10F87",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46055149,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xb6c6FC8bB1B1D947A7Db7398953f5Ca43B8E7E0A",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46056675,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xe6df8d28C8fafE1c9cB41C9BcDBCD6b8d1F91e65",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46056999,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xBef4B2Ef3b9AB923814bEDCD88D3DA741cDA7dCc",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46057662,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x6983cecc734Ae268Da9968f14D003AFFcE2fFdC8",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46057779,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x57b628D02d42b8bE6CD6C2DC043092fa05964F53",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46058124,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xa3231d6919572831Bb034Cb5b1Dd658b9f53de6d",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46058717,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xf91B09BB550b4Add2e3B7F7b10260e854Baabc08",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46059337,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xF10C1e77910E644a85FFCaeD90B94382ccB0E002",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46059889,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x372982b3c60cd4Dc2d1C94438755Ec7Dc52b2441",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46060333,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xEC8ff67868ec537ee8877830ED166587886Cb99F",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46061454,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x1E0727d2787cA8a23a0bbfe1e52aaA423A36267F",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46061770,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x34BC8a9c1c66746885a8B3a12Bb3ebD89b1F8bb3",
+      "fee": 100,
+      "tickSpacing": 1,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46062829,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xC7D2d495511134d8F0ef9BaE94711fAa1177A5e7",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46072940,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x8e4DEE8d9DC228d8f4780aA213b0E8D7B193d8c2",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46074951,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x4222d10896F6674f470D8850e5F8EB5Ac9BC19D1",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46075541,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x9A79A4c7F4BdeDCa6564dC16d72cE4222538c1B5",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46076065,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xC607ADA37085f41e400a487EDb0cBB13151364Af",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46076990,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x7EE82Ea7b407384AE78CaE3b625574444cC8D01f",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46078576,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x337f8e574B17D5d141606Db7a1e33E35c574E9a4",
+      "fee": 3000,
+      "tickSpacing": 60,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46084716,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xFB9cbFF8a233e1EF052c5E9F512B339364C91455",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46084945,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xD41a48CF8c57b813ECB7F0900593b83Cb6a0640A",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46086270,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x4F3867469BBD1A723B53B0F9cD284C608562B2f8",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46092105,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x71285Efe673e751DF2759B828805351D7C8eE331",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46092217,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xb4E30EB0B99a09266b6F63e35fE5a0932981e6Ed",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46093395,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xacF2b0ee2CdEda80a87B501b7e344e215020CABf",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46094292,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x13514683b62CA8aCC68121781cF59EBEE7896661",
+      "fee": 3000,
+      "tickSpacing": 60,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46095743,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x01266324e3bdDDD9eA623CC12D60ba2dc01227Eb",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46101268,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x2d83Dec9aE75A22F6907E0d5Df24827e3f5957fE",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46101833,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x08619012a4934bFf9BaDaaa0Dd6803fB10aE6150",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46106129,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x9abD8a874166Ec477bfBFcA28c57a88d5C63Ae4F",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46106141,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x02831e7f46c7ba6D27B9d629040941EF2a3f8b71",
+      "fee": 3000,
+      "tickSpacing": 60,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46110097,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xe479A4fe334AEd380CA21CdD5c96e4419c411C3b",
+      "fee": 100,
+      "tickSpacing": 1,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46110789,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xDbdBAc69d14F9DCe19AE28abce4c6aa7e5170386",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46121123,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x6c1e6Be9C0a8b8ec099bf68038f77A9242868F38",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46121920,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xCeC6E51A2A38e8556681a1aDa85bfE004afb76D8",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46128152,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xB946F5E648C93DbDc1B332AfCB54f3c9AD45A8e2",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46128508,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x6ce685C010b18Bfc33aeb0aDDcB5ef75c1fC2051",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46128859,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xeaeC51f6B0173d17a4b03B9421D3A7d187C695c7",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46128953,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x861fa2AE2151954B904E2a8edA3832D56D17A925",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46129502,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xe169C41d4C4dFD6c60c8fAC3D9330Da903413D51",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "tvl-drift unavailable (likely non-archive RPC): The contract function \"balanceOf\" returned no data (\"0x\")."
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46131273,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x89c62E0ae1eD891C91B6AF9Bbe26d719B93b65D0",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46133832,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x204A41FC2fA4E10159C5E028e4F043627a07E3E2",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46138195,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xcaB5FD009983D0dD5CB764B4000078d5c8A82AB1",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46140302,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xDdD79256057881D53072CBCF9c4EFB96aC6b2b5D",
+      "fee": 3000,
+      "tickSpacing": 60,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46148955,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x8701415D44ecC0E152634A55DdF87a1Ed336717c",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46152355,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x0a2029af27145b6c9E8EF12291fCd9Bd0a4b6947",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46152415,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xcf9456248Aa24A08c40C6fd2A150E25950DaF814",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46152560,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xc46A4cbEa79067e11D6aeB5A499F5312d8d282E3",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46152691,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x278870d06Cb0659a5813F603ef7B0dCf440Cf038",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46153839,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xd09044f468cD9F35b308e0ef09512b42D0A4A05E",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 5500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46153890,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
     },
     {
       "pool": "0xA62F7867cefE6b853B4D6cF7Bfe149Aa79aC7062",
@@ -11688,6 +16381,40 @@
       "chainId": 4326
     },
     {
+      "pool": "0x59Eb7046EF98c7Cf05C63C0Cc2E7445FadC5119C",
+      "fee": 300,
+      "tickSpacing": 6,
+      "riskBps": 7500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal",
+        "token 0xc442C285…: mint(address,uint256) selector present — supply may be inflated by an admin"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 45990062,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x4FA75a290c6abAb9d5962D30109A207F8deC8DDd",
+      "fee": 300,
+      "tickSpacing": 6,
+      "riskBps": 7500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal",
+        "token 0xcf32e51C…: mint(address,uint256) selector present — supply may be inflated by an admin"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 46099587,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
       "pool": "0xaD1D20E2684D6B004C31df5A05a25e362e0a3C83",
       "fee": 100,
       "tickSpacing": 1,
@@ -11896,6 +16623,40 @@
       "blockCreated": 15139140,
       "protocol": "kumbaya",
       "chainId": 4326
+    },
+    {
+      "pool": "0xE95fa349d89644929a574DFbFEABca2a72D9F2FA",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 8500,
+      "reasons": [
+        "liquidity is 0 (effectively dead)",
+        "shallow oracle cardinality: 1",
+        "pool likely too new for TVL drift signal",
+        "token 0x62eB070e…: vanity-suffix address with suspiciously round 1e27 supply (memecoin/scam shape)"
+      ],
+      "liquidity": "0",
+      "cardinality": 1,
+      "blockCreated": 45955630,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0x60256c06e48A464367441c57B0A9dE8F9390E5d2",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 8500,
+      "reasons": [
+        "pool reentrancy lock engaged at read-time",
+        "liquidity is 0 (effectively dead)",
+        "no oracle observations — TWAP unavailable",
+        "pool likely too new for TVL drift signal"
+      ],
+      "liquidity": "0",
+      "cardinality": 0,
+      "blockCreated": 45980675,
+      "protocol": "uniswap-v3-base",
+      "chainId": 8453
     },
     {
       "pool": "0x3578c9aA7194714DAF36592C32D5021c80A3ED24",
