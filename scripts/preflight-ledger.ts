@@ -22,7 +22,7 @@ const RANKED_PATH = join(import.meta.dir, '..', 'audits', 'ranked.json');
 const LEDGER_DIR = join(import.meta.dir, '..', 'ledger');
 const SERVER = process.env.RISKCLAW_SERVER ?? 'http://localhost:4242';
 const DRY_AMOUNT_IN = process.env.DRY_AMOUNT_IN ?? '1000000000000000000';
-const SCORE_PROTOCOLS = new Set(['kumbaya', 'prism', 'uniswap-v3-base']);
+const SCORE_PROTOCOLS = new Set(['kumbaya', 'prism', 'uniswap-v3-base', 'uniswap-v4-base']);
 const THROTTLE_MS = Number(process.env.THROTTLE_MS ?? 2100);
 const MAX_RISK_FILTER = Number(process.env.MAX_RISK_FILTER ?? 5000);
 const MAX_POOLS = Number(process.env.MAX_POOLS ?? 100);
@@ -40,6 +40,11 @@ interface Ranked {
     liquidity: string;
     cardinality: number;
     reasons: string[];
+    // V4-only — present on uniswap-v4-base entries. Passed through to /api/score
+    // so the decoder can run token-side checks.
+    currency0?: string;
+    currency1?: string;
+    hooks?: string;
   }[];
 }
 
@@ -80,15 +85,20 @@ async function probe(cohort: 'safe' | 'risky', candidates: typeof all): Promise<
     if (i > 0 || cohort === 'risky') await sleep(THROTTLE_MS);
     try {
       const t0 = Date.now();
+      const reqBody: Record<string, unknown> = {
+        protocol: c.protocol,
+        pool: c.pool,
+        amountIn: DRY_AMOUNT_IN,
+        chainId: c.chainId,
+      };
+      if (c.protocol === 'uniswap-v4-base' && c.currency0 && c.currency1) {
+        reqBody.currency0 = c.currency0;
+        reqBody.currency1 = c.currency1;
+      }
       const res = await fetch(`${SERVER}/api/score`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          protocol: c.protocol,
-          pool: c.pool,
-          amountIn: DRY_AMOUNT_IN,
-          chainId: c.chainId,
-        }),
+        body: JSON.stringify(reqBody),
       });
       const data = await res.json() as {
         result?: { routeRiskBps: number; recommendation: string; perPool: { riskBps: number; reasons: string[]; components?: Record<string, unknown> }[] };

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-20T16:39:09.253Z",
+  "generatedAt": "2026-05-21T09:04:38.034Z",
   "protocols": [
     {
       "protocol": "prism",
@@ -13,6 +13,16 @@
         "[high] P3 7 pool(s) pair a known scam-template token",
         "[medium] P4 36/44 pools (82%) have oracle cardinality = 1",
         "[medium] P5 15 pool(s) pair a token with mint() selector"
+      ]
+    },
+    {
+      "protocol": "uniswap-v4-base",
+      "total": 3,
+      "healthy": 1,
+      "dead": 0,
+      "avgBps": 667,
+      "topFindings": [
+        "[medium] V4-2 2 pool(s) have lpFee ≥ 5%"
       ]
     },
     {
@@ -99,6 +109,23 @@
       "blockCreated": 7848813,
       "protocol": "prism",
       "chainId": 4326
+    },
+    {
+      "pool": "0x09ef71f0c152ec57408714f3d017145adfb84f74ad7ed20cc99dddd61566ac16",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 0,
+      "reasons": [
+        "tvl-drift unavailable (likely non-archive RPC): Address \"0x09ef71f0c152ec57408714f3d017145adfb84f74ad7ed20cc99dddd61566ac16\" is invalid."
+      ],
+      "liquidity": "unknown",
+      "cardinality": 0,
+      "blockCreated": 0,
+      "currency0": "0x515e72aF68A374C8f375534B59752277Ee9b4a51",
+      "currency1": "0x568bAC4E1C5A097d4B3B903b9A511534BD45eBa3",
+      "hooks": "0x0000000000000000000000000000000000000000",
+      "protocol": "uniswap-v4-base",
+      "chainId": 8453
     },
     {
       "pool": "0xbe7B4299C29A02d41df65d0b197D146AB15a6879",
@@ -9320,6 +9347,42 @@
       "blockCreated": 15446510,
       "protocol": "kumbaya",
       "chainId": 4326
+    },
+    {
+      "pool": "0x976e654f127a66cc5e6df1987e93c5e853277585ea459097a8be35b8221a028d",
+      "fee": 800000,
+      "tickSpacing": 16000,
+      "riskBps": 1000,
+      "reasons": [
+        "tvl-drift unavailable (likely non-archive RPC): Address \"0x976e654f127a66cc5e6df1987e93c5e853277585ea459097a8be35b8221a028d\" is invalid.",
+        "unusually high lpFee 80.00% — common in launchpad/memecoin configs"
+      ],
+      "liquidity": "unknown",
+      "cardinality": 0,
+      "blockCreated": 0,
+      "currency0": "0x568bAC4E1C5A097d4B3B903b9A511534BD45eBa3",
+      "currency1": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "hooks": "0x0000000000000000000000000000000000000000",
+      "protocol": "uniswap-v4-base",
+      "chainId": 8453
+    },
+    {
+      "pool": "0xaab9f57442335bd75f29fa0d51bed88673e99f580cf0553a9b7602d2424a3229",
+      "fee": 880000,
+      "tickSpacing": 17600,
+      "riskBps": 1000,
+      "reasons": [
+        "tvl-drift unavailable (likely non-archive RPC): Address \"0xaab9f57442335bd75f29fa0d51bed88673e99f580cf0553a9b7602d2424a3229\" is invalid.",
+        "unusually high lpFee 88.00% — common in launchpad/memecoin configs"
+      ],
+      "liquidity": "unknown",
+      "cardinality": 0,
+      "blockCreated": 0,
+      "currency0": "0x568bAC4E1C5A097d4B3B903b9A511534BD45eBa3",
+      "currency1": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "hooks": "0x0000000000000000000000000000000000000000",
+      "protocol": "uniswap-v4-base",
+      "chainId": 8453
     },
     {
       "pool": "0x653C900EcD02268cF91388BD9B59d6Deb0CD3deD",

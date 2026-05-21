@@ -1,0 +1,95 @@
+{
+  "protocol": "uniswap-v4-base",
+  "chainId": 8453,
+  "scannedAt": "2026-05-21T09:04:38.009Z",
+  "blockHeight": 0,
+  "setup": {
+    "factory": "0x498581fF718922c3f8e6A244956aF099B2652b2b",
+    "factoryOwner": null,
+    "factoryOwnerKind": "unknown",
+    "positionManager": "0x7C5f5A4bBd8fD63184577525326123B519429bDc",
+    "universalRouter": "0x6fF5693b99212Da76ad316178A184AB56D299b43",
+    "feeTiers": []
+  },
+  "pools": {
+    "total": 3,
+    "feeDistribution": [
+      {
+        "fee": 10000,
+        "count": 1
+      },
+      {
+        "fee": 800000,
+        "count": 1
+      },
+      {
+        "fee": 880000,
+        "count": 1
+      }
+    ],
+    "averageRiskBps": 667,
+    "healthyCount": 1,
+    "deadCount": 0,
+    "perPool": [
+      {
+        "pool": "0x976e654f127a66cc5e6df1987e93c5e853277585ea459097a8be35b8221a028d",
+        "fee": 800000,
+        "tickSpacing": 16000,
+        "riskBps": 1000,
+        "reasons": [
+          "tvl-drift unavailable (likely non-archive RPC): Address \"0x976e654f127a66cc5e6df1987e93c5e853277585ea459097a8be35b8221a028d\" is invalid.",
+          "unusually high lpFee 80.00% — common in launchpad/memecoin configs"
+        ],
+        "liquidity": "unknown",
+        "cardinality": 0,
+        "blockCreated": 0,
+        "currency0": "0x568bAC4E1C5A097d4B3B903b9A511534BD45eBa3",
+        "currency1": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "hooks": "0x0000000000000000000000000000000000000000"
+      },
+      {
+        "pool": "0xaab9f57442335bd75f29fa0d51bed88673e99f580cf0553a9b7602d2424a3229",
+        "fee": 880000,
+        "tickSpacing": 17600,
+        "riskBps": 1000,
+        "reasons": [
+          "tvl-drift unavailable (likely non-archive RPC): Address \"0xaab9f57442335bd75f29fa0d51bed88673e99f580cf0553a9b7602d2424a3229\" is invalid.",
+          "unusually high lpFee 88.00% — common in launchpad/memecoin configs"
+        ],
+        "liquidity": "unknown",
+        "cardinality": 0,
+        "blockCreated": 0,
+        "currency0": "0x568bAC4E1C5A097d4B3B903b9A511534BD45eBa3",
+        "currency1": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "hooks": "0x0000000000000000000000000000000000000000"
+      },
+      {
+        "pool": "0x09ef71f0c152ec57408714f3d017145adfb84f74ad7ed20cc99dddd61566ac16",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 0,
+        "reasons": [
+          "tvl-drift unavailable (likely non-archive RPC): Address \"0x09ef71f0c152ec57408714f3d017145adfb84f74ad7ed20cc99dddd61566ac16\" is invalid."
+        ],
+        "liquidity": "unknown",
+        "cardinality": 0,
+        "blockCreated": 0,
+        "currency0": "0x515e72aF68A374C8f375534B59752277Ee9b4a51",
+        "currency1": "0x568bAC4E1C5A097d4B3B903b9A511534BD45eBa3",
+        "hooks": "0x0000000000000000000000000000000000000000"
+      }
+    ]
+  },
+  "tokens": {
+    "unique": 3,
+    "survey": []
+  },
+  "findings": [
+    {
+      "severity": "medium",
+      "id": "V4-2",
+      "title": "2 pool(s) have lpFee ≥ 5%",
+      "detail": "Unusually high static fees — typical of bankr.bot launchpad-default configs."
+    }
+  ]
+}
