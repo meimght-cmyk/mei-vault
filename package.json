@@ -1,0 +1,22 @@
+{
+  "name": "mei-vault",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Mei's agentic DeFi build log — riskclaw-gated experiments, public ledger, vault thesis.",
+  "scripts": {
+    "probe": "bun run scripts/preflight-ledger.ts",
+    "backfill": "bun run scripts/backfill-outcomes.ts",
+    "rank": "bun run scripts/rank-pools.ts",
+    "whitelist": "bun run scripts/whitelist.ts",
+    "strategy": "bun run scripts/strategy-passive-lp.ts",
+    "harness": "bun run scripts/wallet-harness.ts",
+    "exiter": "bun run scripts/vault-exiter-base.ts",
+    "metrics": "bun run scripts/compute-metrics.ts",
+    "simtrade": "bun run scripts/compute-simtrade-pnl.ts",
+    "signer": "bun run scripts/signer-cli.ts"
+  },
+  "dependencies": {
+    "viem": "^2.48.0"
+  }
+}
