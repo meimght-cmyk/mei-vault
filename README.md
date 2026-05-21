@@ -9,13 +9,14 @@ The vault doesn't exist yet. The data does. **Every test, every result, public.*
 - **Phase 1 — read-only safety oracle:** live since 2026-05-08. 6-hourly probe of 100 safest + 50 riskiest pools on MegaETH (kumbaya + prism). Strategy module produces dry-run intents.
 - **Phase 2 — Base decoders:** **live end-to-end since 2026-05-20.** `uniswap-v3-base` shipped, wired into the daily probe (306 Base pools alongside 783 MegaETH pools). First cross-chain catch: a Base pool the May-18 audit marked healthy was correctly flagged WARN on 2026-05-20 after its liquidity drained. See [docs/upstream-base-changes.md](docs/upstream-base-changes.md).
 - **Phase 2.5 — UniV4 Base decoder:** **live in probe pipeline 2026-05-21.** MEI's 3 V4 pools probed each cycle (1 healthy at riskBps=0, 2 launchpad-default high-fee pools at riskBps=1000). Server accepts 32-byte poolIds for V4; decoder reads state via StateView (`getSlot0` + `getLiquidity`); catastrophic liquidity drops are caught by the existing backfill rules via the decoder's `inactiveLiquidity → +5000 bps` translation. Seed-pool approach over full Initialize-event audit (V4 universe is too noisy on Base).
-- **Phase 3 — polling vault-exiter port:** queued.
+- **Phase 3 — polling vault-exiter (signer-less):** **live 2026-05-21.** Watches every harness-confirmed position, polls `/api/score` at 5min cadence via launchd. On ALLOW→WARN/BLOCK transition, decision→ERROR, or +3000 bps risk jump, emits an exit event with a would-be-tx payload. No signing, no broadcast — Phase 4 wires the real bounded-delegation signer.
 - **Phase 4 — vault contract:** hard-floored on ≥90 days of ledger data + ALLOW false-negative ≤2%, BLOCK precision ≥70%, plus an external audit. **Earliest unlock: 2026-08-07.**
 
 📊 **Live dashboards:**
 - [Phase 4 readiness](metrics/README.md) — ALLOW false-neg / BLOCK precision vs floors
 - [Sim-trade P&L](metrics/simtrade.md) — what real capital would have done following the signals
 - [Wallet harness](metrics/harness.md) — would-sign / would-skip verdicts per intent, signer-less
+- [Vault-exiter](metrics/vault-exiter.md) — open positions + would-exit events, polling guardian
 
 ## Layout
 

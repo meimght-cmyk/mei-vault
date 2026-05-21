@@ -1,0 +1,42 @@
+# Vault-exiter
+
+_Updated: 2026-05-21T10:22:27.921Z_
+
+Polling guardian for Phase 3. Watches every harness-confirmed position and polls `/api/score` at ~60s cadence. On a degradation transition (ALLOW→WARN/BLOCK, decision→ERROR, or +3000 bps risk jump), it emits an exit event with a would-be-tx payload. **No signing, no broadcast** — Phase 4 swaps the boolean for a real bounded-delegation withdraw.
+
+## Current state
+
+- open positions: **10**
+- positions exited: **0**
+- total exit events logged: **0**
+
+## Trigger rules
+
+| trigger | condition |
+|---|---|
+| `allow_to_warn` | entry decision was ALLOW, current is WARN |
+| `allow_to_block` | entry decision was ALLOW, current is BLOCK |
+| `became_error` | current decision is ERROR (pool unreachable / state corrupt) |
+| `risk_jump` | live riskBps − entry riskBps ≥ 3000 |
+
+## Recent exit events (last 30)
+
+| ts | intent | protocol | entry → current | drift | trigger |
+|---|---|---|---|---|---|
+| _no exit events yet_ | | | | | |
+
+## How to read this
+
+- An exit event means: "if the vault were holding this position, the guardian would now route a withdraw to the signer."
+- Multiple triggers can fire on the same position over time, but once a position is marked `EXITED` it's removed from the watch list.
+- Raw events: [`ledger/exit-events.jsonl`](../ledger/exit-events.jsonl). State cache: [`ledger/exit-state.json`](../ledger/exit-state.json).
+
+## What "signer-less" means
+
+✓ load positions from harness-confirmed intents
+✓ poll `/api/score` for each
+✓ detect degradation transitions
+✓ build the would-be-withdraw payload
+✗ construct real `decreaseLiquidity` calldata (Phase 4: positionManager ABI + tick math)
+✗ sign with a wallet (Phase 4: bounded-delegation signer)
+✗ broadcast to chain (Phase 4: `/api/preflight-raw` + `eth_sendRawTransaction`)
