@@ -20,7 +20,25 @@ Canonical record of every on-chain artifact. Mainnet rows added only after the e
 
 1. `setExecutor(<executor address>)` — turn on the bounded-delegation signer. Can be the same address as owner on testnet for v1; production must separate.
 2. `setAllowedTarget(<positionManager>, true)` — allowlist the contracts the executor is permitted to call.
-3. `(optional)` Verify the contract on BaseScan with `forge verify-contract` so the source is browsable.
+3. ✅ **Verified on Sourcify** (2026-05-21). Source browsable at https://sourcify.dev/#/lookup/0x5328f7c9b6CE55d1f25c20d903F44d33E8F9B5e6 ; BaseScan inherits the metadata.
+
+### Base Sepolia Uniswap addresses (verified on-chain 2026-05-21)
+
+Both V3 and V4 are fully deployed on Base Sepolia (chainId 84532):
+
+| Protocol | Contract | Address |
+|---|---|---|
+| V3 | Factory          | `0x4752ba5DBc23f44D87826276BF6Fd6b1C372aD24` |
+| V3 | PositionManager  | `0x27F971cb582BF9E50F397e4d29a5C7A34f11faA2` |
+| V3 | SwapRouter02     | `0x94cC0AaC535CCDB3C01d6787D6413C739ae12bc4` |
+| V3 | QuoterV2         | `0xC5290058841028F1614F3A6F0F5816cAd0df5E27` |
+| V3 / V4 | UniversalRouter | `0x492E6456D9528771018DeB9E87ef7750EF184104` |
+| V4 | PoolManager      | `0x05E73354cFDd6745C338b50BcFDfA3Aa6fA03408` |
+| V4 | PositionManager  | `0x4B2C77d209D3405F41a037Ec6c77F7F5b8e2ca80` |
+| V4 | StateView        | `0x571291b572ed32ce6751a2cb2486ebee8defb9b4` |
+| V4 | Quoter           | `0x4A6513c898fe1B2d0E78d3b0e0A4a151589B1cBa` |
+
+These are wired into the PositionManager mapping in `scripts/wallet-harness.ts` + `scripts/vault-exiter-base.ts` under the `:84532` keys, so any harness/exiter SignRequest for a Sepolia pool targets the correct PositionManager.
 
 ## Base mainnet (chainId 8453)
 

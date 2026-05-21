@@ -43,11 +43,16 @@ const VAULT_ADDRESS = process.env.MEI_VAULT_ADDRESS as `0x${string}` | undefined
 // Per-(protocol, chainId) → PositionManager address. Mirror of the table in
 // wallet-harness.ts. Exit calls decreaseLiquidity / burn on these.
 const POSITION_MANAGERS: Record<string, `0x${string}`> = {
-  'uniswap-v3-base:8453': '0x03a520b32C04BF3bEEf7BEb72E919cf822Ed34f1',
-  'uniswap-v4-base:8453': '0x7C5f5A4bBd8fD63184577525326123B519429bDc',
-  'kumbaya:4326':         '0x2b781C57e6358f64864Ff8EC464a03Fdaf9974bA',
-  'kumbaya:6343':         '0x367f9db1F974eA241ba046b77B87C58e2947d8dF',
-  'prism:4326':           '0xcb91c75a6b29700756d4411495be696c4e9a576e',
+  // Base mainnet (8453)
+  'uniswap-v3-base:8453':  '0x03a520b32C04BF3bEEf7BEb72E919cf822Ed34f1',
+  'uniswap-v4-base:8453':  '0x7C5f5A4bBd8fD63184577525326123B519429bDc',
+  // Base Sepolia (84532) — verified on-chain 2026-05-21
+  'uniswap-v3-base:84532': '0x27F971cb582BF9E50F397e4d29a5C7A34f11faA2',
+  'uniswap-v4-base:84532': '0x4B2C77d209D3405F41a037Ec6c77F7F5b8e2ca80',
+  // MegaETH
+  'kumbaya:4326':          '0x2b781C57e6358f64864Ff8EC464a03Fdaf9974bA',
+  'kumbaya:6343':          '0x367f9db1F974eA241ba046b77B87C58e2947d8dF',
+  'prism:4326':            '0xcb91c75a6b29700756d4411495be696c4e9a576e',
 };
 
 function positionManagerFor(protocol: string, chainId: number): `0x${string}` | null {
