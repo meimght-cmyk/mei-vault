@@ -92,4 +92,25 @@ Result: 314 pools discovered in 200k blocks (~4 days), 306 scored OK (97.5%), 1 
 
    All three have `hooks=0x0` (no V4 hook callbacks). Math is still concentrated-liquidity, but storage layout is fundamentally different from V3 — single `PoolManager` contract, pools tracked by `bytes32 poolId` keys, state read via `extsload` rather than per-pool `slot0()` calls. **UniV3 Base decoder does not cover MEI.** Need a separate UniV4 decoder for MEI-specific positions; UniV3 Base remains useful for treasury swap gating (WETH/USDC, WBTC/USDC, etc.).
 
+6. ~~UniV4 Base decoder~~ **DONE 2026-05-21 (skeleton).** New package `packages/claw-protocols/src/uniswap-v4-base/`:
+   - `addresses.ts` — PoolManager `0x498581fF…`, StateView `0xA3c0c9b6…`, PositionManager, UniversalRouter (shared), Quoter, WETH (all verified live via getCode())
+   - `abi.ts` — V4 StateView ABI (`getSlot0`, `getLiquidity`) + PoolManager `Initialize` event
+   - `index.ts` — `UniswapV4BaseDecoder` (SwapDecoder) + `computeUniswapV4PoolId(PoolKey)` exported
+
+   Reads state via StateView (poolId-keyed) rather than per-pool `slot0()`. Scoring matches V3 minus the oracle-cardinality signal (V4 removed the built-in TWAP; hooks can implement one — for hooks=0 pools `oracleHealthBps` is reported as `null`). Adds a new high-fee signal (`lpFee ≥ 50000` → +1000 bps) since bankr.bot-launched memecoins frequently configure 80%+ fees.
+
+   Verified end-to-end against MEI/USDC poolId `0x976e654f…`:
+   - poolId derivation matches on-chain Initialize event byte-for-byte
+   - `getSlot0` + `getLiquidity` read cleanly (liquidity 3.09e14)
+   - Score returns `riskBps=1000` with `"unusually high lpFee 80.00%"` reason
+
+   Known v1 limitation: TVL drift via `token.balanceOf(poolAddress)` doesn't work for V4 (tokens live in PoolManager, not at a per-pool address). Decoder gracefully reports `tvl-drift unavailable`. Real V4 TVL signal needs PoolManager-scoped reads — deferred to v2.
+
+   Decoder registered in `packages/claw-protocols/src/index.ts`, `skills/mega-aggregator/src/index.ts` (version bumped to `v0.5-kumbaya+prism+uniswap-v3-base+uniswap-v4-base`).
+
+7. **Server + pipeline integration for V4 — still pending** (next session):
+   - `apps/web/src/server.ts` — `isHexAddress()` validates 40-char hex; V4 needs 66-char poolId. Add a path that accepts bytes32 pool identifier when `protocol === 'uniswap-v4-base'`.
+   - V4 audit script — walks `Initialize` events on PoolManager, derives the pool inventory + PoolKey for each entry, outputs JSON matching the V3 audit shape (with `pool` = poolId). Needs to also persist `currency0`/`currency1` per row so the decoder can do token-side checks during probing.
+   - `scripts/preflight-ledger.ts` — pass `chainId: 8453` and `pool: <poolId>` for V4 entries; server has to accept the bigger pool string.
+
 5. **Trader Joe Liquidity Book token (LBT) appears in MEI's recent transfer logs.** The recipient `0x7B43440F1A7982c8D95aEf3936cca12FB83b3A9a` is an LBT (TJ's LP position token). Could indicate MEI also has TJ Liquidity Book pools. Worth confirming once V4 decoder is in flight — LB has its own (Solidly-style bin) math and would need its own decoder.
