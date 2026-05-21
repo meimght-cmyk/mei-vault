@@ -108,9 +108,13 @@ Result: 314 pools discovered in 200k blocks (~4 days), 306 scored OK (97.5%), 1 
 
    Decoder registered in `packages/claw-protocols/src/index.ts`, `skills/mega-aggregator/src/index.ts` (version bumped to `v0.5-kumbaya+prism+uniswap-v3-base+uniswap-v4-base`).
 
-7. **Server + pipeline integration for V4 — still pending** (next session):
-   - `apps/web/src/server.ts` — `isHexAddress()` validates 40-char hex; V4 needs 66-char poolId. Add a path that accepts bytes32 pool identifier when `protocol === 'uniswap-v4-base'`.
-   - V4 audit script — walks `Initialize` events on PoolManager, derives the pool inventory + PoolKey for each entry, outputs JSON matching the V3 audit shape (with `pool` = poolId). Needs to also persist `currency0`/`currency1` per row so the decoder can do token-side checks during probing.
-   - `scripts/preflight-ledger.ts` — pass `chainId: 8453` and `pool: <poolId>` for V4 entries; server has to accept the bigger pool string.
+7. ~~Server + pipeline integration for V4~~ **DONE 2026-05-21.** Live in the probe pipeline.
+   - `apps/web/src/server.ts` — new `isPoolIdentifier(s, protocol)` accepts 64-char bytes32 poolId when `protocol === 'uniswap-v4-base'`. `SCORE_PROTOCOLS` extended. ScoreBody type accepts optional `currency0`/`currency1` for V4 — server injects them into `ctx.env` as `V4_CURRENCY0_<poolId>` / `V4_CURRENCY1_<poolId>` for the decoder.
+   - V4 audit chose seed-pool route over Initialize-event-walk audit (`scripts/seed-audit-v4-base.ts` in mei-vault). Reason: V4 PoolManager has 10k+ Initialize events per day on Base, mostly bankr.bot launchpad churn; full audit on free RPC is unworkable and irrelevant to vault gating. Seed list curates the pools that matter.
+   - `apps/daemon/src/audit.ts` still has `auditUniswapV4Base()` available for the discovery path — works against paid RPC when that becomes worthwhile. CLI: `claw audit uniswap-v4-base 8453` (use `BASE_RPC_URL=` to override).
+   - `scripts/preflight-ledger.ts` — `SCORE_PROTOCOLS` extended; sends `currency0`/`currency1` in `/api/score` body for V4 entries. Ranked interface extended with optional V4 fields.
+   - First live V4 probe (2026-05-21): MEI pool `0x09ef71f0…/MEI` scored `riskBps=0` cleanly in 599ms.
+
+8. **V4 TVL-drift signal — v1 covered, v2 deferred.** The V4 decoder translates `liquidity < 1000` into `riskBps += 5000` via the `inactiveLiquidity` flag. The existing backfill rule `riskBps_jump_to_5000+` therefore catches V4 catastrophic drains automatically. For finer-grained drift (50% drain but not 0), the probe row needs to carry raw liquidity — v2 work. The PoolRisk type would need a new `liquidity` component, and the V4 (+ V3) decoders updated to populate it. The metrics layer can then compute liquidity_TN / liquidity_T per (pool, ts_original, horizon).
 
 5. **Trader Joe Liquidity Book token (LBT) appears in MEI's recent transfer logs.** The recipient `0x7B43440F1A7982c8D95aEf3936cca12FB83b3A9a` is an LBT (TJ's LP position token). Could indicate MEI also has TJ Liquidity Book pools. Worth confirming once V4 decoder is in flight — LB has its own (Solidly-style bin) math and would need its own decoder.
