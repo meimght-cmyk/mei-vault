@@ -33,6 +33,25 @@ const ASSUMED_SIZE_USD = Number(process.env.HARNESS_SIZE_USD ?? 1000);
 const THROTTLE_MS = Number(process.env.HARNESS_THROTTLE_MS ?? 2100);
 const sleep = (ms: number) => new Promise(r => setTimeout(r, ms));
 
+// Set this once the vault is deployed. When unset, sign-requests are skipped
+// (the harness still runs and writes harness-result.json — only the on-chain
+// step is deferred).
+const VAULT_ADDRESS = process.env.MEI_VAULT_ADDRESS as `0x${string}` | undefined;
+
+// Per-(protocol, chainId) → PositionManager address. The signer-cli will
+// constrain exec calls to these via the vault's allowedTarget mapping.
+const POSITION_MANAGERS: Record<string, `0x${string}`> = {
+  'uniswap-v3-base:8453': '0x03a520b32C04BF3bEEf7BEb72E919cf822Ed34f1',
+  'uniswap-v4-base:8453': '0x7C5f5A4bBd8fD63184577525326123B519429bDc',
+  'kumbaya:4326':         '0x2b781C57e6358f64864Ff8EC464a03Fdaf9974bA',
+  'kumbaya:6343':         '0x367f9db1F974eA241ba046b77B87C58e2947d8dF',
+  'prism:4326':           '0xcb91c75a6b29700756d4411495be696c4e9a576e',
+};
+
+function positionManagerFor(protocol: string, chainId: number): `0x${string}` | null {
+  return POSITION_MANAGERS[`${protocol}:${chainId}`] ?? null;
+}
+
 interface Intent {
   id: string;
   strategy: string;
@@ -110,7 +129,7 @@ if (pending.length === 0) {
 let signYes = 0, signNo = 0, errors = 0;
 
 for (let i = 0; i < pending.length; i++) {
-  const { intent, resultPath } = pending[i]!;
+  const { intent, resultPath, intentPath } = pending[i]!;
   if (i > 0) await sleep(THROTTLE_MS);
   try {
     const res = await fetch(`${SERVER}/api/score`, {
@@ -177,6 +196,42 @@ for (let i = 0; i < pending.length; i++) {
       },
     };
     writeFileSync(resultPath, JSON.stringify(result, null, 2));
+
+    // Emit a SignRequest JSON next to the harness result if the intent
+    // passes gates and we have a deployed vault to target. The signer-cli
+    // operator picks these up. The data field is "0x" — the operator must
+    // construct real positionManager.mint calldata and substitute before
+    // signing. Until then a stray sign produces a harmless no-op.
+    if (overallPass && VAULT_ADDRESS) {
+      const pm = positionManagerFor(intent.target.protocol, intent.target.chainId);
+      if (pm) {
+        const signRequest = {
+          vault: VAULT_ADDRESS,
+          target: pm,
+          value: '0',
+          data: '0x',
+          intent_id: intent.id,
+          source: 'wallet-harness',
+          chainId: intent.target.chainId,
+          attestation: {
+            pool: intent.target.pool,
+            riskBps: liveBps,
+            decision,
+            ts: result.harness_run_at,
+          },
+          _pending_calldata_construction: {
+            action: `${intent.target.protocol} positionManager.mint (passive-LP, wide range)`,
+            pool: intent.target.pool,
+            fee: intent.target.fee,
+            tickRange: 'wide (MIN..MAX)',
+            sizeUsd: ASSUMED_SIZE_USD,
+            note: 'Construct real positionManager.mint calldata with chosen amounts, replace the `data` field, and remove this `_pending_calldata_construction` key before invoking signer-cli sign.',
+          },
+        };
+        const signRequestPath = intentPath.replace(/\.json$/, '.sign-request.json');
+        writeFileSync(signRequestPath, JSON.stringify(signRequest, null, 2));
+      }
+    }
 
     if (overallPass) signYes++; else signNo++;
     console.log(`  ${intent.id}  live=${decision}/${liveBps}bps  ${overallPass ? '✓ would-sign' : '✗ would-skip'}`);

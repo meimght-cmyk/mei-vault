@@ -30,12 +30,33 @@ const LEDGER_DIR = join(import.meta.dir, '..', 'ledger');
 const METRICS_DIR = join(import.meta.dir, '..', 'metrics');
 const EVENTS_PATH = join(LEDGER_DIR, 'exit-events.jsonl');
 const STATE_PATH = join(LEDGER_DIR, 'exit-state.json');
+const EXIT_SIGN_REQUESTS_DIR = join(LEDGER_DIR, 'exit-sign-requests');
 const RISK_JUMP_THRESHOLD = Number(process.env.EXITER_RISK_JUMP_BPS ?? 3000);
 const THROTTLE_MS = Number(process.env.EXITER_THROTTLE_MS ?? 500);
 const sleep = (ms: number) => new Promise(r => setTimeout(r, ms));
 
+// Set this once the vault is deployed. When unset, exit sign-requests are
+// skipped (the exit event still fires + lands in the ledger — only the
+// on-chain step is deferred).
+const VAULT_ADDRESS = process.env.MEI_VAULT_ADDRESS as `0x${string}` | undefined;
+
+// Per-(protocol, chainId) → PositionManager address. Mirror of the table in
+// wallet-harness.ts. Exit calls decreaseLiquidity / burn on these.
+const POSITION_MANAGERS: Record<string, `0x${string}`> = {
+  'uniswap-v3-base:8453': '0x03a520b32C04BF3bEEf7BEb72E919cf822Ed34f1',
+  'uniswap-v4-base:8453': '0x7C5f5A4bBd8fD63184577525326123B519429bDc',
+  'kumbaya:4326':         '0x2b781C57e6358f64864Ff8EC464a03Fdaf9974bA',
+  'kumbaya:6343':         '0x367f9db1F974eA241ba046b77B87C58e2947d8dF',
+  'prism:4326':           '0xcb91c75a6b29700756d4411495be696c4e9a576e',
+};
+
+function positionManagerFor(protocol: string, chainId: number): `0x${string}` | null {
+  return POSITION_MANAGERS[`${protocol}:${chainId}`] ?? null;
+}
+
 if (!existsSync(LEDGER_DIR)) mkdirSync(LEDGER_DIR, { recursive: true });
 if (!existsSync(METRICS_DIR)) mkdirSync(METRICS_DIR, { recursive: true });
+if (!existsSync(EXIT_SIGN_REQUESTS_DIR)) mkdirSync(EXIT_SIGN_REQUESTS_DIR, { recursive: true });
 
 interface HarnessResult {
   intent_id: string;
@@ -214,6 +235,39 @@ for (let i = 0; i < positions.length; i++) {
         last_polled_at: event.ts,
         status: 'EXITED',
       };
+
+      // Emit an exit sign-request next to the event. The signer-cli operator
+      // picks these up. data="0x" is a placeholder — operator constructs
+      // real positionManager.decreaseLiquidity calldata before signing.
+      if (VAULT_ADDRESS) {
+        const pm = positionManagerFor(p.protocol, p.chainId);
+        if (pm) {
+          const signRequest = {
+            vault: VAULT_ADDRESS,
+            target: pm,
+            value: '0',
+            data: '0x',
+            intent_id: p.intent_id,
+            source: 'vault-exiter',
+            chainId: p.chainId,
+            attestation: {
+              pool: p.pool,
+              riskBps: liveBps,
+              decision,
+              ts: event.ts,
+            },
+            _pending_calldata_construction: {
+              action: `${p.protocol} positionManager.decreaseLiquidity (full exit)`,
+              pool: p.pool,
+              trigger,
+              note: 'Construct real positionManager.decreaseLiquidity calldata for full position exit, replace the `data` field, and remove this `_pending_calldata_construction` key before invoking signer-cli sign.',
+            },
+          };
+          const signRequestPath = join(EXIT_SIGN_REQUESTS_DIR, `${p.intent_id}.exit-sign-request.json`);
+          writeFileSync(signRequestPath, JSON.stringify(signRequest, null, 2));
+        }
+      }
+
       triggered++;
       console.log(`  ${p.intent_id}  EXIT trigger=${trigger}  entry=${p.entry_decision}/${p.entry_riskBps}  → live=${decision}/${liveBps}  drift=${drift >= 0 ? '+' : ''}${drift}`);
     } else {
