@@ -76,7 +76,7 @@ contract TreasuryVaultTest is Test {
     }
 
     function test_constructor_revertsOnZeroOwner() public {
-        vm.expectRevert(TreasuryVault.ZeroAddress.selector);
+        vm.expectRevert(abi.encodeWithSelector(Ownable.OwnableInvalidOwner.selector, address(0)));
         new TreasuryVault(address(0));
     }
 

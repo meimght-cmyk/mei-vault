@@ -62,9 +62,8 @@ contract TreasuryVault is Ownable2Step, Pausable, ReentrancyGuard {
 
     /// @param initialOwner The single-key owner. Migrate to a multisig before
     ///        the vault holds material capital; Ownable2Step makes that safe.
-    constructor(address initialOwner) Ownable(initialOwner) {
-        if (initialOwner == address(0)) revert ZeroAddress();
-    }
+    ///        Reverts via Ownable's OwnableInvalidOwner if address(0).
+    constructor(address initialOwner) Ownable(initialOwner) {}
 
     // ─── modifiers ──────────────────────────────────────────────────────
 
