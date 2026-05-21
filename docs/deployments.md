@@ -8,19 +8,27 @@ Canonical record of every on-chain artifact. Mainnet rows added only after the e
 |---|---|---|---|---|
 | `TreasuryVault` | [`0x5328f7c9b6CE55d1f25c20d903F44d33E8F9B5e6`](https://sepolia.basescan.org/address/0x5328f7c9b6CE55d1f25c20d903F44d33E8F9B5e6) | [`0xce8e4aeb…f5c814`](https://sepolia.basescan.org/tx/0xce8e4aeb751699d443134f8dac85816903b08bf0b26340988711f07978f5c814) | 2026-05-21 | Phase 4 v1. Deployer = initial owner = Kewe operator wallet `0x5C7bD42E…` (collapsed roles on testnet; production must separate). Bytecode 3,360 bytes. |
 
-### TreasuryVault initial state (Base Sepolia)
+### TreasuryVault configured state (Base Sepolia, as of 2026-05-21)
 
 - `owner()` → `0x5C7bD42EB443fb8bBB78301E240D9378582e8237` (Kewe operator)
 - `pendingOwner()` → `0x0` (no transfer in flight)
-- `executor()` → `0x0` (no executor configured yet — set via `setExecutor`)
+- `executor()` → `0x5C7bD42EB443fb8bBB78301E240D9378582e8237` (collapsed with owner on testnet — production must separate)
 - `paused()` → `false`
-- `allowedTarget[*]` → all `false` (no targets allowlisted yet)
+- `allowedTarget[V3 PositionManager 0x27F971cb…]` → `true`
+- `allowedTarget[V4 PositionManager 0x4B2C77d2…]` → `true`
+- `allowedTarget[UniversalRouter 0x492E6456…]` → `true`
+- `allowedTarget[<anything else>]` → `false`
 
-### Next configuration steps (owner-only)
+### Owner config txs (Base Sepolia)
 
-1. `setExecutor(<executor address>)` — turn on the bounded-delegation signer. Can be the same address as owner on testnet for v1; production must separate.
-2. `setAllowedTarget(<positionManager>, true)` — allowlist the contracts the executor is permitted to call.
-3. ✅ **Verified on Sourcify** (2026-05-21). Source browsable at https://sourcify.dev/#/lookup/0x5328f7c9b6CE55d1f25c20d903F44d33E8F9B5e6 ; BaseScan inherits the metadata.
+| # | Action | Tx hash |
+|---|---|---|
+| 1 | `setExecutor(0x5C7bD42E…)` | [`0xf6c4b321…b4b763`](https://sepolia.basescan.org/tx/0xf6c4b32143b7764f6fa7183e22d2894c08033cc65214760f205c26e931b4b763) |
+| 2 | `setAllowedTarget(V3 PM, true)` | [`0xd96c25a0…a8ecb2`](https://sepolia.basescan.org/tx/0xd96c25a08c14eacfb162ee7e8f74dac03782fb8422b658a909bc115e93a8ecb2) |
+| 3 | `setAllowedTarget(V4 PM, true)` | [`0xc824e302…5cdd9`](https://sepolia.basescan.org/tx/0xc824e30218a6e2cba870a3618c1ff63314f3061a3f5f8b0c600251cf8f15cdd9) |
+| 4 | `setAllowedTarget(UR, true)` | [`0xe62d45e7…c11202`](https://sepolia.basescan.org/tx/0xe62d45e7b22ac1440622c7737819069403105e1d93be98688917c9b518c11202) |
+
+✅ **Verified on Sourcify** (2026-05-21). Source browsable at https://sourcify.dev/#/lookup/0x5328f7c9b6CE55d1f25c20d903F44d33E8F9B5e6 ; BaseScan inherits the metadata.
 
 ### Base Sepolia Uniswap addresses (verified on-chain 2026-05-21)
 
