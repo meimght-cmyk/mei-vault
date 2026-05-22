@@ -1,20 +1,20 @@
 # Phase 4 readiness
 
-_Updated: 2026-05-21T22:06:45.120Z_
+_Updated: 2026-05-22T22:48:39.009Z_
 
 Phase 4 (vault contract deploy) unlocks only after ≥90 days of probe data **with** the safety floors holding. This dashboard is the public scorecard.
 
 ## Where we are
 
-- 90-day clock started: **2026-05-09** (day 12 of 90)
-- Earliest unlock: **2026-08-07** (77 days away)
-- Probe rows collected: **7,674**
-- Outcome patches resolved: **3,423**
+- 90-day clock started: **2026-05-09** (day 13 of 90)
+- Earliest unlock: **2026-08-07** (76 days away)
+- Probe rows collected: **8,274**
+- Outcome patches resolved: **3,996**
 
 ## Phase 4 floors (7-day horizon)
 
-- ✅ **ALLOW false-negative rate**: 1.30% (n=2693) — floor ≤ 2%
-- ❌ **BLOCK precision**: 0.00% (n=74) _(n=74 < 100 required)_ — floor ≥ 70%
+- ✅ **ALLOW false-negative rate**: 1.39% (n=3094) — floor ≤ 2%
+- ❌ **BLOCK precision**: 0.00% (n=94) _(n=94 < 100 required)_ — floor ≥ 70%
 
 **Overall: ❌ floors not yet met**
 
@@ -23,9 +23,9 @@ Phase 4 (vault contract deploy) unlocks only after ≥90 days of probe data **wi
 ### 7-day horizon
 | cohort | ALLOW | WARN | BLOCK | ERROR |
 |---|---|---|---|---|
-| safe  |   n=2693  loss= 35  rate=1.30% |   n=  30  loss=  1  rate=3.33% |   n=   4  loss=  0  rate=0.00% |   n=  12  loss= 10  rate=83.33% |
-| risky |   n=0 |   n= 613  loss=  4  rate=0.65% |   n=  70  loss=  0  rate=0.00% |   n=   1  loss=  1  rate=100.00% |
-| **all** | **  n=2693  loss= 35  rate=1.30%** | **  n= 643  loss=  5  rate=0.78%** | **  n=  74  loss=  0  rate=0.00%** | **  n=  13  loss= 11  rate=84.62%** |
+| safe  |   n=3092  loss= 43  rate=1.39% |   n=  31  loss=  2  rate=6.45% |   n=   4  loss=  0  rate=0.00% |   n=  12  loss= 10  rate=83.33% |
+| risky |   n=   2  loss=  0  rate=0.00% |   n= 764  loss=  4  rate=0.52% |   n=  90  loss=  0  rate=0.00% |   n=   1  loss=  1  rate=100.00% |
+| **all** | **  n=3094  loss= 43  rate=1.39%** | **  n= 795  loss=  6  rate=0.75%** | **  n=  94  loss=  0  rate=0.00%** | **  n=  13  loss= 11  rate=84.62%** |
 
 ### 30-day horizon (window opens 2026-06-08)
 | cohort | ALLOW | WARN | BLOCK | ERROR |
