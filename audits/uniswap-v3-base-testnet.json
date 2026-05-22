@@ -1,0 +1,110 @@
+{
+  "protocol": "uniswap-v3-base",
+  "chainId": 84532,
+  "scannedAt": "2026-05-22T05:21:51.553Z",
+  "blockHeight": 0,
+  "setup": {
+    "factory": "0x4752ba5DBc23f44D87826276BF6Fd6b1C372aD24",
+    "factoryOwner": null,
+    "factoryOwnerKind": "unknown",
+    "positionManager": "0x27F971cb582BF9E50F397e4d29a5C7A34f11faA2",
+    "universalRouter": "0x492E6456D9528771018DeB9E87ef7750EF184104",
+    "feeTiers": [
+      {
+        "fee": 100,
+        "tickSpacing": 1,
+        "enabled": true
+      },
+      {
+        "fee": 500,
+        "tickSpacing": 10,
+        "enabled": true
+      },
+      {
+        "fee": 3000,
+        "tickSpacing": 60,
+        "enabled": true
+      },
+      {
+        "fee": 10000,
+        "tickSpacing": 200,
+        "enabled": true
+      }
+    ]
+  },
+  "pools": {
+    "total": 4,
+    "feeDistribution": [
+      {
+        "fee": 100,
+        "count": 1
+      },
+      {
+        "fee": 10000,
+        "count": 1
+      },
+      {
+        "fee": 3000,
+        "count": 1
+      },
+      {
+        "fee": 500,
+        "count": 1
+      }
+    ],
+    "averageRiskBps": 250,
+    "healthyCount": 2,
+    "deadCount": 0,
+    "perPool": [
+      {
+        "pool": "0x57183717A087d2fe3Ad890873877244c3B96156c",
+        "fee": 100,
+        "tickSpacing": 1,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "unknown",
+        "cardinality": 1,
+        "blockCreated": 0
+      },
+      {
+        "pool": "0x94bfc0574FF48E92cE43d495376C477B1d0EEeC0",
+        "fee": 500,
+        "tickSpacing": 10,
+        "riskBps": 0,
+        "reasons": [],
+        "liquidity": "unknown",
+        "cardinality": 10,
+        "blockCreated": 0
+      },
+      {
+        "pool": "0x46880b404CD35c165EDdefF7421019F8dD25F4Ad",
+        "fee": 3000,
+        "tickSpacing": 60,
+        "riskBps": 0,
+        "reasons": [],
+        "liquidity": "unknown",
+        "cardinality": 10,
+        "blockCreated": 0
+      },
+      {
+        "pool": "0x4664755562152EDDa3a3073850FB62835451926a",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "riskBps": 500,
+        "reasons": [
+          "shallow oracle cardinality: 1"
+        ],
+        "liquidity": "unknown",
+        "cardinality": 1,
+        "blockCreated": 0
+      }
+    ]
+  },
+  "tokens": {
+    "unique": 2,
+    "survey": []
+  },
+  "findings": []
+}

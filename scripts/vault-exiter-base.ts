@@ -35,10 +35,12 @@ const RISK_JUMP_THRESHOLD = Number(process.env.EXITER_RISK_JUMP_BPS ?? 3000);
 const THROTTLE_MS = Number(process.env.EXITER_THROTTLE_MS ?? 500);
 const sleep = (ms: number) => new Promise(r => setTimeout(r, ms));
 
-// Set this once the vault is deployed. When unset, exit sign-requests are
-// skipped (the exit event still fires + lands in the ledger — only the
-// on-chain step is deferred).
+// Set both once the vault is deployed. When either is unset, exit
+// sign-requests are skipped — exit events still fire and land in the ledger,
+// only the on-chain emission step is deferred. The chainId guard prevents
+// emission for positions on a different chain than the deployed vault.
 const VAULT_ADDRESS = process.env.MEI_VAULT_ADDRESS as `0x${string}` | undefined;
+const VAULT_CHAIN_ID = process.env.MEI_VAULT_CHAIN_ID ? Number(process.env.MEI_VAULT_CHAIN_ID) : undefined;
 
 // Per-(protocol, chainId) → PositionManager address. Mirror of the table in
 // wallet-harness.ts. Exit calls decreaseLiquidity / burn on these.
@@ -241,10 +243,11 @@ for (let i = 0; i < positions.length; i++) {
         status: 'EXITED',
       };
 
-      // Emit an exit sign-request next to the event. The signer-cli operator
-      // picks these up. data="0x" is a placeholder — operator constructs
-      // real positionManager.decreaseLiquidity calldata before signing.
-      if (VAULT_ADDRESS) {
+      // Emit an exit sign-request next to the event. Same chainId-guard
+      // pattern as the harness. data="0x" is a placeholder — operator
+      // constructs real positionManager.decreaseLiquidity calldata before
+      // signing.
+      if (VAULT_ADDRESS && VAULT_CHAIN_ID === p.chainId) {
         const pm = positionManagerFor(p.protocol, p.chainId);
         if (pm) {
           const signRequest = {

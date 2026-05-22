@@ -15,6 +15,10 @@ mkdir -p "${LOG_DIR}"
 LOG="${LOG_DIR}/vault-exiter-$(date -u +%Y-%m-%d).log"
 # Public mainnet.base.org rate-limits hard; use publicnode for Base reads.
 export BASE_RPC_URL="${BASE_RPC_URL:-https://base.publicnode.com}"
+# Deployed TreasuryVault on Base Sepolia (chainId guard prevents emission
+# for wrong-chain positions).
+export MEI_VAULT_ADDRESS="${MEI_VAULT_ADDRESS:-0x5328f7c9b6CE55d1f25c20d903F44d33E8F9B5e6}"
+export MEI_VAULT_CHAIN_ID="${MEI_VAULT_CHAIN_ID:-84532}"
 
 if ! curl -fsS -m 3 -o /dev/null "http://localhost:4242/api/integrations" 2>/dev/null; then
   echo "[$(date -u +%FT%TZ)] server down, booting from ${RISKCLAW_DAEMON_DIR}..." >> "${LOG}"

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-21T09:04:38.034Z",
+  "generatedAt": "2026-05-22T05:21:51.581Z",
   "protocols": [
     {
       "protocol": "prism",
@@ -48,6 +48,14 @@
         "[medium] P4 102/108 pools (94%) have oracle cardinality = 1",
         "[medium] P5 25 pool(s) pair a token with mint() selector"
       ]
+    },
+    {
+      "protocol": "uniswap-v3-base",
+      "total": 4,
+      "healthy": 2,
+      "dead": 0,
+      "avgBps": 250,
+      "topFindings": []
     },
     {
       "protocol": "kumbaya",
@@ -138,6 +146,30 @@
       "blockCreated": 46080887,
       "protocol": "uniswap-v3-base",
       "chainId": 8453
+    },
+    {
+      "pool": "0x94bfc0574FF48E92cE43d495376C477B1d0EEeC0",
+      "fee": 500,
+      "tickSpacing": 10,
+      "riskBps": 0,
+      "reasons": [],
+      "liquidity": "unknown",
+      "cardinality": 10,
+      "blockCreated": 0,
+      "protocol": "uniswap-v3-base",
+      "chainId": 84532
+    },
+    {
+      "pool": "0x46880b404CD35c165EDdefF7421019F8dD25F4Ad",
+      "fee": 3000,
+      "tickSpacing": 60,
+      "riskBps": 0,
+      "reasons": [],
+      "liquidity": "unknown",
+      "cardinality": 10,
+      "blockCreated": 0,
+      "protocol": "uniswap-v3-base",
+      "chainId": 84532
     },
     {
       "pool": "0x6bD9eeF21c2419FeffafbF4850153A3b3A74A5E1",
@@ -3341,6 +3373,34 @@
       "blockCreated": 18445476,
       "protocol": "kumbaya",
       "chainId": 6343
+    },
+    {
+      "pool": "0x57183717A087d2fe3Ad890873877244c3B96156c",
+      "fee": 100,
+      "tickSpacing": 1,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1"
+      ],
+      "liquidity": "unknown",
+      "cardinality": 1,
+      "blockCreated": 0,
+      "protocol": "uniswap-v3-base",
+      "chainId": 84532
+    },
+    {
+      "pool": "0x4664755562152EDDa3a3073850FB62835451926a",
+      "fee": 10000,
+      "tickSpacing": 200,
+      "riskBps": 500,
+      "reasons": [
+        "shallow oracle cardinality: 1"
+      ],
+      "liquidity": "unknown",
+      "cardinality": 1,
+      "blockCreated": 0,
+      "protocol": "uniswap-v3-base",
+      "chainId": 84532
     },
     {
       "pool": "0x2F1d923B909389AC1338BCe5dE97fC268763AbB2",

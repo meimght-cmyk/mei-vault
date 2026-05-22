@@ -11,6 +11,10 @@ RISKCLAW_DAEMON_DIR="${RISKCLAW_DAEMON_DIR:-${HOME}/Desktop/Trading/riskclaw-dae
 MEI_VAULT_DIR="${MEI_VAULT_DIR:-${HOME}/Desktop/mei-vault}"
 # Public mainnet.base.org rate-limits hard; use publicnode for Base reads.
 export BASE_RPC_URL="${BASE_RPC_URL:-https://base.publicnode.com}"
+# Deployed TreasuryVault on Base Sepolia (chainId guard prevents emission
+# for wrong-chain intents).
+export MEI_VAULT_ADDRESS="${MEI_VAULT_ADDRESS:-0x5328f7c9b6CE55d1f25c20d903F44d33E8F9B5e6}"
+export MEI_VAULT_CHAIN_ID="${MEI_VAULT_CHAIN_ID:-84532}"
 LOG_DIR="${MEI_VAULT_DIR}/ledger/logs"
 mkdir -p "${LOG_DIR}"
 LOG="${LOG_DIR}/backfill-$(date -u +%Y-%m-%d).log"

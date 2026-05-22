@@ -30,6 +30,25 @@ Canonical record of every on-chain artifact. Mainnet rows added only after the e
 
 ✅ **Verified on Sourcify** (2026-05-21). Source browsable at https://sourcify.dev/#/lookup/0x5328f7c9b6CE55d1f25c20d903F44d33E8F9B5e6 ; BaseScan inherits the metadata.
 
+### End-to-end smoke test (2026-05-21)
+
+First real `vault.exec` call on-chain. Built a SignRequest pointed at the allowlisted V3 PositionManager with `name()` selector (`0x06fdde03`), signed via `signer-cli` with the executor key, broadcast to Base Sepolia. The vault correctly:
+
+- accepted the executor's call
+- checked `allowedTarget[V3 PM] == true`
+- called `target.call{value: 0}(data)`
+- bubbled up the return value (`"Uniswap V3 Positions NFT-V1"`)
+- emitted `Executed(target, value, data)`
+
+| | |
+|---|---|
+| Tx | [`0x373c2946…cdea625`](https://sepolia.basescan.org/tx/0x373c2946570e8b11be16a8757111b809605439346c691ad300feb14cecdea625) |
+| Block | 41,809,853 |
+| Gas | 40,243 |
+| Status | success |
+
+The whole bounded-delegation pipeline is now proven end-to-end on testnet. Pieces validated: SignRequest → policy gates → EIP-1559 sign → broadcast → vault auth check → target allowlist check → external call → return-data bubble → Executed event emission.
+
 ### Base Sepolia Uniswap addresses (verified on-chain 2026-05-21)
 
 Both V3 and V4 are fully deployed on Base Sepolia (chainId 84532):

@@ -33,10 +33,13 @@ const ASSUMED_SIZE_USD = Number(process.env.HARNESS_SIZE_USD ?? 1000);
 const THROTTLE_MS = Number(process.env.HARNESS_THROTTLE_MS ?? 2100);
 const sleep = (ms: number) => new Promise(r => setTimeout(r, ms));
 
-// Set this once the vault is deployed. When unset, sign-requests are skipped
-// (the harness still runs and writes harness-result.json — only the on-chain
-// step is deferred).
+// Set both once the vault is deployed. When either is unset, sign-requests
+// are skipped — the harness still runs + writes harness-result.json, only
+// the on-chain emission step is deferred. The chainId guard means we
+// silently skip emission when intent.chainId mismatches the vault's chain
+// (the operator would otherwise see broken cross-chain requests).
 const VAULT_ADDRESS = process.env.MEI_VAULT_ADDRESS as `0x${string}` | undefined;
+const VAULT_CHAIN_ID = process.env.MEI_VAULT_CHAIN_ID ? Number(process.env.MEI_VAULT_CHAIN_ID) : undefined;
 
 // Per-(protocol, chainId) → PositionManager address. The signer-cli will
 // constrain exec calls to these via the vault's allowedTarget mapping.
@@ -203,11 +206,12 @@ for (let i = 0; i < pending.length; i++) {
     writeFileSync(resultPath, JSON.stringify(result, null, 2));
 
     // Emit a SignRequest JSON next to the harness result if the intent
-    // passes gates and we have a deployed vault to target. The signer-cli
-    // operator picks these up. The data field is "0x" — the operator must
-    // construct real positionManager.mint calldata and substitute before
-    // signing. Until then a stray sign produces a harmless no-op.
-    if (overallPass && VAULT_ADDRESS) {
+    // passes gates and we have a deployed vault to target on the SAME chain
+    // as the intent. The signer-cli operator picks these up. The data field
+    // is "0x" — the operator must construct real positionManager.mint
+    // calldata and substitute before signing. Until then a stray sign
+    // produces a harmless no-op.
+    if (overallPass && VAULT_ADDRESS && VAULT_CHAIN_ID === intent.target.chainId) {
       const pm = positionManagerFor(intent.target.protocol, intent.target.chainId);
       if (pm) {
         const signRequest = {
