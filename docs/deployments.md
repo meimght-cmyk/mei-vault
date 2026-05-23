@@ -49,6 +49,25 @@ First real `vault.exec` call on-chain. Built a SignRequest pointed at the allowl
 
 The whole bounded-delegation pipeline is now proven end-to-end on testnet. Pieces validated: SignRequest → policy gates → EIP-1559 sign → broadcast → vault auth check → target allowlist check → external call → return-data bubble → Executed event emission.
 
+### AEON v0 monitor live (2026-05-23)
+
+Read-only vault intelligence layer running on Vercel cron at `/api/mei-vault/monitor` (every 4h). Codex shipped the build between May 22 and 23: ERC-4626 adapter, then a TreasuryVault-specific adapter when it found our vault isn't ERC-4626. Source in [mei-terminal repo](https://github.com/meimght-cmyk/mei-terminal): `lib/mei-vault-monitor.ts`, `app/api/mei-vault/monitor/route.ts`, `docs/mei-aeon-vault-monitor.md`. Snapshots persist to Supabase `public.mei_vault_monitor_snapshots`.
+
+**Production issue caught + fixed 2026-05-23:** Vercel Cron was firing every 4h but every invocation returned HTTP 301. The mei-terminal middleware's canonical-host redirect was catching `.vercel.app` cron hits (Vercel Cron doesn't follow redirects). Fix in commit [`3a0d8ab`](https://github.com/meimght-cmyk/mei-terminal/commit/3a0d8ab) — skip the host redirect when `pathname.startsWith('/api/')`. After fix the cron lands snapshots successfully every 4h.
+
+**End-to-end pipeline test 2026-05-23**
+
+| Snapshot | nativeBalance | delta | flags |
+|---|---|---|---|
+| `15:06Z` post-funding | 0.01 ETH | n/a (0→non-zero) | info + collapsed-roles warning |
+| `15:07Z` post-withdrawal | 0 ETH | **-100.00%** | info + collapsed-roles + **TOTAL_ASSETS_DROP** ⚠ |
+
+Two on-chain txs drove the state changes:
+- Deposit: [`0xc0caef62…600599`](https://sepolia.basescan.org/tx/0xc0caef62d7ceeeda69452cc79e9dac5638153df719f4f2b557dbd2f532600599) — Kewe → Vault, 0.01 ETH via `receive()`
+- Withdrawal: [`0x745b69da…77cde4`](https://sepolia.basescan.org/tx/0x745b69dabf6793a8224a069eb6a2686c34022460c2a392da5b859eaa2677cde4) — Vault → Kewe via owner-only `withdrawETH`
+
+The full observe → flag → persist pipeline works. Alert delivery (Discord/GitHub) and additional risk rules are the next AEON layers.
+
 ### Base Sepolia Uniswap addresses (verified on-chain 2026-05-21)
 
 Both V3 and V4 are fully deployed on Base Sepolia (chainId 84532):
