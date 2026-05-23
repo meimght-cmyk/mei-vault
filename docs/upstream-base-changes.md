@@ -108,6 +108,8 @@ Result: 314 pools discovered in 200k blocks (~4 days), 306 scored OK (97.5%), 1 
 
    Decoder registered in `packages/claw-protocols/src/index.ts`, `skills/mega-aggregator/src/index.ts` (version bumped to `v0.5-kumbaya+prism+uniswap-v3-base+uniswap-v4-base`).
 
+9. ~~Aerodrome decoder~~ **Slipstream variant shipped 2026-05-23** (upstream local diff). Package `packages/claw-protocols/src/aerodrome-slipstream-base/` mirrors the V3 Base shape — same scoring math, addresses verified via `getCode()` on Base mainnet. Aerodrome is **not deployed on Base Sepolia** (only mainnet). Tested against real WETH/USDC ts=100 pool `0xb2cc224c…`: `riskBps=0, oracleHealthBps=10000, inactiveLiquidity=false`. Aggregator skill version `v0.6-...+aerodrome-slipstream-base`. Aerodrome v2 (Solidly stable/volatile) is a separate package not yet built — needs different curve math. With UniV3 Base + UniV4 Base + Aerodrome Slipstream Base, **B5 (≥3 Base protocols decoded) is now satisfied.**
+
 7. ~~Server + pipeline integration for V4~~ **DONE 2026-05-21.** Live in the probe pipeline.
    - `apps/web/src/server.ts` — new `isPoolIdentifier(s, protocol)` accepts 64-char bytes32 poolId when `protocol === 'uniswap-v4-base'`. `SCORE_PROTOCOLS` extended. ScoreBody type accepts optional `currency0`/`currency1` for V4 — server injects them into `ctx.env` as `V4_CURRENCY0_<poolId>` / `V4_CURRENCY1_<poolId>` for the decoder.
    - V4 audit chose seed-pool route over Initialize-event-walk audit (`scripts/seed-audit-v4-base.ts` in mei-vault). Reason: V4 PoolManager has 10k+ Initialize events per day on Base, mostly bankr.bot launchpad churn; full audit on free RPC is unworkable and irrelevant to vault gating. Seed list curates the pools that matter.
