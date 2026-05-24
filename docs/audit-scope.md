@@ -231,8 +231,9 @@ If the audit firm believes any of the above belong on-chain for safety, that is 
 | Implementation comparison | `docs/vault-contract-comparison.md` | Done |
 | Codex implementation notes | `docs/codex-implementation-notes.md` | Done |
 | Reconciliation notes | `docs/codex-reconciliation-notes.md` | Done |
-| Deployment scripts | `contracts/script/DeployMeiVaults.s.sol` | Tier 2 — drafting next week |
-| Test coverage report | (generated at engagement start) | Tier 1 — running next |
+| Deployment scripts | `contracts/script/DeployMeiVaults.s.sol` | Done — multi-tier deploy with env-overridable roles |
+| Fork integration tests | `contracts/test/integration/MeiVaultFork.t.sol` | Done — 7 tests against Base Sepolia, skip without RPC |
+| Test coverage report | inline in §7 | Done |
 | Gas snapshot | `contracts/.gas-snapshot` | Tier 3 |
 | Auditor README | `contracts/README.md` | Tier 3 |
 
