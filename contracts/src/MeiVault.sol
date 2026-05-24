@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.24;
+pragma solidity 0.8.24;
 
 import {Ownable, Ownable2Step} from "@openzeppelin/contracts/access/Ownable2Step.sol";
 import {ERC20} from "@openzeppelin/contracts/token/ERC20/ERC20.sol";
@@ -15,9 +15,10 @@ contract MeiVault is ERC20, Ownable2Step, Pausable, ReentrancyGuard {
 
     uint256 public constant MAX_MGMT_FEE_BPS = 200;
     uint256 public constant MAX_PERF_FEE_BPS = 2500;
-    uint256 public constant BPS = 10_000;
+    uint256 public constant BPS = 1e4;
     uint256 public constant YEAR = 365.25 days;
     uint8 public constant SHARE_DECIMALS = 18;
+    uint256 public constant PPS_PRECISION = 1e18;
 
     IERC20 public immutable asset;
     uint256 public immutable capacityCap;
@@ -135,7 +136,7 @@ contract MeiVault is ERC20, Ownable2Step, Pausable, ReentrancyGuard {
         valuationStalenessSeconds = valuationStalenessSeconds_;
         mgmtFeeBps = mgmtFeeBps_;
         perfFeeBps = perfFeeBps_;
-        highWaterMark = 1e18;
+        highWaterMark = PPS_PRECISION;
         mgmtFeeAccruedAt = block.timestamp;
         lastValuationAt = block.timestamp;
     }
@@ -272,9 +273,9 @@ contract MeiVault is ERC20, Ownable2Step, Pausable, ReentrancyGuard {
     /// @return result Raw return data from the target.
     function exec(address target, bytes calldata data)
         external
+        nonReentrant
         onlyExecutor
         whenNotPaused
-        nonReentrant
         returns (bytes memory result)
     {
         if (!allowedTarget[target]) revert TargetNotAllowed(target);
@@ -406,8 +407,8 @@ contract MeiVault is ERC20, Ownable2Step, Pausable, ReentrancyGuard {
     /// @return PPS in 1e18 units.
     function pricePerShare() public view returns (uint256) {
         uint256 supply = totalSupply();
-        if (supply == 0) return 1e18;
-        return Math.mulDiv(totalAssets(), _assetToShareScale * 1e18, supply);
+        if (supply == 0) return PPS_PRECISION;
+        return Math.mulDiv(totalAssets(), _assetToShareScale * PPS_PRECISION, supply);
     }
 
     /// @notice Redemption delay in seconds.
@@ -488,7 +489,7 @@ contract MeiVault is ERC20, Ownable2Step, Pausable, ReentrancyGuard {
         if (currentPPS <= highWaterMark) return 0;
 
         uint256 gainPerShare = currentPPS - highWaterMark;
-        uint256 gainAssets = Math.mulDiv(gainPerShare, supply, 1e18 * _assetToShareScale);
+        uint256 gainAssets = Math.mulDiv(gainPerShare, supply, PPS_PRECISION * _assetToShareScale);
         uint256 feeAssets = Math.mulDiv(gainAssets, perfFeeBps, BPS);
         feeShares = convertToShares(feeAssets);
         if (feeShares != 0) _mint(feeRecipient, feeShares);

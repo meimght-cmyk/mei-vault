@@ -1070,6 +1070,63 @@ contract MeiVaultTest is Test {
         assertEq(usdcVault.pricePerShare(), 1e18);
     }
 
+    // ─── coverage-closing tests (added 2026-05-24) ──────────────────────
+
+    function test_unpauseAllowsActionsAgain() public {
+        _pause();
+        assertTrue(vault.paused());
+
+        token.mint(user, 100e6);
+        vm.startPrank(user);
+        token.approve(address(vault), 100e6);
+        vm.expectRevert(Pausable.EnforcedPause.selector);
+        vault.deposit(100e6, user);
+        vm.stopPrank();
+
+        vm.prank(owner);
+        vault.unpause();
+        assertFalse(vault.paused());
+
+        vm.prank(user);
+        uint256 shares = vault.deposit(100e6, user);
+        assertGt(shares, 0);
+    }
+
+    function test_pauseUnpauseToggle() public {
+        assertFalse(vault.paused());
+        _pause();
+        assertTrue(vault.paused());
+        vm.prank(owner);
+        vault.unpause();
+        assertFalse(vault.paused());
+        _pause();
+        assertTrue(vault.paused());
+    }
+
+    function test_execReturnsTargetReturnData() public {
+        vm.prank(owner);
+        vault.setAllowedTarget(address(target), true);
+        vm.prank(executor);
+        bytes memory result =
+            vault.exec(address(target), abi.encodeWithSelector(target.ping.selector, 1337));
+        uint256 decoded = abi.decode(result, (uint256));
+        assertEq(decoded, 1338); // ping returns value + 1
+    }
+
+    function test_redemptionDelayMatchesImmutable() public view {
+        assertEq(vault.redemptionDelay(), DELAY);
+    }
+
+    function test_getRedemptionReturnsStoredRequest() public {
+        uint256 shares = _depositAs(user, 100e6);
+        uint256 id = _requestAs(user, shares, user, user);
+        MeiVault.RedemptionRequest memory r = vault.getRedemption(id);
+        assertEq(r.owner, user);
+        assertEq(r.shares, shares);
+        assertEq(r.unlockAt, block.timestamp + DELAY);
+        assertFalse(r.claimed);
+    }
+
     function invariant_totalAssetsEqualsIdlePlusReported() public view {
         assertEq(vault.totalAssets(), token.balanceOf(address(vault)) + vault.lastValuation());
     }

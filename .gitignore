@@ -16,6 +16,10 @@ ledger/logs/
 node_modules/
 bun.lockb
 
+# static analysis + coverage output (regenerated on demand)
+contracts/report.md
+contracts/lcov.info
+
 # secrets — NEVER commit
 .env
 .env.*

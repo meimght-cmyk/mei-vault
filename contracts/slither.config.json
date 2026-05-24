@@ -1,0 +1,7 @@
+{
+  "filter_paths": "lib/|test/|src/MeiVault.codex.sol|src/TreasuryVault.sol|script/",
+  "exclude_informational": true,
+  "exclude_optimization": true,
+  "exclude_dependencies": true,
+  "detectors_to_exclude": "naming-convention,solc-version,low-level-calls,timestamp,incorrect-equality,assembly,locked-ether,missing-zero-check"
+}
