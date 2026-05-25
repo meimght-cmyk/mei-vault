@@ -1,5 +1,5 @@
 {
-  "computed_at": "2026-05-23T23:27:33.500Z",
+  "computed_at": "2026-05-25T00:08:23.357Z",
   "model": {
     "horizon_days": 7,
     "loss_pnl_bps": -5000,
@@ -8,9 +8,9 @@
     "drift_model": "pnl_bps = -(tvlDriftBps_TN - tvlDriftBps_T)"
   },
   "totals": {
-    "probe_rows": 8874,
-    "real_intents": 7,
-    "hypothetical_entries": 5443
+    "probe_rows": 9474,
+    "real_intents": 8,
+    "hypothetical_entries": 5591
   },
   "real_intents": [
     {
@@ -23,14 +23,14 @@
       "entry_decision": "ALLOW",
       "entry_riskBps": 0,
       "entry_tvlDriftBps": -3,
-      "age_days": 5.5,
+      "age_days": 6.5,
       "resolved": false,
-      "outcome_ts": "2026-05-23T21:10:02.688Z",
+      "outcome_ts": "2026-05-24T21:39:15.239Z",
       "outcome_decision": "ALLOW",
       "outcome_riskBps": 0,
-      "outcome_tvlDriftBps": 0,
+      "outcome_tvlDriftBps": 1,
       "loss_flagged": false,
-      "pnl_bps": -3,
+      "pnl_bps": -4,
       "pnl_label": "TVL drift down"
     },
     {
@@ -43,15 +43,15 @@
       "entry_decision": "ALLOW",
       "entry_riskBps": 0,
       "entry_tvlDriftBps": 0,
-      "age_days": 2.9,
+      "age_days": 3.9,
       "resolved": false,
-      "outcome_ts": "2026-05-23T21:10:02.688Z",
+      "outcome_ts": "2026-05-24T21:39:15.239Z",
       "outcome_decision": "ALLOW",
       "outcome_riskBps": 0,
-      "outcome_tvlDriftBps": 0,
+      "outcome_tvlDriftBps": 1,
       "loss_flagged": false,
-      "pnl_bps": 0,
-      "pnl_label": "stable/up"
+      "pnl_bps": -1,
+      "pnl_label": "TVL drift down"
     },
     {
       "source": "intent",
@@ -63,15 +63,15 @@
       "entry_decision": "ALLOW",
       "entry_riskBps": 0,
       "entry_tvlDriftBps": 0,
-      "age_days": 1.9,
+      "age_days": 2.9,
       "resolved": false,
-      "outcome_ts": "2026-05-23T21:10:02.688Z",
+      "outcome_ts": "2026-05-24T21:39:15.239Z",
       "outcome_decision": "ALLOW",
       "outcome_riskBps": 0,
-      "outcome_tvlDriftBps": 0,
+      "outcome_tvlDriftBps": 1,
       "loss_flagged": false,
-      "pnl_bps": 0,
-      "pnl_label": "stable/up"
+      "pnl_bps": -1,
+      "pnl_label": "TVL drift down"
     },
     {
       "source": "intent",
@@ -83,15 +83,15 @@
       "entry_decision": "ALLOW",
       "entry_riskBps": 0,
       "entry_tvlDriftBps": 0,
-      "age_days": 3.9,
+      "age_days": 5,
       "resolved": false,
-      "outcome_ts": "2026-05-23T21:10:02.688Z",
+      "outcome_ts": "2026-05-24T21:39:15.239Z",
       "outcome_decision": "ALLOW",
       "outcome_riskBps": 0,
-      "outcome_tvlDriftBps": 0,
+      "outcome_tvlDriftBps": 1,
       "loss_flagged": false,
-      "pnl_bps": 0,
-      "pnl_label": "stable/up"
+      "pnl_bps": -1,
+      "pnl_label": "TVL drift down"
     },
     {
       "source": "intent",
@@ -99,11 +99,31 @@
       "pool": "0x6bD9eeF21c2419FeffafbF4850153A3b3A74A5E1",
       "protocol": "kumbaya",
       "cohort": "safe",
+      "entry_ts": "2026-05-24T03:17:45.641Z",
+      "entry_decision": "ALLOW",
+      "entry_riskBps": 0,
+      "entry_tvlDriftBps": 0,
+      "age_days": 0.9,
+      "resolved": false,
+      "outcome_ts": "2026-05-24T21:39:15.239Z",
+      "outcome_decision": "ALLOW",
+      "outcome_riskBps": 0,
+      "outcome_tvlDriftBps": 1,
+      "loss_flagged": false,
+      "pnl_bps": -1,
+      "pnl_label": "TVL drift down"
+    },
+    {
+      "source": "intent",
+      "intent_id": "passive-lp-kumbaya-2026-05-25-001",
+      "pool": "0x6bD9eeF21c2419FeffafbF4850153A3b3A74A5E1",
+      "protocol": "kumbaya",
+      "cohort": "safe",
       "entry_ts": "2026-05-08T17:00:23.781Z",
       "entry_decision": "ALLOW",
       "entry_riskBps": 0,
       "entry_tvlDriftBps": 1,
-      "age_days": 15.3,
+      "age_days": 16.3,
       "resolved": true,
       "outcome_ts": "2026-05-15T21:58:31.425Z",
       "outcome_decision": "ALLOW",
@@ -123,15 +143,15 @@
       "entry_decision": "ALLOW",
       "entry_riskBps": 0,
       "entry_tvlDriftBps": 0,
-      "age_days": 0.9,
+      "age_days": 1.9,
       "resolved": false,
-      "outcome_ts": "2026-05-23T21:10:02.688Z",
+      "outcome_ts": "2026-05-24T21:39:15.239Z",
       "outcome_decision": "ALLOW",
       "outcome_riskBps": 0,
-      "outcome_tvlDriftBps": 0,
+      "outcome_tvlDriftBps": 1,
       "loss_flagged": false,
-      "pnl_bps": 0,
-      "pnl_label": "stable/up"
+      "pnl_bps": -1,
+      "pnl_label": "TVL drift down"
     },
     {
       "source": "intent",
@@ -143,7 +163,7 @@
       "entry_decision": "ALLOW",
       "entry_riskBps": 0,
       "entry_tvlDriftBps": -98,
-      "age_days": 14.3,
+      "age_days": 15.3,
       "resolved": true,
       "outcome_ts": "2026-05-16T22:45:15.588Z",
       "outcome_decision": "ALLOW",
@@ -156,56 +176,56 @@
   ],
   "hypothetical_summary": {
     "all": {
-      "count": 5443,
-      "resolved_count": 3496,
-      "loss_flagged_count": 49,
-      "win_count": 4993,
-      "win_rate": 0.9173250045930553,
-      "avg_pnl_bps": -47.97593239022598,
-      "avg_pnl_pct": "-0.48%",
+      "count": 5591,
+      "resolved_count": 3896,
+      "loss_flagged_count": 55,
+      "win_count": 4954,
+      "win_rate": 0.8860668932212484,
+      "avg_pnl_bps": -57.79341799320336,
+      "avg_pnl_pct": "-0.58%",
       "median_pnl_bps": 0,
       "worst_pnl_bps": -5000,
       "best_pnl_bps": 613,
-      "total_pnl_bps": -261133
+      "total_pnl_bps": -323123
     },
     "safe_cohort": {
-      "count": 5406,
-      "resolved_count": 3489,
-      "loss_flagged_count": 49,
-      "win_count": 4958,
-      "win_rate": 0.9171291157972623,
-      "avg_pnl_bps": -48.268960414354424,
-      "avg_pnl_pct": "-0.48%",
+      "count": 5550,
+      "resolved_count": 3885,
+      "loss_flagged_count": 55,
+      "win_count": 4944,
+      "win_rate": 0.8908108108108108,
+      "avg_pnl_bps": -57.35927927927928,
+      "avg_pnl_pct": "-0.57%",
       "median_pnl_bps": 0,
       "worst_pnl_bps": -5000,
       "best_pnl_bps": 613,
-      "total_pnl_bps": -260942
+      "total_pnl_bps": -318344
     },
     "risky_cohort": {
-      "count": 37,
-      "resolved_count": 7,
+      "count": 41,
+      "resolved_count": 11,
       "loss_flagged_count": 0,
-      "win_count": 35,
-      "win_rate": 0.9459459459459459,
-      "avg_pnl_bps": -5.162162162162162,
-      "avg_pnl_pct": "-0.05%",
-      "median_pnl_bps": 0,
-      "worst_pnl_bps": -268,
+      "win_count": 10,
+      "win_rate": 0.24390243902439024,
+      "avg_pnl_bps": -116.5609756097561,
+      "avg_pnl_pct": "-1.17%",
+      "median_pnl_bps": -148,
+      "worst_pnl_bps": -416,
       "best_pnl_bps": 267,
-      "total_pnl_bps": -191
+      "total_pnl_bps": -4779
     }
   },
   "real_summary": {
-    "count": 7,
+    "count": 8,
     "resolved_count": 2,
     "loss_flagged_count": 0,
-    "win_count": 5,
-    "win_rate": 0.7142857142857143,
-    "avg_pnl_bps": -14,
-    "avg_pnl_pct": "-0.14%",
-    "median_pnl_bps": 0,
+    "win_count": 1,
+    "win_rate": 0.125,
+    "avg_pnl_bps": -13,
+    "avg_pnl_pct": "-0.13%",
+    "median_pnl_bps": -1,
     "worst_pnl_bps": -99,
     "best_pnl_bps": 4,
-    "total_pnl_bps": -98
+    "total_pnl_bps": -104
   }
 }

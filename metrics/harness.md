@@ -1,19 +1,22 @@
 # Wallet harness
 
-_Updated: 2026-05-23T23:27:33.396Z_
+_Updated: 2026-05-25T00:08:23.249Z_
 
 Bounded-delegation signer simulation. For every strategy intent, the harness re-checks pool state at "would-sign time," decides sign/no-sign against intent gates, and logs the would-be transaction payload. **No keys, no wallet, no broadcast.** Phase 4 swaps the boolean for a real signer.
 
 ## Summary
 
-- harnessed intents: **19**
-- would-sign: **19** · would-skip: **0**
+- harnessed intents: **22**
+- would-sign: **22** · would-skip: **0**
 - sign rate: **100.0%**
 
 ## Recent (last 30)
 
 | intent | protocol | pool | live decision | live riskBps | Δ from intent | harness verdict |
 |---|---|---|---|---|---|---|
+| `passive-lp-kumbaya-2026-05-25-002` | kumbaya | `0x5fB29184…` | ALLOW | 2000 | +0 | ✓ sign |
+| `passive-lp-kumbaya-2026-05-25-003` | kumbaya | `0xA8275D88…` | ALLOW | 2000 | +0 | ✓ sign |
+| `passive-lp-kumbaya-2026-05-25-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 0 | +0 | ✓ sign |
 | `passive-lp-kumbaya-2026-05-23-003` | kumbaya | `0xA8275D88…` | ALLOW | 2000 | +0 | ✓ sign |
 | `passive-lp-kumbaya-2026-05-23-002` | kumbaya | `0x5fB29184…` | ALLOW | 2000 | +0 | ✓ sign |
 | `passive-lp-kumbaya-2026-05-23-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 0 | +0 | ✓ sign |
