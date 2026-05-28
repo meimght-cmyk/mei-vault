@@ -1,20 +1,20 @@
 # Phase 4 readiness
 
-_Updated: 2026-05-27T01:28:51.835Z_
+_Updated: 2026-05-28T02:00:47.528Z_
 
 Phase 4 (vault contract deploy) unlocks only after ≥90 days of probe data **with** the safety floors holding. This dashboard is the public scorecard.
 
 ## Where we are
 
-- 90-day clock started: **2026-05-09** (day 18 of 90)
-- Earliest unlock: **2026-08-07** (71 days away)
-- Probe rows collected: **10,674**
-- Outcome patches resolved: **6,289**
+- 90-day clock started: **2026-05-09** (day 19 of 90)
+- Earliest unlock: **2026-08-07** (70 days away)
+- Probe rows collected: **11,274**
+- Outcome patches resolved: **6,949**
 
 ## Phase 4 floors (7-day horizon)
 
-- ✅ **ALLOW false-negative rate**: 1.37% (n=4594) — floor ≤ 2%
-- ❌ **BLOCK precision**: 0.00% (n=171) — floor ≥ 70%
+- ✅ **ALLOW false-negative rate**: 1.68% (n=4943) — floor ≤ 2%
+- ❌ **BLOCK precision**: 0.00% (n=198) — floor ≥ 70%
 
 **Overall: ❌ floors not yet met**
 
@@ -23,9 +23,9 @@ Phase 4 (vault contract deploy) unlocks only after ≥90 days of probe data **wi
 ### 7-day horizon
 | cohort | ALLOW | WARN | BLOCK | ERROR |
 |---|---|---|---|---|
-| safe  |   n=4576  loss= 63  rate=1.38% |   n=  44  loss=  2  rate=4.55% |   n=   4  loss=  0  rate=0.00% |   n=  15  loss= 10  rate=66.67% |
-| risky |   n=  18  loss=  0  rate=0.00% |   n=1464  loss=  4  rate=0.27% |   n= 167  loss=  0  rate=0.00% |   n=   1  loss=  1  rate=100.00% |
-| **all** | **  n=4594  loss= 63  rate=1.37%** | **  n=1508  loss=  6  rate=0.40%** | **  n= 171  loss=  0  rate=0.00%** | **  n=  16  loss= 11  rate=68.75%** |
+| safe  |   n=4920  loss= 83  rate=1.69% |   n=  51  loss=  2  rate=3.92% |   n=   4  loss=  0  rate=0.00% |   n=  74  loss= 11  rate=14.86% |
+| risky |   n=  23  loss=  0  rate=0.00% |   n=1663  loss=  9  rate=0.54% |   n= 194  loss=  0  rate=0.00% |   n=  20  loss=  5  rate=25.00% |
+| **all** | **  n=4943  loss= 83  rate=1.68%** | **  n=1714  loss= 11  rate=0.64%** | **  n= 198  loss=  0  rate=0.00%** | **  n=  94  loss= 16  rate=17.02%** |
 
 ### 30-day horizon (window opens 2026-06-08)
 | cohort | ALLOW | WARN | BLOCK | ERROR |

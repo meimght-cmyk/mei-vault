@@ -1,6 +1,6 @@
 # Sim-trade P&L
 
-_Updated: 2026-05-27T01:28:51.905Z_
+_Updated: 2026-05-28T02:00:47.604Z_
 
 Conservative simulation of "what would real capital have done if it had followed our signals." No fees assumed — we don't claim ungrounded gains.
 
@@ -20,55 +20,58 @@ These are the strategy intents the system actually produced. Equal-weight $1 per
 
 | intent | protocol | pool | entry decision | age | P&L | label |
 |---|---|---|---|---|---|---|
-| `passive-lp-kumbaya-2026-05-18-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 8.6d | 0.00% | stable/up |
-| `spot-swap-base-2026-05-27-001` | uniswap-v3-base | `0x94bfc057…` | ALLOW | 4.7d | 0.00% | stable/up |
-| `spot-swap-base-2026-05-27-002` | uniswap-v3-base | `0x46880b40…` | ALLOW | 4.7d | 0.00% | stable/up |
-| `passive-lp-kumbaya-2026-05-27-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 18.4d | 0.04% | stable/up |
-| `passive-lp-kumbaya-2026-05-20-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 6d | 0.00% | stable/up |
-| `passive-lp-kumbaya-2026-05-21-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 5d | 0.00% | stable/up |
-| `passive-lp-kumbaya-2026-05-19-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 7d | 0.00% | stable/up |
-| `spot-swap-base-2026-05-26-001` | uniswap-v3-base | `0x94bfc057…` | ALLOW | 0.9d | 0.00% | stable/up |
-| `spot-swap-base-2026-05-26-002` | uniswap-v3-base | `0x46880b40…` | ALLOW | 0.9d | 0.00% | stable/up |
-| `passive-lp-kumbaya-2026-05-26-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 0.9d | 0.03% | stable/up |
-| `passive-lp-kumbaya-2026-05-23-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 2.9d | 0.00% | stable/up |
-| `passive-lp-kumbaya-2026-05-25-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 1.9d | 0.00% | stable/up |
-| `spot-swap-base-2026-05-25-002` | uniswap-v3-base | `0x46880b40…` | ALLOW | 1.6d | 0.00% | stable/up |
-| `spot-swap-base-2026-05-25-001` | uniswap-v3-base | `0x94bfc057…` | ALLOW | 1.6d | 0.00% | stable/up |
-| `passive-lp-kumbaya-2026-05-22-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 3.9d | 0.00% | stable/up |
-| `passive-lp-kumbaya-2026-05-08-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 17.3d | -0.99% | TVL drift down |
+| `passive-lp-kumbaya-2026-05-18-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 9.6d | 0.00% | stable/up |
+| `spot-swap-base-2026-05-27-001` | uniswap-v3-base | `0x94bfc057…` | ALLOW | 0.9d | 0.00% | stable/up |
+| `spot-swap-base-2026-05-27-002` | uniswap-v3-base | `0x46880b40…` | ALLOW | 0.9d | 0.00% | stable/up |
+| `passive-lp-kumbaya-2026-05-27-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 0.9d | 0.00% | stable/up |
+| `passive-lp-kumbaya-2026-05-20-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 7d | 0.00% | stable/up |
+| `passive-lp-kumbaya-2026-05-21-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 6d | 0.00% | stable/up |
+| `passive-lp-kumbaya-2026-05-19-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 8d | 0.00% | stable/up |
+| `spot-swap-base-2026-05-26-001` | uniswap-v3-base | `0x94bfc057…` | ALLOW | 1.9d | 0.00% | stable/up |
+| `spot-swap-base-2026-05-26-002` | uniswap-v3-base | `0x46880b40…` | ALLOW | 1.9d | 0.00% | stable/up |
+| `passive-lp-kumbaya-2026-05-26-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 1.9d | 0.03% | stable/up |
+| `spot-swap-base-2026-05-28-002` | uniswap-v3-base | `0x46880b40…` | ALLOW | 5.7d | 0.00% | stable/up |
+| `passive-lp-kumbaya-2026-05-28-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 19.4d | 0.04% | stable/up |
+| `spot-swap-base-2026-05-28-001` | uniswap-v3-base | `0x94bfc057…` | ALLOW | 5.7d | 0.00% | stable/up |
+| `passive-lp-kumbaya-2026-05-23-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 3.9d | 0.00% | stable/up |
+| `passive-lp-kumbaya-2026-05-25-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 2.9d | 0.00% | stable/up |
+| `spot-swap-base-2026-05-25-002` | uniswap-v3-base | `0x46880b40…` | ALLOW | 2.7d | 0.00% | stable/up |
+| `spot-swap-base-2026-05-25-001` | uniswap-v3-base | `0x94bfc057…` | ALLOW | 2.7d | 0.00% | stable/up |
+| `passive-lp-kumbaya-2026-05-22-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 5d | 0.00% | stable/up |
+| `passive-lp-kumbaya-2026-05-08-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 18.4d | -0.99% | TVL drift down |
 
-- count: **16** (4 resolved at 7d, 0 loss-flagged)
-- avg P&L per entry: **-0.06%**
+- count: **19** (5 resolved at 7d, 0 loss-flagged)
+- avg P&L per entry: **-0.05%**
 - median P&L per entry: **0.00%**
-- win rate (P&L ≥ 0): **93.8%** (15 wins)
+- win rate (P&L ≥ 0): **94.7%** (18 wins)
 - worst entry: -0.99% · best entry: 0.04%
-- equal-weight portfolio: starting $1 per entry → **-0.06% return**
+- equal-weight portfolio: starting $1 per entry → **-0.05% return**
 
 ## Hypothetical: every ALLOW probe as an entry
 
 Counterfactual portfolio — if we'd been more aggressive and entered every ALLOW signal at every probe cycle.
 
 ### All entries
-- count: **5885** (4694 resolved at 7d, 63 loss-flagged)
-- avg P&L per entry: **-0.56%**
+- count: **6031** (4979 resolved at 7d, 83 loss-flagged)
+- avg P&L per entry: **-0.80%**
 - median P&L per entry: **0.00%**
-- win rate (P&L ≥ 0): **91.8%** (5401 wins)
+- win rate (P&L ≥ 0): **91.1%** (5495 wins)
 - worst entry: -50.00% · best entry: 6.13%
-- equal-weight portfolio: starting $1 per entry → **-0.56% return**
+- equal-weight portfolio: starting $1 per entry → **-0.80% return**
 
 ### Safe cohort only
-- count: **5836** (4675 resolved at 7d, 63 loss-flagged)
-- avg P&L per entry: **-0.57%**
+- count: **5978** (4955 resolved at 7d, 83 loss-flagged)
+- avg P&L per entry: **-0.80%**
 - median P&L per entry: **0.00%**
-- win rate (P&L ≥ 0): **91.8%** (5356 wins)
+- win rate (P&L ≥ 0): **91.1%** (5446 wins)
 - worst entry: -50.00% · best entry: 6.13%
-- equal-weight portfolio: starting $1 per entry → **-0.57% return**
+- equal-weight portfolio: starting $1 per entry → **-0.80% return**
 
 ### Risky cohort only
-- count: **49** (19 resolved at 7d, 0 loss-flagged)
+- count: **53** (24 resolved at 7d, 0 loss-flagged)
 - avg P&L per entry: **-0.04%**
 - median P&L per entry: **0.00%**
-- win rate (P&L ≥ 0): **91.8%** (45 wins)
+- win rate (P&L ≥ 0): **92.5%** (49 wins)
 - worst entry: -2.68% · best entry: 2.67%
 - equal-weight portfolio: starting $1 per entry → **-0.04% return**
 
