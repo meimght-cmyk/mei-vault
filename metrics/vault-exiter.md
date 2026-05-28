@@ -1,14 +1,14 @@
 # Vault-exiter
 
-_Updated: 2026-05-28T05:07:06.002Z_
+_Updated: 2026-05-28T05:12:17.912Z_
 
 Polling guardian for Phase 3. Watches every harness-confirmed position and polls `/api/score` at ~60s cadence. On a degradation transition (ALLOW→WARN/BLOCK, decision→ERROR, or +3000 bps risk jump), it emits an exit event with a would-be-tx payload. **No signing, no broadcast** — Phase 4 swaps the boolean for a real bounded-delegation withdraw.
 
 ## Current state
 
-- open positions: **11**
-- positions exited: **32**
-- total exit events logged: **32**
+- open positions: **8**
+- positions exited: **35**
+- total exit events logged: **35**
 
 ## Trigger rules
 
@@ -23,6 +23,9 @@ Polling guardian for Phase 3. Watches every harness-confirmed position and polls
 
 | ts | intent | protocol | entry → current | drift | trigger |
 |---|---|---|---|---|---|
+| 2026-05-28 05:12:17 | `spot-swap-base-2026-05-28-001` | uniswap-v3-base | ALLOW/0 → ERROR/-1 | -1 | became_error |
+| 2026-05-28 05:12:17 | `spot-swap-base-2026-05-28-003` | uniswap-v3-base | ALLOW/500 → ERROR/-1 | -501 | became_error |
+| 2026-05-28 05:12:15 | `passive-lp-kumbaya-2026-05-28-003` | kumbaya | ALLOW/2000 → ERROR/-1 | -2001 | became_error |
 | 2026-05-27 10:49:35 | `spot-swap-base-2026-05-27-002` | uniswap-v3-base | ALLOW/0 → ERROR/-1 | -1 | became_error |
 | 2026-05-27 10:49:35 | `spot-swap-base-2026-05-27-003` | uniswap-v3-base | ALLOW/500 → ERROR/-1 | -501 | became_error |
 | 2026-05-27 04:42:13 | `spot-swap-base-2026-05-26-002` | uniswap-v3-base | ALLOW/0 → ERROR/-1 | -1 | became_error |
@@ -50,9 +53,6 @@ Polling guardian for Phase 3. Watches every harness-confirmed position and polls
 | 2026-05-22 08:27:30 | `passive-lp-kumbaya-2026-05-21-002` | kumbaya | ALLOW/2000 → ERROR/-1 | -2001 | became_error |
 | 2026-05-22 02:20:38 | `passive-lp-kumbaya-2026-05-19-003` | kumbaya | ALLOW/2000 → ERROR/-1 | -2001 | became_error |
 | 2026-05-22 02:20:38 | `passive-lp-kumbaya-2026-05-19-001` | kumbaya | ALLOW/0 → ERROR/-1 | -1 | became_error |
-| 2026-05-22 02:20:35 | `passive-lp-kumbaya-2026-05-21-003` | kumbaya | ALLOW/2000 → ERROR/-1 | -2001 | became_error |
-| 2026-05-22 02:20:34 | `passive-lp-kumbaya-2026-05-21-001` | kumbaya | ALLOW/0 → ERROR/-1 | -1 | became_error |
-| 2026-05-22 02:20:34 | `passive-lp-kumbaya-2026-05-20-001` | kumbaya | ALLOW/0 → ERROR/-1 | -1 | became_error |
 
 ## How to read this
 
