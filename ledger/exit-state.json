@@ -3,7 +3,7 @@
     "intent_id": "passive-lp-kumbaya-2026-05-18-002",
     "last_decision": "ALLOW",
     "last_riskBps": 2000,
-    "last_polled_at": "2026-05-29T01:58:30.549Z",
+    "last_polled_at": "2026-05-29T02:03:38.120Z",
     "status": "OPEN"
   },
   "passive-lp-kumbaya-2026-05-18-003": {
@@ -17,7 +17,7 @@
     "intent_id": "passive-lp-kumbaya-2026-05-18-001",
     "last_decision": "ALLOW",
     "last_riskBps": 0,
-    "last_polled_at": "2026-05-29T01:58:31.662Z",
+    "last_polled_at": "2026-05-29T02:03:39.194Z",
     "status": "OPEN"
   },
   "passive-lp-kumbaya-2026-05-20-002": {
@@ -220,7 +220,7 @@
     "intent_id": "passive-lp-kumbaya-2026-05-27-001",
     "last_decision": "ALLOW",
     "last_riskBps": 0,
-    "last_polled_at": "2026-05-29T01:58:32.784Z",
+    "last_polled_at": "2026-05-29T02:03:40.297Z",
     "status": "OPEN"
   },
   "passive-lp-kumbaya-2026-05-27-003": {
@@ -234,7 +234,7 @@
     "intent_id": "passive-lp-kumbaya-2026-05-27-002",
     "last_decision": "ALLOW",
     "last_riskBps": 2000,
-    "last_polled_at": "2026-05-29T01:58:33.889Z",
+    "last_polled_at": "2026-05-29T02:03:41.503Z",
     "status": "OPEN"
   },
   "spot-swap-base-2026-05-27-003": {
@@ -260,17 +260,17 @@
   },
   "passive-lp-kumbaya-2026-05-28-001": {
     "intent_id": "passive-lp-kumbaya-2026-05-28-001",
-    "last_decision": "ALLOW",
-    "last_riskBps": 0,
-    "last_polled_at": "2026-05-29T01:58:34.985Z",
-    "status": "OPEN"
+    "last_decision": "ERROR",
+    "last_riskBps": -1,
+    "last_polled_at": "2026-05-29T02:03:42.006Z",
+    "status": "EXITED"
   },
   "passive-lp-kumbaya-2026-05-28-002": {
     "intent_id": "passive-lp-kumbaya-2026-05-28-002",
-    "last_decision": "ALLOW",
-    "last_riskBps": 2000,
-    "last_polled_at": "2026-05-29T01:58:36.065Z",
-    "status": "OPEN"
+    "last_decision": "ERROR",
+    "last_riskBps": -1,
+    "last_polled_at": "2026-05-29T02:03:42.510Z",
+    "status": "EXITED"
   },
   "passive-lp-kumbaya-2026-05-28-003": {
     "intent_id": "passive-lp-kumbaya-2026-05-28-003",
