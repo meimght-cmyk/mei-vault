@@ -386,16 +386,16 @@
   },
   "passive-lp-kumbaya-2026-05-31-001": {
     "intent_id": "passive-lp-kumbaya-2026-05-31-001",
-    "last_decision": "ALLOW",
-    "last_riskBps": 0,
-    "last_polled_at": "2026-06-01T14:26:55.155Z",
-    "status": "OPEN"
+    "last_decision": "ERROR",
+    "last_riskBps": -1,
+    "last_polled_at": "2026-06-01T14:32:21.278Z",
+    "status": "EXITED"
   },
   "passive-lp-kumbaya-2026-05-31-002": {
     "intent_id": "passive-lp-kumbaya-2026-05-31-002",
     "last_decision": "ALLOW",
     "last_riskBps": 2000,
-    "last_polled_at": "2026-06-01T14:26:56.621Z",
+    "last_polled_at": "2026-06-01T14:32:22.849Z",
     "status": "OPEN"
   },
   "passive-lp-kumbaya-2026-05-31-003": {
@@ -430,42 +430,42 @@
     "intent_id": "passive-lp-kumbaya-2026-06-01-003",
     "last_decision": "ALLOW",
     "last_riskBps": 2000,
-    "last_polled_at": "2026-06-01T14:26:47.992Z",
+    "last_polled_at": "2026-06-01T14:31:59.729Z",
     "status": "OPEN"
   },
   "passive-lp-kumbaya-2026-06-01-002": {
     "intent_id": "passive-lp-kumbaya-2026-06-01-002",
     "last_decision": "ALLOW",
     "last_riskBps": 2000,
-    "last_polled_at": "2026-06-01T14:26:49.432Z",
+    "last_polled_at": "2026-06-01T14:32:01.494Z",
     "status": "OPEN"
   },
   "passive-lp-kumbaya-2026-06-01-001": {
     "intent_id": "passive-lp-kumbaya-2026-06-01-001",
     "last_decision": "ALLOW",
     "last_riskBps": 0,
-    "last_polled_at": "2026-06-01T14:26:50.808Z",
+    "last_polled_at": "2026-06-01T14:32:03.061Z",
     "status": "OPEN"
   },
   "spot-swap-base-2026-06-01-001": {
     "intent_id": "spot-swap-base-2026-06-01-001",
     "last_decision": "ALLOW",
     "last_riskBps": 0,
-    "last_polled_at": "2026-06-01T14:26:51.999Z",
+    "last_polled_at": "2026-06-01T14:32:04.064Z",
     "status": "OPEN"
   },
   "spot-swap-base-2026-06-01-003": {
     "intent_id": "spot-swap-base-2026-06-01-003",
     "last_decision": "ALLOW",
     "last_riskBps": 500,
-    "last_polled_at": "2026-06-01T14:26:52.853Z",
+    "last_polled_at": "2026-06-01T14:32:04.919Z",
     "status": "OPEN"
   },
   "spot-swap-base-2026-06-01-002": {
     "intent_id": "spot-swap-base-2026-06-01-002",
     "last_decision": "ALLOW",
     "last_riskBps": 0,
-    "last_polled_at": "2026-06-01T14:26:53.756Z",
+    "last_polled_at": "2026-06-01T14:32:05.772Z",
     "status": "OPEN"
   }
 }
