@@ -1,6 +1,6 @@
 # Sim-trade P&L
 
-_Updated: 2026-06-04T05:09:30.927Z_
+_Updated: 2026-06-05T05:36:10.965Z_
 
 Conservative simulation of "what would real capital have done if it had followed our signals." No fees assumed — we don't claim ungrounded gains.
 
@@ -20,51 +20,54 @@ These are the strategy intents the system actually produced. Equal-weight $1 per
 
 | intent | protocol | pool | entry decision | age | P&L | label |
 |---|---|---|---|---|---|---|
-| `spot-swap-base-2026-05-29-002` | uniswap-v3-base | `0x46880b40…` | ALLOW | 6d | 0.00% | stable/up |
-| `passive-lp-kumbaya-2026-05-29-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 6d | 0.00% | stable/up |
-| `spot-swap-base-2026-05-29-001` | uniswap-v3-base | `0x94bfc057…` | ALLOW | 6d | 0.00% | stable/up |
-| `passive-lp-kumbaya-2026-05-18-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 16.7d | 0.00% | stable/up |
-| `spot-swap-base-2026-05-27-001` | uniswap-v3-base | `0x94bfc057…` | ALLOW | 8d | 0.00% | stable/up |
-| `spot-swap-base-2026-05-27-002` | uniswap-v3-base | `0x46880b40…` | ALLOW | 8d | 0.00% | stable/up |
-| `passive-lp-kumbaya-2026-05-27-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 8d | 0.00% | stable/up |
-| `passive-lp-kumbaya-2026-05-20-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 14.1d | 0.00% | stable/up |
-| `passive-lp-kumbaya-2026-05-21-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 13.1d | 0.00% | stable/up |
-| `passive-lp-kumbaya-2026-05-19-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 15.2d | 0.00% | stable/up |
-| `spot-swap-base-2026-06-01-002` | uniswap-v3-base | `0x46880b40…` | ALLOW | 2.9d | 0.00% | stable/up |
-| `passive-lp-kumbaya-2026-06-01-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 2.9d | 0.00% | stable/up |
-| `spot-swap-base-2026-06-01-001` | uniswap-v3-base | `0x94bfc057…` | ALLOW | 2.9d | 0.00% | stable/up |
-| `spot-swap-base-2026-05-26-001` | uniswap-v3-base | `0x94bfc057…` | ALLOW | 9d | 0.00% | stable/up |
-| `spot-swap-base-2026-05-26-002` | uniswap-v3-base | `0x46880b40…` | ALLOW | 9d | 0.00% | stable/up |
-| `passive-lp-kumbaya-2026-05-26-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 9d | 0.03% | stable/up |
-| `spot-swap-base-2026-05-28-002` | uniswap-v3-base | `0x46880b40…` | ALLOW | 7d | 0.00% | stable/up |
-| `passive-lp-kumbaya-2026-05-28-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 7d | 0.00% | stable/up |
-| `spot-swap-base-2026-05-28-001` | uniswap-v3-base | `0x94bfc057…` | ALLOW | 7d | 0.00% | stable/up |
-| `spot-swap-base-2026-06-04-001` | uniswap-v3-base | `0x94bfc057…` | ALLOW | 12.9d | 0.00% | stable/up |
-| `spot-swap-base-2026-06-04-002` | uniswap-v3-base | `0x46880b40…` | ALLOW | 12.9d | 0.00% | stable/up |
-| `passive-lp-kumbaya-2026-06-04-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 26.5d | 0.04% | stable/up |
-| `passive-lp-kumbaya-2026-05-23-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 11.1d | 0.00% | stable/up |
-| `spot-swap-base-2026-06-03-001` | uniswap-v3-base | `0x94bfc057…` | ALLOW | 0.9d | 0.00% | stable/up |
-| `passive-lp-kumbaya-2026-06-03-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 0.9d | 0.00% | stable/up |
-| `spot-swap-base-2026-06-03-002` | uniswap-v3-base | `0x46880b40…` | ALLOW | 0.9d | 0.00% | stable/up |
-| `spot-swap-base-2026-06-02-001` | uniswap-v3-base | `0x94bfc057…` | ALLOW | 1.9d | 0.00% | stable/up |
-| `passive-lp-kumbaya-2026-06-02-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 1.9d | 0.00% | stable/up |
-| `spot-swap-base-2026-06-02-002` | uniswap-v3-base | `0x46880b40…` | ALLOW | 1.9d | 0.00% | stable/up |
-| `passive-lp-kumbaya-2026-05-25-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 10.1d | 0.00% | stable/up |
-| `spot-swap-base-2026-05-25-002` | uniswap-v3-base | `0x46880b40…` | ALLOW | 9.8d | 0.00% | stable/up |
-| `spot-swap-base-2026-05-25-001` | uniswap-v3-base | `0x94bfc057…` | ALLOW | 9.8d | 0.00% | stable/up |
-| `passive-lp-kumbaya-2026-05-22-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 12.1d | 0.00% | stable/up |
-| `spot-swap-base-2026-05-31-001` | uniswap-v3-base | `0x94bfc057…` | ALLOW | 3.9d | 0.00% | stable/up |
-| `passive-lp-kumbaya-2026-05-31-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 3.9d | 0.00% | stable/up |
-| `spot-swap-base-2026-05-31-002` | uniswap-v3-base | `0x46880b40…` | ALLOW | 3.9d | 0.00% | stable/up |
-| `passive-lp-kumbaya-2026-05-08-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 25.5d | -0.99% | TVL drift down |
-| `spot-swap-base-2026-05-30-001` | uniswap-v3-base | `0x94bfc057…` | ALLOW | 5d | 0.00% | stable/up |
-| `passive-lp-kumbaya-2026-05-30-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 5d | 0.00% | stable/up |
-| `spot-swap-base-2026-05-30-002` | uniswap-v3-base | `0x46880b40…` | ALLOW | 5d | 0.00% | stable/up |
+| `spot-swap-base-2026-05-29-002` | uniswap-v3-base | `0x46880b40…` | ALLOW | 7d | 0.00% | stable/up |
+| `passive-lp-kumbaya-2026-05-29-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 7d | 0.00% | stable/up |
+| `spot-swap-base-2026-05-29-001` | uniswap-v3-base | `0x94bfc057…` | ALLOW | 7d | 0.00% | stable/up |
+| `passive-lp-kumbaya-2026-05-18-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 17.7d | 0.00% | stable/up |
+| `spot-swap-base-2026-05-27-001` | uniswap-v3-base | `0x94bfc057…` | ALLOW | 9d | 0.00% | stable/up |
+| `spot-swap-base-2026-05-27-002` | uniswap-v3-base | `0x46880b40…` | ALLOW | 9d | 0.00% | stable/up |
+| `passive-lp-kumbaya-2026-05-27-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 9d | 0.00% | stable/up |
+| `passive-lp-kumbaya-2026-05-20-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 15.2d | 0.00% | stable/up |
+| `passive-lp-kumbaya-2026-05-21-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 14.1d | 0.00% | stable/up |
+| `passive-lp-kumbaya-2026-05-19-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 16.2d | 0.00% | stable/up |
+| `spot-swap-base-2026-06-01-002` | uniswap-v3-base | `0x46880b40…` | ALLOW | 3.9d | 0.00% | stable/up |
+| `passive-lp-kumbaya-2026-06-01-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 3.9d | 0.00% | stable/up |
+| `spot-swap-base-2026-06-01-001` | uniswap-v3-base | `0x94bfc057…` | ALLOW | 3.9d | 0.00% | stable/up |
+| `spot-swap-base-2026-05-26-001` | uniswap-v3-base | `0x94bfc057…` | ALLOW | 10.1d | 0.00% | stable/up |
+| `spot-swap-base-2026-05-26-002` | uniswap-v3-base | `0x46880b40…` | ALLOW | 10.1d | 0.00% | stable/up |
+| `passive-lp-kumbaya-2026-05-26-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 10.1d | 0.03% | stable/up |
+| `spot-swap-base-2026-05-28-002` | uniswap-v3-base | `0x46880b40…` | ALLOW | 8d | 0.00% | stable/up |
+| `passive-lp-kumbaya-2026-05-28-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 8d | 0.00% | stable/up |
+| `spot-swap-base-2026-05-28-001` | uniswap-v3-base | `0x94bfc057…` | ALLOW | 8d | 0.00% | stable/up |
+| `spot-swap-base-2026-06-04-001` | uniswap-v3-base | `0x94bfc057…` | ALLOW | 0.9d | 0.00% | stable/up |
+| `spot-swap-base-2026-06-04-002` | uniswap-v3-base | `0x46880b40…` | ALLOW | 0.9d | 0.00% | stable/up |
+| `passive-lp-kumbaya-2026-06-04-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 0.9d | 0.00% | stable/up |
+| `passive-lp-kumbaya-2026-05-23-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 12.1d | 0.00% | stable/up |
+| `spot-swap-base-2026-06-03-001` | uniswap-v3-base | `0x94bfc057…` | ALLOW | 1.9d | 0.00% | stable/up |
+| `passive-lp-kumbaya-2026-06-03-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 1.9d | 0.00% | stable/up |
+| `spot-swap-base-2026-06-03-002` | uniswap-v3-base | `0x46880b40…` | ALLOW | 1.9d | 0.00% | stable/up |
+| `spot-swap-base-2026-06-02-001` | uniswap-v3-base | `0x94bfc057…` | ALLOW | 2.9d | 0.00% | stable/up |
+| `passive-lp-kumbaya-2026-06-02-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 2.9d | 0.00% | stable/up |
+| `spot-swap-base-2026-06-02-002` | uniswap-v3-base | `0x46880b40…` | ALLOW | 2.9d | 0.00% | stable/up |
+| `passive-lp-kumbaya-2026-05-25-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 11.1d | 0.00% | stable/up |
+| `spot-swap-base-2026-05-25-002` | uniswap-v3-base | `0x46880b40…` | ALLOW | 10.8d | 0.00% | stable/up |
+| `spot-swap-base-2026-05-25-001` | uniswap-v3-base | `0x94bfc057…` | ALLOW | 10.8d | 0.00% | stable/up |
+| `passive-lp-kumbaya-2026-05-22-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 13.1d | 0.00% | stable/up |
+| `spot-swap-base-2026-06-05-001` | uniswap-v3-base | `0x94bfc057…` | ALLOW | 13.9d | 0.00% | stable/up |
+| `spot-swap-base-2026-06-05-002` | uniswap-v3-base | `0x46880b40…` | ALLOW | 13.9d | 0.00% | stable/up |
+| `passive-lp-kumbaya-2026-06-05-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 27.5d | 0.04% | stable/up |
+| `spot-swap-base-2026-05-31-001` | uniswap-v3-base | `0x94bfc057…` | ALLOW | 5d | 0.00% | stable/up |
+| `passive-lp-kumbaya-2026-05-31-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 5d | 0.00% | stable/up |
+| `spot-swap-base-2026-05-31-002` | uniswap-v3-base | `0x46880b40…` | ALLOW | 5d | 0.00% | stable/up |
+| `passive-lp-kumbaya-2026-05-08-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 26.5d | -0.99% | TVL drift down |
+| `spot-swap-base-2026-05-30-001` | uniswap-v3-base | `0x94bfc057…` | ALLOW | 6d | 0.00% | stable/up |
+| `passive-lp-kumbaya-2026-05-30-001` | kumbaya | `0x6bD9eeF2…` | ALLOW | 6d | 0.00% | stable/up |
+| `spot-swap-base-2026-05-30-002` | uniswap-v3-base | `0x46880b40…` | ALLOW | 6d | 0.00% | stable/up |
 
-- count: **40** (22 resolved at 7d, 0 loss-flagged)
+- count: **43** (25 resolved at 7d, 0 loss-flagged)
 - avg P&L per entry: **-0.02%**
 - median P&L per entry: **0.00%**
-- win rate (P&L ≥ 0): **97.5%** (39 wins)
+- win rate (P&L ≥ 0): **97.7%** (42 wins)
 - worst entry: -0.99% · best entry: 0.04%
 - equal-weight portfolio: starting $1 per entry → **-0.02% return**
 
@@ -73,28 +76,28 @@ These are the strategy intents the system actually produced. Equal-weight $1 per
 Counterfactual portfolio — if we'd been more aggressive and entered every ALLOW signal at every probe cycle.
 
 ### All entries
-- count: **7019** (6057 resolved at 7d, 531 loss-flagged)
-- avg P&L per entry: **-4.21%**
+- count: **7157** (6208 resolved at 7d, 581 loss-flagged)
+- avg P&L per entry: **-4.52%**
 - median P&L per entry: **0.00%**
-- win rate (P&L ≥ 0): **82.7%** (5805 wins)
+- win rate (P&L ≥ 0): **82.9%** (5933 wins)
 - worst entry: -50.00% · best entry: 8.01%
-- equal-weight portfolio: starting $1 per entry → **-4.21% return**
+- equal-weight portfolio: starting $1 per entry → **-4.52% return**
 
 ### Safe cohort only
-- count: **6939** (6004 resolved at 7d, 531 loss-flagged)
-- avg P&L per entry: **-4.25%**
+- count: **7073** (6151 resolved at 7d, 581 loss-flagged)
+- avg P&L per entry: **-4.57%**
 - median P&L per entry: **0.00%**
-- win rate (P&L ≥ 0): **82.6%** (5731 wins)
+- win rate (P&L ≥ 0): **82.8%** (5855 wins)
 - worst entry: -50.00% · best entry: 6.13%
-- equal-weight portfolio: starting $1 per entry → **-4.25% return**
+- equal-weight portfolio: starting $1 per entry → **-4.57% return**
 
 ### Risky cohort only
-- count: **80** (53 resolved at 7d, 0 loss-flagged)
-- avg P&L per entry: **-0.27%**
+- count: **84** (57 resolved at 7d, 0 loss-flagged)
+- avg P&L per entry: **-0.26%**
 - median P&L per entry: **0.00%**
-- win rate (P&L ≥ 0): **92.5%** (74 wins)
+- win rate (P&L ≥ 0): **92.9%** (78 wins)
 - worst entry: -20.00% · best entry: 8.01%
-- equal-weight portfolio: starting $1 per entry → **-0.27% return**
+- equal-weight portfolio: starting $1 per entry → **-0.26% return**
 
 ## How to read this
 
