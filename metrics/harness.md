@@ -1,6 +1,6 @@
 # Wallet harness
 
-_Updated: 2026-06-06T06:02:28.935Z_
+_Updated: 2026-06-07T18:08:32.304Z_
 
 Bounded-delegation signer simulation. For every strategy intent, the harness re-checks pool state at "would-sign time," decides sign/no-sign against intent gates, and logs the would-be transaction payload. **No keys, no wallet, no broadcast.** Phase 4 swaps the boolean for a real signer.
 
