@@ -596,10 +596,10 @@
   },
   "spot-swap-base-2026-06-05-001": {
     "intent_id": "spot-swap-base-2026-06-05-001",
-    "last_decision": "ALLOW",
-    "last_riskBps": 0,
-    "last_polled_at": "2026-06-07T17:24:09.066Z",
-    "status": "OPEN"
+    "last_decision": "ERROR",
+    "last_riskBps": -1,
+    "last_polled_at": "2026-06-07T17:29:12.567Z",
+    "status": "EXITED"
   },
   "spot-swap-base-2026-06-05-002": {
     "intent_id": "spot-swap-base-2026-06-05-002",
