@@ -682,36 +682,36 @@
     "intent_id": "spot-swap-base-2026-06-07-001",
     "last_decision": "ALLOW",
     "last_riskBps": 0,
-    "last_polled_at": "2026-06-09T20:33:46.955Z",
+    "last_polled_at": "2026-06-09T20:38:54.965Z",
     "status": "OPEN"
   },
   "spot-swap-base-2026-06-07-003": {
     "intent_id": "spot-swap-base-2026-06-07-003",
     "last_decision": "ALLOW",
     "last_riskBps": 500,
-    "last_polled_at": "2026-06-09T20:33:47.994Z",
+    "last_polled_at": "2026-06-09T20:38:55.951Z",
     "status": "OPEN"
   },
   "spot-swap-base-2026-06-07-002": {
     "intent_id": "spot-swap-base-2026-06-07-002",
     "last_decision": "ALLOW",
     "last_riskBps": 0,
-    "last_polled_at": "2026-06-09T20:33:48.988Z",
+    "last_polled_at": "2026-06-09T20:38:56.896Z",
     "status": "OPEN"
   },
   "passive-lp-kumbaya-2026-06-07-003": {
     "intent_id": "passive-lp-kumbaya-2026-06-07-003",
-    "last_decision": "ALLOW",
-    "last_riskBps": 2000,
-    "last_polled_at": "2026-06-09T20:33:50.256Z",
-    "status": "OPEN"
+    "last_decision": "ERROR",
+    "last_riskBps": -1,
+    "last_polled_at": "2026-06-09T20:38:57.398Z",
+    "status": "EXITED"
   },
   "passive-lp-kumbaya-2026-06-07-002": {
     "intent_id": "passive-lp-kumbaya-2026-06-07-002",
-    "last_decision": "ALLOW",
-    "last_riskBps": 2000,
-    "last_polled_at": "2026-06-09T20:33:51.526Z",
-    "status": "OPEN"
+    "last_decision": "ERROR",
+    "last_riskBps": -1,
+    "last_polled_at": "2026-06-09T20:38:57.901Z",
+    "status": "EXITED"
   },
   "passive-lp-kumbaya-2026-06-07-001": {
     "intent_id": "passive-lp-kumbaya-2026-06-07-001",
@@ -729,10 +729,10 @@
   },
   "spot-swap-base-2026-06-08-002": {
     "intent_id": "spot-swap-base-2026-06-08-002",
-    "last_decision": "ALLOW",
-    "last_riskBps": 0,
-    "last_polled_at": "2026-06-09T20:33:52.619Z",
-    "status": "OPEN"
+    "last_decision": "ERROR",
+    "last_riskBps": -1,
+    "last_polled_at": "2026-06-09T20:38:58.404Z",
+    "status": "EXITED"
   },
   "spot-swap-base-2026-06-08-003": {
     "intent_id": "spot-swap-base-2026-06-08-003",
