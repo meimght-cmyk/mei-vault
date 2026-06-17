@@ -1018,35 +1018,35 @@
     "intent_id": "spot-swap-base-2026-06-16-003",
     "last_decision": "ALLOW",
     "last_riskBps": 500,
-    "last_polled_at": "2026-06-17T03:13:30.399Z",
+    "last_polled_at": "2026-06-17T03:18:43.392Z",
     "status": "OPEN"
   },
   "spot-swap-base-2026-06-16-002": {
     "intent_id": "spot-swap-base-2026-06-16-002",
     "last_decision": "ALLOW",
     "last_riskBps": 0,
-    "last_polled_at": "2026-06-17T03:13:31.253Z",
+    "last_polled_at": "2026-06-17T03:18:44.275Z",
     "status": "OPEN"
   },
   "spot-swap-base-2026-06-16-001": {
     "intent_id": "spot-swap-base-2026-06-16-001",
     "last_decision": "ALLOW",
     "last_riskBps": 0,
-    "last_polled_at": "2026-06-17T03:13:32.093Z",
+    "last_polled_at": "2026-06-17T03:18:45.160Z",
     "status": "OPEN"
   },
   "passive-lp-kumbaya-2026-06-16-001": {
     "intent_id": "passive-lp-kumbaya-2026-06-16-001",
     "last_decision": "ALLOW",
     "last_riskBps": 0,
-    "last_polled_at": "2026-06-17T03:13:33.691Z",
+    "last_polled_at": "2026-06-17T03:18:46.443Z",
     "status": "OPEN"
   },
   "passive-lp-kumbaya-2026-06-16-003": {
     "intent_id": "passive-lp-kumbaya-2026-06-16-003",
     "last_decision": "ALLOW",
     "last_riskBps": 2000,
-    "last_polled_at": "2026-06-17T03:13:34.993Z",
+    "last_polled_at": "2026-06-17T03:18:47.819Z",
     "status": "OPEN"
   },
   "passive-lp-kumbaya-2026-06-16-002": {
@@ -1058,44 +1058,44 @@
   },
   "passive-lp-kumbaya-2026-06-17-002": {
     "intent_id": "passive-lp-kumbaya-2026-06-17-002",
-    "last_decision": "ALLOW",
-    "last_riskBps": 2000,
-    "last_polled_at": "2026-06-17T03:13:36.229Z",
-    "status": "OPEN"
+    "last_decision": "ERROR",
+    "last_riskBps": -1,
+    "last_polled_at": "2026-06-17T03:18:48.322Z",
+    "status": "EXITED"
   },
   "passive-lp-kumbaya-2026-06-17-003": {
     "intent_id": "passive-lp-kumbaya-2026-06-17-003",
-    "last_decision": "ALLOW",
-    "last_riskBps": 2000,
-    "last_polled_at": "2026-06-17T03:13:37.455Z",
-    "status": "OPEN"
+    "last_decision": "ERROR",
+    "last_riskBps": -1,
+    "last_polled_at": "2026-06-17T03:18:48.825Z",
+    "status": "EXITED"
   },
   "passive-lp-kumbaya-2026-06-17-001": {
     "intent_id": "passive-lp-kumbaya-2026-06-17-001",
-    "last_decision": "ALLOW",
-    "last_riskBps": 0,
-    "last_polled_at": "2026-06-17T03:13:38.782Z",
-    "status": "OPEN"
+    "last_decision": "ERROR",
+    "last_riskBps": -1,
+    "last_polled_at": "2026-06-17T03:18:49.327Z",
+    "status": "EXITED"
   },
   "spot-swap-base-2026-06-17-001": {
     "intent_id": "spot-swap-base-2026-06-17-001",
-    "last_decision": "ALLOW",
-    "last_riskBps": 0,
-    "last_polled_at": "2026-06-17T03:13:39.675Z",
-    "status": "OPEN"
+    "last_decision": "ERROR",
+    "last_riskBps": -1,
+    "last_polled_at": "2026-06-17T03:18:49.829Z",
+    "status": "EXITED"
   },
   "spot-swap-base-2026-06-17-002": {
     "intent_id": "spot-swap-base-2026-06-17-002",
-    "last_decision": "ALLOW",
-    "last_riskBps": 0,
-    "last_polled_at": "2026-06-17T03:13:40.537Z",
-    "status": "OPEN"
+    "last_decision": "ERROR",
+    "last_riskBps": -1,
+    "last_polled_at": "2026-06-17T03:18:50.333Z",
+    "status": "EXITED"
   },
   "spot-swap-base-2026-06-17-003": {
     "intent_id": "spot-swap-base-2026-06-17-003",
-    "last_decision": "ALLOW",
-    "last_riskBps": 500,
-    "last_polled_at": "2026-06-17T03:13:41.382Z",
-    "status": "OPEN"
+    "last_decision": "ERROR",
+    "last_riskBps": -1,
+    "last_polled_at": "2026-06-17T03:18:50.837Z",
+    "status": "EXITED"
   }
 }
