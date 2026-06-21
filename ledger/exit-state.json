@@ -1186,7 +1186,7 @@
     "intent_id": "spot-swap-base-2026-06-20-001",
     "last_decision": "ALLOW",
     "last_riskBps": 0,
-    "last_polled_at": "2026-06-21T06:49:04.548Z",
+    "last_polled_at": "2026-06-21T06:54:09.104Z",
     "status": "OPEN"
   },
   "spot-swap-base-2026-06-20-003": {
@@ -1214,7 +1214,7 @@
     "intent_id": "passive-lp-kumbaya-2026-06-20-002",
     "last_decision": "ALLOW",
     "last_riskBps": 2000,
-    "last_polled_at": "2026-06-21T06:49:06.955Z",
+    "last_polled_at": "2026-06-21T06:54:10.558Z",
     "status": "OPEN"
   },
   "passive-lp-kumbaya-2026-06-20-001": {
@@ -1223,5 +1223,47 @@
     "last_riskBps": -1,
     "last_polled_at": "2026-06-20T05:51:21.664Z",
     "status": "EXITED"
+  },
+  "passive-lp-kumbaya-2026-06-21-001": {
+    "intent_id": "passive-lp-kumbaya-2026-06-21-001",
+    "last_decision": "ALLOW",
+    "last_riskBps": 0,
+    "last_polled_at": "2026-06-21T06:54:11.903Z",
+    "status": "OPEN"
+  },
+  "passive-lp-kumbaya-2026-06-21-002": {
+    "intent_id": "passive-lp-kumbaya-2026-06-21-002",
+    "last_decision": "ALLOW",
+    "last_riskBps": 2000,
+    "last_polled_at": "2026-06-21T06:54:13.295Z",
+    "status": "OPEN"
+  },
+  "passive-lp-kumbaya-2026-06-21-003": {
+    "intent_id": "passive-lp-kumbaya-2026-06-21-003",
+    "last_decision": "ALLOW",
+    "last_riskBps": 2000,
+    "last_polled_at": "2026-06-21T06:54:14.591Z",
+    "status": "OPEN"
+  },
+  "spot-swap-base-2026-06-21-002": {
+    "intent_id": "spot-swap-base-2026-06-21-002",
+    "last_decision": "ALLOW",
+    "last_riskBps": 0,
+    "last_polled_at": "2026-06-21T06:54:15.417Z",
+    "status": "OPEN"
+  },
+  "spot-swap-base-2026-06-21-003": {
+    "intent_id": "spot-swap-base-2026-06-21-003",
+    "last_decision": "ALLOW",
+    "last_riskBps": 500,
+    "last_polled_at": "2026-06-21T06:54:16.313Z",
+    "status": "OPEN"
+  },
+  "spot-swap-base-2026-06-21-001": {
+    "intent_id": "spot-swap-base-2026-06-21-001",
+    "last_decision": "ALLOW",
+    "last_riskBps": 0,
+    "last_polled_at": "2026-06-21T06:54:17.191Z",
+    "status": "OPEN"
   }
 }
