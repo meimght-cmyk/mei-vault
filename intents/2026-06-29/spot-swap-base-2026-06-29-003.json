@@ -1,0 +1,38 @@
+{
+  "id": "spot-swap-base-2026-06-29-003",
+  "strategy": "spot-swap-base",
+  "status": "dry-run",
+  "createdAt": "2026-06-29T14:13:38.010Z",
+  "rank": 3,
+  "target": {
+    "protocol": "uniswap-v3-base",
+    "chainId": 84532,
+    "pool": "0x57183717A087d2fe3Ad890873877244c3B96156c",
+    "fee": 100,
+    "auditRiskBps": 500,
+    "liquidity": "unknown"
+  },
+  "position": {
+    "type": "spot-swap",
+    "router": "0x492E6456D9528771018DeB9E87ef7750EF184104",
+    "amountIn": null,
+    "tokenIn": null,
+    "tokenOut": null,
+    "notes": "fill tokenIn/tokenOut/amountIn before signing — operator constructs Universal Router calldata"
+  },
+  "gates": {
+    "protocol_match": true,
+    "chain_match": true,
+    "riskBps_le_threshold": {
+      "value": 500,
+      "threshold": 2000,
+      "pass": true
+    }
+  },
+  "rationale": "rank-3 spot-swap candidate on chain 84532: uniswap-v3-base pool 0x57183717A087d2fe3Ad890873877244c3B96156c riskBps=500 fee=100. Route via Universal Router 0x492E6456D9528771018DeB9E87ef7750EF184104.",
+  "next_steps": [
+    "fill tokenIn, tokenOut, amountIn in this intent",
+    "wallet harness: re-check pool state at would-sign time",
+    "on harness ALLOW: construct Universal Router calldata, route to signer-cli"
+  ]
+}
