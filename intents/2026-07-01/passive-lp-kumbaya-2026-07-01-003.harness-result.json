@@ -1,0 +1,38 @@
+{
+  "intent_id": "passive-lp-kumbaya-2026-07-01-003",
+  "intent_created_at": "2026-07-01T19:45:03.487Z",
+  "intent_target_pool": "0xA8275D88521B346c42dB84D5B760ef4b9E527764",
+  "intent_target_protocol": "kumbaya",
+  "harness_run_at": "2026-07-01T19:47:44.423Z",
+  "preflight": {
+    "decision": "ERROR",
+    "riskBps": -1,
+    "reasons": [],
+    "components": {},
+    "drift_from_intent_riskBps": -2001
+  },
+  "gate_recheck": {
+    "riskBps_le_threshold": {
+      "live": -1,
+      "threshold": 2000,
+      "pass": false
+    },
+    "decision_is_allow": {
+      "live": "ERROR",
+      "pass": false
+    },
+    "overall_pass": false
+  },
+  "would_sign": false,
+  "sign_decision_rationale": "do not sign: live decision=ERROR (need ALLOW); live riskBps=-1 exceeds intent threshold 2000",
+  "prepared_tx": {
+    "protocol": "kumbaya",
+    "chain_id": 4326,
+    "target_pool": "0xA8275D88521B346c42dB84D5B760ef4b9E527764",
+    "fee": 3000,
+    "proposed_action": "passive-LP mint (wide range)",
+    "assumed_size_usd": 1000,
+    "would_call": "positionManager.mint(pool=0xA8275D88521B346c42dB84D5B760ef4b9E527764, fee=3000, tickLower=MIN, tickUpper=MAX, size=$1000)",
+    "notes": "signer-less harness — no calldata constructed, no broadcast. Phase 4 replaces this with real positionManager ABI + signer."
+  }
+}

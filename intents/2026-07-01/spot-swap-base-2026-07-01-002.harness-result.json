@@ -1,0 +1,38 @@
+{
+  "intent_id": "spot-swap-base-2026-07-01-002",
+  "intent_created_at": "2026-07-01T19:45:03.500Z",
+  "intent_target_pool": "0x46880b404CD35c165EDdefF7421019F8dD25F4Ad",
+  "intent_target_protocol": "uniswap-v3-base",
+  "harness_run_at": "2026-07-01T19:48:52.853Z",
+  "preflight": {
+    "decision": "ERROR",
+    "riskBps": -1,
+    "reasons": [],
+    "components": {},
+    "drift_from_intent_riskBps": -1
+  },
+  "gate_recheck": {
+    "riskBps_le_threshold": {
+      "live": -1,
+      "threshold": 2000,
+      "pass": false
+    },
+    "decision_is_allow": {
+      "live": "ERROR",
+      "pass": false
+    },
+    "overall_pass": false
+  },
+  "would_sign": false,
+  "sign_decision_rationale": "do not sign: live decision=ERROR (need ALLOW); live riskBps=-1 exceeds intent threshold 2000",
+  "prepared_tx": {
+    "protocol": "uniswap-v3-base",
+    "chain_id": 84532,
+    "target_pool": "0x46880b404CD35c165EDdefF7421019F8dD25F4Ad",
+    "fee": 3000,
+    "proposed_action": "passive-LP mint (wide range)",
+    "assumed_size_usd": 1000,
+    "would_call": "positionManager.mint(pool=0x46880b404CD35c165EDdefF7421019F8dD25F4Ad, fee=3000, tickLower=MIN, tickUpper=MAX, size=$1000)",
+    "notes": "signer-less harness — no calldata constructed, no broadcast. Phase 4 replaces this with real positionManager ABI + signer."
+  }
+}
