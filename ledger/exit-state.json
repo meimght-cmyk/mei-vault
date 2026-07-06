@@ -1653,10 +1653,10 @@
   },
   "spot-swap-base-2026-07-04-002": {
     "intent_id": "spot-swap-base-2026-07-04-002",
-    "last_decision": "ALLOW",
-    "last_riskBps": 0,
-    "last_polled_at": "2026-07-06T05:22:06.178Z",
-    "status": "OPEN"
+    "last_decision": "ERROR",
+    "last_riskBps": -1,
+    "last_polled_at": "2026-07-06T05:27:15.014Z",
+    "status": "EXITED"
   },
   "spot-swap-base-2026-07-04-001": {
     "intent_id": "spot-swap-base-2026-07-04-001",
@@ -1690,42 +1690,42 @@
     "intent_id": "passive-lp-kumbaya-2026-07-05-002",
     "last_decision": "ALLOW",
     "last_riskBps": 2000,
-    "last_polled_at": "2026-07-06T05:21:59.258Z",
+    "last_polled_at": "2026-07-06T05:27:08.757Z",
     "status": "OPEN"
   },
   "passive-lp-kumbaya-2026-07-05-003": {
     "intent_id": "passive-lp-kumbaya-2026-07-05-003",
     "last_decision": "ALLOW",
     "last_riskBps": 2000,
-    "last_polled_at": "2026-07-06T05:22:00.682Z",
+    "last_polled_at": "2026-07-06T05:27:10.078Z",
     "status": "OPEN"
   },
   "passive-lp-kumbaya-2026-07-05-001": {
     "intent_id": "passive-lp-kumbaya-2026-07-05-001",
     "last_decision": "ALLOW",
     "last_riskBps": 0,
-    "last_polled_at": "2026-07-06T05:22:01.962Z",
+    "last_polled_at": "2026-07-06T05:27:11.457Z",
     "status": "OPEN"
   },
   "spot-swap-base-2026-07-05-001": {
     "intent_id": "spot-swap-base-2026-07-05-001",
     "last_decision": "ALLOW",
     "last_riskBps": 0,
-    "last_polled_at": "2026-07-06T05:22:03.148Z",
+    "last_polled_at": "2026-07-06T05:27:12.533Z",
     "status": "OPEN"
   },
   "spot-swap-base-2026-07-05-002": {
     "intent_id": "spot-swap-base-2026-07-05-002",
     "last_decision": "ALLOW",
     "last_riskBps": 0,
-    "last_polled_at": "2026-07-06T05:22:04.184Z",
+    "last_polled_at": "2026-07-06T05:27:13.573Z",
     "status": "OPEN"
   },
   "spot-swap-base-2026-07-05-003": {
     "intent_id": "spot-swap-base-2026-07-05-003",
     "last_decision": "ALLOW",
     "last_riskBps": 500,
-    "last_polled_at": "2026-07-06T05:22:05.125Z",
+    "last_polled_at": "2026-07-06T05:27:14.510Z",
     "status": "OPEN"
   }
 }
