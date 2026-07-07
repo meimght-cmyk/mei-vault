@@ -1,0 +1,23 @@
+{
+  "vault": "0x5328f7c9b6CE55d1f25c20d903F44d33E8F9B5e6",
+  "target": "0x27F971cb582BF9E50F397e4d29a5C7A34f11faA2",
+  "value": "0",
+  "data": "0x",
+  "intent_id": "spot-swap-base-2026-07-07-003",
+  "source": "wallet-harness",
+  "chainId": 84532,
+  "attestation": {
+    "pool": "0x57183717A087d2fe3Ad890873877244c3B96156c",
+    "riskBps": 500,
+    "decision": "ALLOW",
+    "ts": "2026-07-07T06:39:04.984Z"
+  },
+  "_pending_calldata_construction": {
+    "action": "uniswap-v3-base positionManager.mint (passive-LP, wide range)",
+    "pool": "0x57183717A087d2fe3Ad890873877244c3B96156c",
+    "fee": 100,
+    "tickRange": "wide (MIN..MAX)",
+    "sizeUsd": 1000,
+    "note": "Construct real positionManager.mint calldata with chosen amounts, replace the `data` field, and remove this `_pending_calldata_construction` key before invoking signer-cli sign."
+  }
+}
