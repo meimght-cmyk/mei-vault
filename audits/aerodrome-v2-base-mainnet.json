@@ -1,0 +1,91 @@
+{
+  "protocol": "aerodrome-v2-base",
+  "chainId": 8453,
+  "scannedAt": "2026-07-09T17:50:25.461Z",
+  "blockHeight": 0,
+  "setup": {
+    "factory": "0x420DD381b31aEf6683db6B902084cB0FFECe40Da",
+    "factoryOwner": null,
+    "factoryOwnerKind": "unknown",
+    "router": "0xcF77a3Ba9A5CA399B7c97c74d54e5b1Beb874E43",
+    "poolKind": "uniswap-v2-style (stable/volatile)"
+  },
+  "pools": {
+    "total": 5,
+    "feeDistribution": [
+      {
+        "fee": 0,
+        "count": 5
+      }
+    ],
+    "averageRiskBps": 800,
+    "healthyCount": 3,
+    "deadCount": 0,
+    "perPool": [
+      {
+        "pool": "0xcDAC0d6c6C59727a65F871236188350531885C43",
+        "fee": 0,
+        "tickSpacing": 0,
+        "stable": false,
+        "riskBps": 0,
+        "reasons": [],
+        "liquidity": "unknown",
+        "cardinality": 0,
+        "blockCreated": 0
+      },
+      {
+        "pool": "0x6cDcb1C4A4D1C3C6d054b27AC5B77e89eAFb971d",
+        "fee": 0,
+        "tickSpacing": 0,
+        "stable": false,
+        "riskBps": 2000,
+        "reasons": [
+          "token 0x940181a9…: mint(address,uint256) selector present — supply may be inflated by an admin"
+        ],
+        "liquidity": "unknown",
+        "cardinality": 0,
+        "blockCreated": 0
+      },
+      {
+        "pool": "0x7f670f78B17dEC44d5Ef68a48740b6f8849cc2e6",
+        "fee": 0,
+        "tickSpacing": 0,
+        "stable": false,
+        "riskBps": 2000,
+        "reasons": [
+          "token 0x940181a9…: mint(address,uint256) selector present — supply may be inflated by an admin"
+        ],
+        "liquidity": "unknown",
+        "cardinality": 0,
+        "blockCreated": 0
+      },
+      {
+        "pool": "0x2578365B3dfA7FfE60108e181EFb79FeDdec2319",
+        "fee": 0,
+        "tickSpacing": 0,
+        "stable": false,
+        "riskBps": 0,
+        "reasons": [],
+        "liquidity": "unknown",
+        "cardinality": 0,
+        "blockCreated": 0
+      },
+      {
+        "pool": "0x9c38b55f9A9Aba91BbCEDEb12bf4428f47A6a0B8",
+        "fee": 0,
+        "tickSpacing": 0,
+        "stable": false,
+        "riskBps": 0,
+        "reasons": [],
+        "liquidity": "unknown",
+        "cardinality": 0,
+        "blockCreated": 0
+      }
+    ]
+  },
+  "tokens": {
+    "unique": 0,
+    "survey": []
+  },
+  "findings": []
+}
