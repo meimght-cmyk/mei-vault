@@ -1,0 +1,47 @@
+{
+  "id": "passive-lp-kumbaya-2026-07-11-001",
+  "strategy": "passive-lp-kumbaya",
+  "status": "dry-run",
+  "createdAt": "2026-07-11T10:14:29.557Z",
+  "rank": 1,
+  "target": {
+    "protocol": "kumbaya",
+    "chainId": 4326,
+    "pool": "0x6bD9eeF21c2419FeffafbF4850153A3b3A74A5E1",
+    "fee": 10000,
+    "auditRiskBps": 0,
+    "liquidity": "398134912017050790482087",
+    "cardinality": 100
+  },
+  "position": {
+    "type": "passive-lp",
+    "tickRange": "wide",
+    "sizeUsd": null,
+    "notes": "sizing deferred to capital allocator (Phase 3+)"
+  },
+  "gates": {
+    "protocol_match": true,
+    "chain_match": true,
+    "riskBps_le_threshold": {
+      "value": 0,
+      "threshold": 2000,
+      "pass": true
+    },
+    "cardinality_ok": {
+      "value": 100,
+      "threshold": 10,
+      "pass": true
+    },
+    "liquidity_ok": {
+      "value": "398134912017050790482087",
+      "threshold": "1000000000000000000",
+      "pass": true
+    }
+  },
+  "rationale": "rank-1 kumbaya pool on chain 4326: riskBps=0, liquidity=398134912017050790482087, cardinality=100. Selected from 5 eligible candidate(s) under handoff §7.5 strategy, top-3 diversification.",
+  "next_steps": [
+    "wallet harness: re-check pool state at would-sign time",
+    "on harness ALLOW: route to bounded-delegation signer (Phase 4+)",
+    "on harness WARN/BLOCK: do not sign, log full reasons"
+  ]
+}
