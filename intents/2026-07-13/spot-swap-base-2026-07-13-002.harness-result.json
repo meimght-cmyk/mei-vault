@@ -1,0 +1,48 @@
+{
+  "intent_id": "spot-swap-base-2026-07-13-002",
+  "intent_created_at": "2026-07-13T12:06:52.522Z",
+  "intent_target_pool": "0x46880b404CD35c165EDdefF7421019F8dD25F4Ad",
+  "intent_target_protocol": "uniswap-v3-base",
+  "harness_run_at": "2026-07-13T12:08:27.661Z",
+  "preflight": {
+    "decision": "ALLOW",
+    "riskBps": 0,
+    "reasons": [
+      "tvl-drift unavailable (likely non-archive RPC): Invalid parameters were provided to the RPC method."
+    ],
+    "components": {
+      "tvlDriftBps": null,
+      "tvlDriftMediumBps": null,
+      "spreadBps": null,
+      "inactiveLiquidity": false,
+      "oracleHealthBps": 10000,
+      "tokenPatternBps": null,
+      "dePegDeviationBps": null
+    },
+    "drift_from_intent_riskBps": 0
+  },
+  "gate_recheck": {
+    "riskBps_le_threshold": {
+      "live": 0,
+      "threshold": 2000,
+      "pass": true
+    },
+    "decision_is_allow": {
+      "live": "ALLOW",
+      "pass": true
+    },
+    "overall_pass": true
+  },
+  "would_sign": true,
+  "sign_decision_rationale": "live state passes all intent gates — would route to bounded-delegation signer",
+  "prepared_tx": {
+    "protocol": "uniswap-v3-base",
+    "chain_id": 84532,
+    "target_pool": "0x46880b404CD35c165EDdefF7421019F8dD25F4Ad",
+    "fee": 3000,
+    "proposed_action": "passive-LP mint (wide range)",
+    "assumed_size_usd": 1000,
+    "would_call": "positionManager.mint(pool=0x46880b404CD35c165EDdefF7421019F8dD25F4Ad, fee=3000, tickLower=MIN, tickUpper=MAX, size=$1000)",
+    "notes": "signer-less harness — no calldata constructed, no broadcast. Phase 4 replaces this with real positionManager ABI + signer."
+  }
+}
