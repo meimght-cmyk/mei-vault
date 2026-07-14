@@ -1,0 +1,48 @@
+{
+  "intent_id": "passive-lp-kumbaya-2026-07-14-002",
+  "intent_created_at": "2026-07-14T13:05:17.265Z",
+  "intent_target_pool": "0x5fB29184C49546c13A14A3958f21E5759f0821f2",
+  "intent_target_protocol": "kumbaya",
+  "harness_run_at": "2026-07-14T13:07:07.110Z",
+  "preflight": {
+    "decision": "ALLOW",
+    "riskBps": 2000,
+    "reasons": [
+      "token 0x28B7E77f…: mint(address,uint256) selector present — supply may be inflated by an admin"
+    ],
+    "components": {
+      "tvlDriftBps": 0,
+      "tvlDriftMediumBps": 7,
+      "spreadBps": null,
+      "inactiveLiquidity": false,
+      "oracleHealthBps": 10000,
+      "tokenPatternBps": 2000,
+      "dePegDeviationBps": null
+    },
+    "drift_from_intent_riskBps": 0
+  },
+  "gate_recheck": {
+    "riskBps_le_threshold": {
+      "live": 2000,
+      "threshold": 2000,
+      "pass": true
+    },
+    "decision_is_allow": {
+      "live": "ALLOW",
+      "pass": true
+    },
+    "overall_pass": true
+  },
+  "would_sign": true,
+  "sign_decision_rationale": "live state passes all intent gates — would route to bounded-delegation signer",
+  "prepared_tx": {
+    "protocol": "kumbaya",
+    "chain_id": 4326,
+    "target_pool": "0x5fB29184C49546c13A14A3958f21E5759f0821f2",
+    "fee": 10000,
+    "proposed_action": "passive-LP mint (wide range)",
+    "assumed_size_usd": 1000,
+    "would_call": "positionManager.mint(pool=0x5fB29184C49546c13A14A3958f21E5759f0821f2, fee=10000, tickLower=MIN, tickUpper=MAX, size=$1000)",
+    "notes": "signer-less harness — no calldata constructed, no broadcast. Phase 4 replaces this with real positionManager ABI + signer."
+  }
+}
