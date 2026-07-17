@@ -1,30 +1,30 @@
 {
-  "computed_at": "2026-07-16T15:03:55.043Z",
+  "computed_at": "2026-07-17T16:00:47.223Z",
   "phase4_start": "2026-05-09",
   "earliest_unlock": "2026-08-07",
-  "days_since_start": 68,
-  "days_until_earliest_unlock": 21,
+  "days_since_start": 69,
+  "days_until_earliest_unlock": 20,
   "floors": {
     "allow_false_neg_max": 0.02,
     "block_precision_min": 0.7,
     "min_samples_per_cohort": 100
   },
   "totals": {
-    "probe_rows": 39774,
-    "outcome_patches": 57648
+    "probe_rows": 40374,
+    "outcome_patches": 58848
   },
   "horizons": {
     "7d": {
       "safe": {
         "ALLOW": {
-          "samples": 11212,
-          "loss": 2830,
-          "rate": 0.2524081341419907
+          "samples": 11346,
+          "loss": 2886,
+          "rate": 0.254362771020624
         },
         "WARN": {
-          "samples": 944,
-          "loss": 201,
-          "rate": 0.2129237288135593
+          "samples": 967,
+          "loss": 207,
+          "rate": 0.2140641158221303
         },
         "BLOCK": {
           "samples": 5,
@@ -32,67 +32,67 @@
           "rate": 0
         },
         "ERROR": {
-          "samples": 11913,
-          "loss": 231,
-          "rate": 0.019390581717451522
+          "samples": 12156,
+          "loss": 237,
+          "rate": 0.01949654491609082
         }
       },
       "risky": {
         "ALLOW": {
-          "samples": 214,
-          "loss": 13,
-          "rate": 0.06074766355140187
+          "samples": 220,
+          "loss": 15,
+          "rate": 0.06818181818181818
         },
         "WARN": {
-          "samples": 7655,
-          "loss": 718,
-          "rate": 0.0937949052906597
+          "samples": 7783,
+          "loss": 728,
+          "rate": 0.09353719645380959
         },
         "BLOCK": {
-          "samples": 1303,
+          "samples": 1327,
           "loss": 97,
-          "rate": 0.07444359171143515
+          "rate": 0.07309721175584025
         },
         "ERROR": {
-          "samples": 2328,
-          "loss": 804,
-          "rate": 0.34536082474226804
+          "samples": 2370,
+          "loss": 816,
+          "rate": 0.34430379746835443
         }
       },
       "all": {
         "ALLOW": {
-          "samples": 11426,
-          "loss": 2843,
-          "rate": 0.24881848415893576
+          "samples": 11566,
+          "loss": 2901,
+          "rate": 0.2508213729897977
         },
         "WARN": {
-          "samples": 8599,
-          "loss": 919,
-          "rate": 0.10687289219676707
+          "samples": 8750,
+          "loss": 935,
+          "rate": 0.10685714285714286
         },
         "BLOCK": {
-          "samples": 1308,
+          "samples": 1332,
           "loss": 97,
-          "rate": 0.07415902140672782
+          "rate": 0.07282282282282282
         },
         "ERROR": {
-          "samples": 14241,
-          "loss": 1035,
-          "rate": 0.07267748051400885
+          "samples": 14526,
+          "loss": 1053,
+          "rate": 0.0724907063197026
         }
       }
     },
     "30d": {
       "safe": {
         "ALLOW": {
-          "samples": 8413,
-          "loss": 1895,
-          "rate": 0.22524664210150958
+          "samples": 8546,
+          "loss": 1949,
+          "rate": 0.2280599110695062
         },
         "WARN": {
-          "samples": 510,
-          "loss": 134,
-          "rate": 0.2627450980392157
+          "samples": 534,
+          "loss": 140,
+          "rate": 0.26217228464419473
         },
         "BLOCK": {
           "samples": 5,
@@ -100,67 +100,67 @@
           "rate": 0
         },
         "ERROR": {
-          "samples": 6146,
-          "loss": 112,
-          "rate": 0.018223234624145785
+          "samples": 6389,
+          "loss": 117,
+          "rate": 0.018312724996087024
         }
       },
       "risky": {
         "ALLOW": {
-          "samples": 124,
+          "samples": 128,
           "loss": 12,
-          "rate": 0.0967741935483871
+          "rate": 0.09375
         },
         "WARN": {
-          "samples": 4985,
-          "loss": 603,
-          "rate": 0.120962888665998
+          "samples": 5116,
+          "loss": 613,
+          "rate": 0.11982017200938233
         },
         "BLOCK": {
-          "samples": 806,
-          "loss": 89,
-          "rate": 0.11042183622828784
+          "samples": 832,
+          "loss": 92,
+          "rate": 0.11057692307692307
         },
         "ERROR": {
-          "samples": 1085,
-          "loss": 275,
-          "rate": 0.2534562211981567
+          "samples": 1124,
+          "loss": 283,
+          "rate": 0.251779359430605
         }
       },
       "all": {
         "ALLOW": {
-          "samples": 8537,
-          "loss": 1907,
-          "rate": 0.22338057865760805
+          "samples": 8674,
+          "loss": 1961,
+          "rate": 0.22607793405579893
         },
         "WARN": {
-          "samples": 5495,
-          "loss": 737,
-          "rate": 0.13412192902638762
+          "samples": 5650,
+          "loss": 753,
+          "rate": 0.13327433628318583
         },
         "BLOCK": {
-          "samples": 811,
-          "loss": 89,
-          "rate": 0.10974106041923551
+          "samples": 837,
+          "loss": 92,
+          "rate": 0.10991636798088411
         },
         "ERROR": {
-          "samples": 7231,
-          "loss": 387,
-          "rate": 0.0535195685244088
+          "samples": 7513,
+          "loss": 400,
+          "rate": 0.05324104884866232
         }
       }
     }
   },
   "phase4_gates": {
     "allow_false_neg": {
-      "value": 0.24881848415893576,
-      "samples": 11426,
+      "value": 0.2508213729897977,
+      "samples": 11566,
       "samples_ok": true,
       "floor_pass": false
     },
     "block_precision": {
-      "value": 0.07415902140672782,
-      "samples": 1308,
+      "value": 0.07282282282282282,
+      "samples": 1332,
       "samples_ok": true,
       "floor_pass": false
     }
