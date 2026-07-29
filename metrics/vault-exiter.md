@@ -1,14 +1,14 @@
 # Vault-exiter
 
-_Updated: 2026-07-29T13:07:31.513Z_
+_Updated: 2026-07-29T13:12:37.876Z_
 
 Polling guardian for Phase 3. Watches every harness-confirmed position and polls `/api/score` at ~60s cadence. On a degradation transition (ALLOW→WARN/BLOCK, decision→ERROR, or +3000 bps risk jump), it emits an exit event with a would-be-tx payload. **No signing, no broadcast** — Phase 4 swaps the boolean for a real bounded-delegation withdraw.
 
 ## Current state
 
-- open positions: **5**
-- positions exited: **378**
-- total exit events logged: **378**
+- open positions: **4**
+- positions exited: **379**
+- total exit events logged: **379**
 
 ## Trigger rules
 
@@ -23,6 +23,7 @@ Polling guardian for Phase 3. Watches every harness-confirmed position and polls
 
 | ts | intent | protocol | entry → current | drift | trigger |
 |---|---|---|---|---|---|
+| 2026-07-29 13:12:37 | `passive-lp-kumbaya-2026-07-29-002` | kumbaya | ALLOW/2000 → ERROR/-1 | -2001 | became_error |
 | 2026-07-29 02:21:35 | `passive-lp-kumbaya-2026-07-29-003` | kumbaya | ALLOW/2000 → ERROR/-1 | -2001 | became_error |
 | 2026-07-29 02:21:33 | `spot-swap-base-2026-07-29-003` | uniswap-v3-base | ALLOW/500 → ERROR/-1 | -501 | became_error |
 | 2026-07-29 02:21:33 | `spot-swap-base-2026-07-29-002` | uniswap-v3-base | ALLOW/0 → ERROR/-1 | -1 | became_error |
@@ -52,7 +53,6 @@ Polling guardian for Phase 3. Watches every harness-confirmed position and polls
 | 2026-07-24 21:45:48 | `passive-lp-kumbaya-2026-07-22-001` | kumbaya | ALLOW/0 → ERROR/-1 | -1 | became_error |
 | 2026-07-24 21:45:46 | `passive-lp-kumbaya-2026-07-22-003` | kumbaya | ALLOW/2000 → ERROR/-1 | -2001 | became_error |
 | 2026-07-24 21:45:45 | `passive-lp-kumbaya-2026-07-22-002` | kumbaya | ALLOW/2000 → ERROR/-1 | -2001 | became_error |
-| 2026-07-23 22:59:01 | `passive-lp-kumbaya-2026-07-23-003` | kumbaya | ALLOW/2000 → ERROR/-1 | -2001 | became_error |
 
 ## How to read this
 
