@@ -1,14 +1,14 @@
 # Vault-exiter
 
-_Updated: 2026-07-31T04:10:14.664Z_
+_Updated: 2026-07-31T04:15:19.116Z_
 
 Polling guardian for Phase 3. Watches every harness-confirmed position and polls `/api/score` at ~60s cadence. On a degradation transition (ALLOW→WARN/BLOCK, decision→ERROR, or +3000 bps risk jump), it emits an exit event with a would-be-tx payload. **No signing, no broadcast** — Phase 4 swaps the boolean for a real bounded-delegation withdraw.
 
 ## Current state
 
-- open positions: **4**
-- positions exited: **383**
-- total exit events logged: **383**
+- open positions: **2**
+- positions exited: **385**
+- total exit events logged: **385**
 
 ## Trigger rules
 
@@ -23,6 +23,8 @@ Polling guardian for Phase 3. Watches every harness-confirmed position and polls
 
 | ts | intent | protocol | entry → current | drift | trigger |
 |---|---|---|---|---|---|
+| 2026-07-31 04:15:19 | `spot-swap-base-2026-07-29-001` | uniswap-v3-base | ALLOW/0 → ERROR/-1 | -1 | became_error |
+| 2026-07-31 04:15:18 | `passive-lp-kumbaya-2026-07-28-002` | kumbaya | ALLOW/2000 → ERROR/-1 | -2001 | became_error |
 | 2026-07-30 03:15:45 | `spot-swap-base-2026-07-28-003` | uniswap-v3-base | ALLOW/500 → ERROR/-1 | -501 | became_error |
 | 2026-07-30 03:15:44 | `passive-lp-kumbaya-2026-07-28-003` | kumbaya | ALLOW/2000 → ERROR/-1 | -2001 | became_error |
 | 2026-07-30 03:15:43 | `passive-lp-kumbaya-2026-07-30-002` | kumbaya | ALLOW/2000 → ERROR/-1 | -2001 | became_error |
@@ -51,8 +53,6 @@ Polling guardian for Phase 3. Watches every harness-confirmed position and polls
 | 2026-07-24 22:41:12 | `passive-lp-kumbaya-2026-07-24-001` | kumbaya | ALLOW/0 → ERROR/-1 | -1 | became_error |
 | 2026-07-24 22:41:12 | `passive-lp-kumbaya-2026-07-24-003` | kumbaya | ALLOW/2000 → ERROR/-1 | -2001 | became_error |
 | 2026-07-24 22:41:10 | `spot-swap-base-2026-07-24-003` | uniswap-v3-base | ALLOW/500 → ERROR/-1 | -501 | became_error |
-| 2026-07-24 22:41:10 | `spot-swap-base-2026-07-24-002` | uniswap-v3-base | ALLOW/0 → ERROR/-1 | -1 | became_error |
-| 2026-07-24 21:45:51 | `spot-swap-base-2026-07-23-002` | uniswap-v3-base | ALLOW/0 → ERROR/-1 | -1 | became_error |
 
 ## How to read this
 
