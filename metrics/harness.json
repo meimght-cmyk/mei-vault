@@ -1,13 +1,13 @@
 {
-  "computed_at": "2026-08-06T10:03:25.218Z",
-  "total_harnessed": 445,
-  "would_sign": 419,
-  "would_skip": 26,
-  "sign_rate": 0.9415730337078652,
+  "computed_at": "2026-08-07T11:00:31.458Z",
+  "total_harnessed": 451,
+  "would_sign": 424,
+  "would_skip": 27,
+  "sign_rate": 0.9401330376940134,
   "this_run": {
-    "pending": 210,
-    "sign_yes": 2,
-    "sign_no": 4,
-    "errors": 204
+    "pending": 211,
+    "sign_yes": 5,
+    "sign_no": 1,
+    "errors": 205
   }
 }
