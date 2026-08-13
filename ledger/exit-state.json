@@ -3102,10 +3102,10 @@
   },
   "passive-lp-kumbaya-2026-08-12-003": {
     "intent_id": "passive-lp-kumbaya-2026-08-12-003",
-    "last_decision": "ALLOW",
-    "last_riskBps": 2000,
-    "last_polled_at": "2026-08-13T16:43:20.368Z",
-    "status": "OPEN"
+    "last_decision": "ERROR",
+    "last_riskBps": -1,
+    "last_polled_at": "2026-08-13T16:48:28.979Z",
+    "status": "EXITED"
   },
   "passive-lp-kumbaya-2026-08-12-002": {
     "intent_id": "passive-lp-kumbaya-2026-08-12-002",
@@ -3125,7 +3125,7 @@
     "intent_id": "spot-swap-base-2026-08-12-002",
     "last_decision": "ALLOW",
     "last_riskBps": 0,
-    "last_polled_at": "2026-08-13T16:43:21.643Z",
+    "last_polled_at": "2026-08-13T16:48:29.962Z",
     "status": "OPEN"
   },
   "spot-swap-base-2026-08-12-001": {
@@ -3133,6 +3133,41 @@
     "last_decision": "ERROR",
     "last_riskBps": -1,
     "last_polled_at": "2026-08-12T15:52:27.427Z",
+    "status": "EXITED"
+  },
+  "spot-swap-base-2026-08-13-001": {
+    "intent_id": "spot-swap-base-2026-08-13-001",
+    "last_decision": "ALLOW",
+    "last_riskBps": 0,
+    "last_polled_at": "2026-08-13T16:48:25.168Z",
+    "status": "OPEN"
+  },
+  "spot-swap-base-2026-08-13-002": {
+    "intent_id": "spot-swap-base-2026-08-13-002",
+    "last_decision": "ALLOW",
+    "last_riskBps": 0,
+    "last_polled_at": "2026-08-13T16:48:26.303Z",
+    "status": "OPEN"
+  },
+  "spot-swap-base-2026-08-13-003": {
+    "intent_id": "spot-swap-base-2026-08-13-003",
+    "last_decision": "ERROR",
+    "last_riskBps": -1,
+    "last_polled_at": "2026-08-13T16:48:26.805Z",
+    "status": "EXITED"
+  },
+  "passive-lp-kumbaya-2026-08-13-002": {
+    "intent_id": "passive-lp-kumbaya-2026-08-13-002",
+    "last_decision": "ALLOW",
+    "last_riskBps": 2000,
+    "last_polled_at": "2026-08-13T16:48:27.973Z",
+    "status": "OPEN"
+  },
+  "passive-lp-kumbaya-2026-08-13-003": {
+    "intent_id": "passive-lp-kumbaya-2026-08-13-003",
+    "last_decision": "ERROR",
+    "last_riskBps": -1,
+    "last_polled_at": "2026-08-13T16:48:28.476Z",
     "status": "EXITED"
   }
 }
