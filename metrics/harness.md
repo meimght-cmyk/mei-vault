@@ -1,19 +1,25 @@
 # Wallet harness
 
-_Updated: 2026-08-19T22:54:22.928Z_
+_Updated: 2026-08-20T23:51:20.958Z_
 
 Bounded-delegation signer simulation. For every strategy intent, the harness re-checks pool state at "would-sign time," decides sign/no-sign against intent gates, and logs the would-be transaction payload. **No keys, no wallet, no broadcast.** Phase 4 swaps the boolean for a real signer.
 
 ## Summary
 
-- harnessed intents: **523**
-- would-sign: **483** · would-skip: **40**
-- sign rate: **92.4%**
+- harnessed intents: **529**
+- would-sign: **488** · would-skip: **41**
+- sign rate: **92.2%**
 
 ## Recent (last 30)
 
 | intent | protocol | pool | live decision | live riskBps | Δ from intent | harness verdict |
 |---|---|---|---|---|---|---|
+| `passive-lp-kumbaya-2026-08-20-002` | kumbaya | `0x5fB29184…` | ALLOW | 2000 | +0 | ✓ sign |
+| `passive-lp-kumbaya-2026-08-20-003` | kumbaya | `0xA8275D88…` | ALLOW | 2000 | +0 | ✓ sign |
+| `spot-swap-base-2026-08-20-001` | uniswap-v3-base | `0x94bfc057…` | ALLOW | 0 | +0 | ✓ sign |
+| `spot-swap-base-2026-08-20-002` | uniswap-v3-base | `0x46880b40…` | ALLOW | 0 | +0 | ✓ sign |
+| `passive-lp-kumbaya-2026-08-20-001` | kumbaya | `0x6bD9eeF2…` | WARN | 5000 | +5000 | ✗ skip |
+| `spot-swap-base-2026-08-20-003` | uniswap-v3-base | `0x57183717…` | ALLOW | 500 | +0 | ✓ sign |
 | `spot-swap-base-2026-08-19-001` | uniswap-v3-base | `0x94bfc057…` | ALLOW | 0 | +0 | ✓ sign |
 | `passive-lp-kumbaya-2026-08-19-003` | kumbaya | `0xA8275D88…` | ALLOW | 2000 | +0 | ✓ sign |
 | `passive-lp-kumbaya-2026-08-19-002` | kumbaya | `0x5fB29184…` | ALLOW | 2000 | +0 | ✓ sign |
@@ -38,12 +44,6 @@ Bounded-delegation signer simulation. For every strategy intent, the harness re-
 | `spot-swap-base-2026-08-16-001` | uniswap-v3-base | `0x94bfc057…` | ALLOW | 0 | +0 | ✓ sign |
 | `passive-lp-kumbaya-2026-08-16-003` | kumbaya | `0xA8275D88…` | ALLOW | 2000 | +0 | ✓ sign |
 | `passive-lp-kumbaya-2026-08-16-002` | kumbaya | `0x5fB29184…` | ALLOW | 2000 | +0 | ✓ sign |
-| `passive-lp-kumbaya-2026-08-15-002` | kumbaya | `0x5fB29184…` | ALLOW | 2000 | +0 | ✓ sign |
-| `spot-swap-base-2026-08-15-001` | uniswap-v3-base | `0x94bfc057…` | ALLOW | 0 | +0 | ✓ sign |
-| `passive-lp-kumbaya-2026-08-15-003` | kumbaya | `0xA8275D88…` | ALLOW | 2000 | +0 | ✓ sign |
-| `spot-swap-base-2026-08-15-002` | uniswap-v3-base | `0x46880b40…` | ALLOW | 0 | +0 | ✓ sign |
-| `spot-swap-base-2026-08-15-003` | uniswap-v3-base | `0x57183717…` | ALLOW | 500 | +0 | ✓ sign |
-| `passive-lp-kumbaya-2026-08-15-001` | kumbaya | `0x6bD9eeF2…` | WARN | 5000 | +5000 | ✗ skip |
 
 ## How to read this
 
