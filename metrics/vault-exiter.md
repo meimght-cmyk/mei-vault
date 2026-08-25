@@ -1,14 +1,14 @@
 # Vault-exiter
 
-_Updated: 2026-08-25T03:32:46.786Z_
+_Updated: 2026-08-25T03:37:54.779Z_
 
 Polling guardian for Phase 3. Watches every harness-confirmed position and polls `/api/score` at ~60s cadence. On a degradation transition (ALLOW→WARN/BLOCK, decision→ERROR, or +3000 bps risk jump), it emits an exit event with a would-be-tx payload. **No signing, no broadcast** — Phase 4 swaps the boolean for a real bounded-delegation withdraw.
 
 ## Current state
 
 - open positions: **4**
-- positions exited: **498**
-- total exit events logged: **498**
+- positions exited: **503**
+- total exit events logged: **503**
 
 ## Trigger rules
 
@@ -23,6 +23,11 @@ Polling guardian for Phase 3. Watches every harness-confirmed position and polls
 
 | ts | intent | protocol | entry → current | drift | trigger |
 |---|---|---|---|---|---|
+| 2026-08-25 03:37:53 | `spot-swap-base-2026-08-24-001` | uniswap-v3-base | ALLOW/0 → ERROR/-1 | -1 | became_error |
+| 2026-08-25 03:37:53 | `passive-lp-kumbaya-2026-08-24-003` | kumbaya | ALLOW/2000 → ERROR/-1 | -2001 | became_error |
+| 2026-08-25 03:37:51 | `passive-lp-kumbaya-2026-08-25-002` | kumbaya | ALLOW/2000 → ERROR/-1 | -2001 | became_error |
+| 2026-08-25 03:37:50 | `spot-swap-base-2026-08-25-001` | uniswap-v3-base | ALLOW/0 → ERROR/-1 | -1 | became_error |
+| 2026-08-25 03:37:49 | `spot-swap-base-2026-08-25-002` | uniswap-v3-base | ALLOW/0 → ERROR/-1 | -1 | became_error |
 | 2026-08-24 02:40:58 | `spot-swap-base-2026-08-23-001` | uniswap-v3-base | ALLOW/0 → ERROR/-1 | -1 | became_error |
 | 2026-08-24 02:40:56 | `spot-swap-base-2026-08-24-002` | uniswap-v3-base | ALLOW/0 → ERROR/-1 | -1 | became_error |
 | 2026-08-24 02:40:56 | `spot-swap-base-2026-08-24-003` | uniswap-v3-base | ALLOW/500 → ERROR/-1 | -501 | became_error |
@@ -48,11 +53,6 @@ Polling guardian for Phase 3. Watches every harness-confirmed position and polls
 | 2026-08-19 21:53:44 | `passive-lp-kumbaya-2026-08-18-003` | kumbaya | ALLOW/2000 → ERROR/-1 | -2001 | became_error |
 | 2026-08-19 21:53:44 | `passive-lp-kumbaya-2026-08-18-002` | kumbaya | ALLOW/2000 → ERROR/-1 | -2001 | became_error |
 | 2026-08-18 21:46:48 | `spot-swap-base-2026-08-18-003` | uniswap-v3-base | ALLOW/500 → ERROR/-1 | -501 | became_error |
-| 2026-08-18 21:41:41 | `spot-swap-base-2026-08-17-003` | uniswap-v3-base | ALLOW/500 → ERROR/-1 | -501 | became_error |
-| 2026-08-18 21:41:40 | `spot-swap-base-2026-08-13-001` | uniswap-v3-base | ALLOW/0 → ERROR/-1 | -1 | became_error |
-| 2026-08-18 21:31:33 | `spot-swap-base-2026-08-17-001` | uniswap-v3-base | ALLOW/0 → ERROR/-1 | -1 | became_error |
-| 2026-08-18 21:31:33 | `passive-lp-kumbaya-2026-08-17-002` | kumbaya | ALLOW/2000 → ERROR/-1 | -2001 | became_error |
-| 2026-08-18 21:31:32 | `passive-lp-kumbaya-2026-08-17-003` | kumbaya | ALLOW/2000 → ERROR/-1 | -2001 | became_error |
 
 ## How to read this
 
