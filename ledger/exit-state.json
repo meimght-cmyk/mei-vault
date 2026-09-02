@@ -3692,7 +3692,7 @@
     "intent_id": "passive-lp-kumbaya-2026-08-30-003",
     "last_decision": "ALLOW",
     "last_riskBps": 2000,
-    "last_polled_at": "2026-09-02T11:42:05.139Z",
+    "last_polled_at": "2026-09-02T11:47:09.132Z",
     "status": "OPEN"
   },
   "passive-lp-kumbaya-2026-08-30-002": {
@@ -3767,10 +3767,10 @@
   },
   "spot-swap-base-2026-09-01-002": {
     "intent_id": "spot-swap-base-2026-09-01-002",
-    "last_decision": "ALLOW",
-    "last_riskBps": 0,
-    "last_polled_at": "2026-09-02T11:42:06.266Z",
-    "status": "OPEN"
+    "last_decision": "ERROR",
+    "last_riskBps": -1,
+    "last_polled_at": "2026-09-02T11:47:09.634Z",
+    "status": "EXITED"
   },
   "spot-swap-base-2026-09-01-003": {
     "intent_id": "spot-swap-base-2026-09-01-003",
