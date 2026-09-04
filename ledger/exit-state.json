@@ -3832,15 +3832,15 @@
     "intent_id": "spot-swap-base-2026-09-03-001",
     "last_decision": "ALLOW",
     "last_riskBps": 0,
-    "last_polled_at": "2026-09-04T13:45:19.851Z",
+    "last_polled_at": "2026-09-04T13:50:23.859Z",
     "status": "OPEN"
   },
   "spot-swap-base-2026-09-03-003": {
     "intent_id": "spot-swap-base-2026-09-03-003",
-    "last_decision": "ALLOW",
-    "last_riskBps": 500,
-    "last_polled_at": "2026-09-04T13:45:20.751Z",
-    "status": "OPEN"
+    "last_decision": "ERROR",
+    "last_riskBps": -1,
+    "last_polled_at": "2026-09-04T13:50:24.362Z",
+    "status": "EXITED"
   },
   "spot-swap-base-2026-09-03-002": {
     "intent_id": "spot-swap-base-2026-09-03-002",
