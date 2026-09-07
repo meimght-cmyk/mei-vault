@@ -3935,10 +3935,10 @@
   },
   "spot-swap-base-2026-09-06-003": {
     "intent_id": "spot-swap-base-2026-09-06-003",
-    "last_decision": "ALLOW",
-    "last_riskBps": 500,
-    "last_polled_at": "2026-09-07T16:53:15.081Z",
-    "status": "OPEN"
+    "last_decision": "ERROR",
+    "last_riskBps": -1,
+    "last_polled_at": "2026-09-07T16:58:23.220Z",
+    "status": "EXITED"
   },
   "spot-swap-base-2026-09-06-002": {
     "intent_id": "spot-swap-base-2026-09-06-002",
@@ -3951,7 +3951,7 @@
     "intent_id": "spot-swap-base-2026-09-06-001",
     "last_decision": "ALLOW",
     "last_riskBps": 0,
-    "last_polled_at": "2026-09-07T16:53:16.084Z",
+    "last_polled_at": "2026-09-07T16:58:24.123Z",
     "status": "OPEN"
   },
   "passive-lp-kumbaya-2026-09-06-003": {
@@ -3966,6 +3966,41 @@
     "last_decision": "ERROR",
     "last_riskBps": -1,
     "last_polled_at": "2026-09-06T15:56:49.980Z",
+    "status": "EXITED"
+  },
+  "passive-lp-kumbaya-2026-09-07-002": {
+    "intent_id": "passive-lp-kumbaya-2026-09-07-002",
+    "last_decision": "ALLOW",
+    "last_riskBps": 2000,
+    "last_polled_at": "2026-09-07T16:58:19.524Z",
+    "status": "OPEN"
+  },
+  "passive-lp-kumbaya-2026-09-07-003": {
+    "intent_id": "passive-lp-kumbaya-2026-09-07-003",
+    "last_decision": "ALLOW",
+    "last_riskBps": 2000,
+    "last_polled_at": "2026-09-07T16:58:20.708Z",
+    "status": "OPEN"
+  },
+  "spot-swap-base-2026-09-07-001": {
+    "intent_id": "spot-swap-base-2026-09-07-001",
+    "last_decision": "ERROR",
+    "last_riskBps": -1,
+    "last_polled_at": "2026-09-07T16:58:21.210Z",
+    "status": "EXITED"
+  },
+  "spot-swap-base-2026-09-07-002": {
+    "intent_id": "spot-swap-base-2026-09-07-002",
+    "last_decision": "ALLOW",
+    "last_riskBps": 0,
+    "last_polled_at": "2026-09-07T16:58:22.212Z",
+    "status": "OPEN"
+  },
+  "spot-swap-base-2026-09-07-003": {
+    "intent_id": "spot-swap-base-2026-09-07-003",
+    "last_decision": "ERROR",
+    "last_riskBps": -1,
+    "last_polled_at": "2026-09-07T16:58:22.715Z",
     "status": "EXITED"
   }
 }
