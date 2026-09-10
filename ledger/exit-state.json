@@ -4042,7 +4042,7 @@
     "intent_id": "spot-swap-base-2026-09-09-002",
     "last_decision": "ALLOW",
     "last_riskBps": 0,
-    "last_polled_at": "2026-09-10T08:32:53.728Z",
+    "last_polled_at": "2026-09-10T08:37:58.083Z",
     "status": "OPEN"
   },
   "spot-swap-base-2026-09-09-003": {
@@ -4070,7 +4070,7 @@
     "intent_id": "passive-lp-kumbaya-2026-09-09-003",
     "last_decision": "ALLOW",
     "last_riskBps": 2000,
-    "last_polled_at": "2026-09-10T08:32:55.312Z",
+    "last_polled_at": "2026-09-10T08:37:59.429Z",
     "status": "OPEN"
   }
 }
