@@ -4145,10 +4145,10 @@
   },
   "spot-swap-base-2026-09-12-003": {
     "intent_id": "spot-swap-base-2026-09-12-003",
-    "last_decision": "ALLOW",
-    "last_riskBps": 500,
-    "last_polled_at": "2026-09-14T12:58:21.840Z",
-    "status": "OPEN"
+    "last_decision": "ERROR",
+    "last_riskBps": -1,
+    "last_polled_at": "2026-09-14T13:03:39.022Z",
+    "status": "EXITED"
   },
   "spot-swap-base-2026-09-12-002": {
     "intent_id": "spot-swap-base-2026-09-12-002",
