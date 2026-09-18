@@ -1,20 +1,20 @@
 # Phase 4 readiness
 
-_Updated: 2026-09-17T02:20:01.504Z_
+_Updated: 2026-09-18T03:20:56.215Z_
 
 Phase 4 (vault contract deploy) unlocks only after ≥90 days of probe data **with** the safety floors holding. This dashboard is the public scorecard.
 
 ## Where we are
 
-- 90-day clock started: **2026-05-09** (day 131 of 90)
+- 90-day clock started: **2026-05-09** (day 132 of 90)
 - Earliest unlock: **2026-08-07** (0 days away)
-- Probe rows collected: **76,524**
-- Outcome patches resolved: **131,298**
+- Probe rows collected: **77,124**
+- Outcome patches resolved: **132,498**
 
 ## Phase 4 floors (7-day horizon)
 
-- ❌ **ALLOW false-negative rate**: 31.70% (n=19701) — floor ≤ 2%
-- ❌ **BLOCK precision**: 6.05% (n=2794) — floor ≥ 70%
+- ❌ **ALLOW false-negative rate**: 31.70% (n=19829) — floor ≤ 2%
+- ❌ **BLOCK precision**: 6.03% (n=2820) — floor ≥ 70%
 
 **Overall: ❌ floors not yet met**
 
@@ -23,16 +23,16 @@ Phase 4 (vault contract deploy) unlocks only after ≥90 days of probe data **wi
 ### 7-day horizon
 | cohort | ALLOW | WARN | BLOCK | ERROR |
 |---|---|---|---|---|
-| safe  |   n=19226  loss=6174  rate=32.11% |   n=2277  loss=545  rate=23.94% |   n=   5  loss=  0  rate=0.00% |   n=27166  loss=622  rate=2.29% |
-| risky |   n= 475  loss= 72  rate=15.16% |   n=15519  loss=1263  rate=8.14% |   n=2789  loss=169  rate=6.06% |   n=5017  loss=1497  rate=29.84% |
-| **all** | **  n=19701  loss=6246  rate=31.70%** | **  n=17796  loss=1808  rate=10.16%** | **  n=2794  loss=169  rate=6.05%** | **  n=32183  loss=2119  rate=6.58%** |
+| safe  |   n=19354  loss=6213  rate=32.10% |   n=2301  loss=551  rate=23.95% |   n=   5  loss=  0  rate=0.00% |   n=27414  loss=625  rate=2.28% |
+| risky |   n= 475  loss= 72  rate=15.16% |   n=15652  loss=1269  rate=8.11% |   n=2815  loss=170  rate=6.04% |   n=5058  loss=1506  rate=29.77% |
+| **all** | **  n=19829  loss=6285  rate=31.70%** | **  n=17953  loss=1820  rate=10.14%** | **  n=2820  loss=170  rate=6.03%** | **  n=32472  loss=2131  rate=6.56%** |
 
 ### 30-day horizon (window opens 2026-06-08)
 | cohort | ALLOW | WARN | BLOCK | ERROR |
 |---|---|---|---|---|
-| safe  |   n=16309  loss=5211  rate=31.95% |   n=1763  loss=443  rate=25.13% |   n=   5  loss=  0  rate=0.00% |   n=21497  loss=502  rate=2.34% |
-| risky |   n= 398  loss= 99  rate=24.87% |   n=12599  loss=1188  rate=9.43% |   n=2240  loss=172  rate=7.68% |   n=4013  loss=1256  rate=31.30% |
-| **all** | **  n=16707  loss=5310  rate=31.78%** | **  n=14362  loss=1631  rate=11.36%** | **  n=2245  loss=172  rate=7.66%** | **  n=25510  loss=1758  rate=6.89%** |
+| safe  |   n=16425  loss=5248  rate=31.95% |   n=1782  loss=447  rate=25.08% |   n=   5  loss=  0  rate=0.00% |   n=21762  loss=510  rate=2.34% |
+| risky |   n= 401  loss=102  rate=25.44% |   n=12711  loss=1196  rate=9.41% |   n=2261  loss=172  rate=7.61% |   n=4077  loss=1289  rate=31.62% |
+| **all** | **  n=16826  loss=5350  rate=31.80%** | **  n=14493  loss=1643  rate=11.34%** | **  n=2266  loss=172  rate=7.59%** | **  n=25839  loss=1799  rate=6.96%** |
 
 
 ## How to read this
