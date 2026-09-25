@@ -4516,10 +4516,10 @@
   },
   "spot-swap-base-2026-09-24-001": {
     "intent_id": "spot-swap-base-2026-09-24-001",
-    "last_decision": "ALLOW",
-    "last_riskBps": 0,
-    "last_polled_at": "2026-09-25T05:29:59.384Z",
-    "status": "OPEN"
+    "last_decision": "WARN",
+    "last_riskBps": 5938,
+    "last_polled_at": "2026-09-25T05:35:02.326Z",
+    "status": "EXITED"
   },
   "spot-swap-base-2026-09-24-003": {
     "intent_id": "spot-swap-base-2026-09-24-003",
