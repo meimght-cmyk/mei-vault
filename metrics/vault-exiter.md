@@ -1,6 +1,6 @@
 # Vault-exiter
 
-_Updated: 2026-09-25T17:33:35.706Z_
+_Updated: 2026-09-25T17:38:40.373Z_
 
 Polling guardian for Phase 3. Watches every harness-confirmed position and polls `/api/score` at ~60s cadence. On a degradation transition (ALLOW→WARN/BLOCK, decision→ERROR, or +3000 bps risk jump), it emits an exit event with a would-be-tx payload. **No signing, no broadcast** — Phase 4 swaps the boolean for a real bounded-delegation withdraw.
 
