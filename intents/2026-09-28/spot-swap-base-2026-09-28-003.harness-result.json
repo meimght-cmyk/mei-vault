@@ -1,0 +1,49 @@
+{
+  "intent_id": "spot-swap-base-2026-09-28-003",
+  "intent_created_at": "2026-09-28T13:39:49.882Z",
+  "intent_target_pool": "0x57183717A087d2fe3Ad890873877244c3B96156c",
+  "intent_target_protocol": "uniswap-v3-base",
+  "harness_run_at": "2026-09-28T13:46:40.959Z",
+  "preflight": {
+    "decision": "ALLOW",
+    "riskBps": 2102,
+    "reasons": [
+      "shallow oracle cardinality: 1",
+      "TVL token0 down 3204 bps over last 7200 blocks (slow drain)"
+    ],
+    "components": {
+      "tvlDriftBps": 0,
+      "tvlDriftMediumBps": -3204,
+      "spreadBps": null,
+      "inactiveLiquidity": false,
+      "oracleHealthBps": 1000,
+      "tokenPatternBps": null,
+      "dePegDeviationBps": null
+    },
+    "drift_from_intent_riskBps": 1602
+  },
+  "gate_recheck": {
+    "riskBps_le_threshold": {
+      "live": 2102,
+      "threshold": 2000,
+      "pass": false
+    },
+    "decision_is_allow": {
+      "live": "ALLOW",
+      "pass": true
+    },
+    "overall_pass": false
+  },
+  "would_sign": false,
+  "sign_decision_rationale": "do not sign: live riskBps=2102 exceeds intent threshold 2000",
+  "prepared_tx": {
+    "protocol": "uniswap-v3-base",
+    "chain_id": 84532,
+    "target_pool": "0x57183717A087d2fe3Ad890873877244c3B96156c",
+    "fee": 100,
+    "proposed_action": "passive-LP mint (wide range)",
+    "assumed_size_usd": 1000,
+    "would_call": "positionManager.mint(pool=0x57183717A087d2fe3Ad890873877244c3B96156c, fee=100, tickLower=MIN, tickUpper=MAX, size=$1000)",
+    "notes": "signer-less harness — no calldata constructed, no broadcast. Phase 4 replaces this with real positionManager ABI + signer."
+  }
+}
