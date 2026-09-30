@@ -4686,7 +4686,7 @@
     "intent_id": "spot-swap-base-2026-09-29-001",
     "last_decision": "ALLOW",
     "last_riskBps": 0,
-    "last_polled_at": "2026-09-30T15:55:23.137Z",
+    "last_polled_at": "2026-09-30T16:00:30.474Z",
     "status": "OPEN"
   },
   "spot-swap-base-2026-09-29-003": {
@@ -4705,16 +4705,51 @@
   },
   "passive-lp-kumbaya-2026-09-29-003": {
     "intent_id": "passive-lp-kumbaya-2026-09-29-003",
-    "last_decision": "ALLOW",
-    "last_riskBps": 2000,
-    "last_polled_at": "2026-09-30T15:55:24.303Z",
-    "status": "OPEN"
+    "last_decision": "ERROR",
+    "last_riskBps": -1,
+    "last_polled_at": "2026-09-30T16:00:30.976Z",
+    "status": "EXITED"
   },
   "passive-lp-kumbaya-2026-09-29-002": {
     "intent_id": "passive-lp-kumbaya-2026-09-29-002",
     "last_decision": "ERROR",
     "last_riskBps": -1,
     "last_polled_at": "2026-09-29T14:49:47.349Z",
+    "status": "EXITED"
+  },
+  "spot-swap-base-2026-09-30-001": {
+    "intent_id": "spot-swap-base-2026-09-30-001",
+    "last_decision": "ALLOW",
+    "last_riskBps": 0,
+    "last_polled_at": "2026-09-30T16:00:27.132Z",
+    "status": "OPEN"
+  },
+  "spot-swap-base-2026-09-30-003": {
+    "intent_id": "spot-swap-base-2026-09-30-003",
+    "last_decision": "ALLOW",
+    "last_riskBps": 500,
+    "last_polled_at": "2026-09-30T16:00:28.012Z",
+    "status": "OPEN"
+  },
+  "spot-swap-base-2026-09-30-002": {
+    "intent_id": "spot-swap-base-2026-09-30-002",
+    "last_decision": "ERROR",
+    "last_riskBps": -1,
+    "last_polled_at": "2026-09-30T16:00:28.515Z",
+    "status": "EXITED"
+  },
+  "passive-lp-kumbaya-2026-09-30-003": {
+    "intent_id": "passive-lp-kumbaya-2026-09-30-003",
+    "last_decision": "ERROR",
+    "last_riskBps": -1,
+    "last_polled_at": "2026-09-30T16:00:29.021Z",
+    "status": "EXITED"
+  },
+  "passive-lp-kumbaya-2026-09-30-002": {
+    "intent_id": "passive-lp-kumbaya-2026-09-30-002",
+    "last_decision": "ERROR",
+    "last_riskBps": -1,
+    "last_polled_at": "2026-09-30T16:00:29.523Z",
     "status": "EXITED"
   }
 }
