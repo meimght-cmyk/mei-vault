@@ -1,0 +1,36 @@
+{
+  "id": "lending-supply-moonwell-2026-10-10-001",
+  "strategy": "lending-supply-moonwell",
+  "status": "dry-run",
+  "createdAt": "2026-10-10T01:38:27.089Z",
+  "target": {
+    "protocol": "moonwell-base",
+    "chainId": 8453,
+    "mToken": "0xEdc817A28E8B93B03976FBd4a3dDBc9f7D176c22",
+    "marketName": "mUSDC",
+    "utilizationHeadroomBps": null,
+    "reasons": []
+  },
+  "position": {
+    "type": "lending-supply",
+    "amountUsd": null,
+    "underlyingAmount": null,
+    "notes": "fill amountUsd + underlyingAmount before signing"
+  },
+  "execution": {
+    "vaultGated": true,
+    "prerequisite": "vault owner must call addTarget(0xEdc817A28E8B93B03976FBd4a3dDBc9f7D176c22) on TreasuryVault before execution",
+    "txSequence": [
+      "tx 1: vault.execute(underlying_token, 0, approve(0xEdc817A28E8B93B03976FBd4a3dDBc9f7D176c22, amount))",
+      "tx 2: vault.execute(0xEdc817A28E8B93B03976FBd4a3dDBc9f7D176c22, 0, mint(amount))"
+    ],
+    "note": "underlying token contract also needs addTarget if not already allowlisted"
+  },
+  "rationale": "best Moonwell market by riskBps: mUSDC (0xEdc817A28E8B93B03976FBd4a3dDBc9f7D176c22) riskBps=undefined decision=undefined. Moonwell is Base mainnet-only — vault must be deployed to 8453 before execution.",
+  "next_steps": [
+    "fill amountUsd + underlyingAmount",
+    "owner: addTarget(mToken) + addTarget(underlying) on TreasuryVault",
+    "wallet harness: re-check market state at would-sign time",
+    "on harness ALLOW: construct approve + mint calldata, route to signer-cli"
+  ]
+}
