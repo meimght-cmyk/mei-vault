@@ -5010,5 +5010,12 @@
     "last_riskBps": 8000,
     "last_polled_at": "2026-10-09T01:31:11.830Z",
     "status": "EXITED"
+  },
+  "spot-swap-base-2026-10-10-003": {
+    "intent_id": "spot-swap-base-2026-10-10-003",
+    "last_decision": "ALLOW",
+    "last_riskBps": 500,
+    "last_polled_at": "2026-10-10T01:41:17.404Z",
+    "status": "OPEN"
   }
 }
