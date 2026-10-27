@@ -5573,10 +5573,10 @@
   },
   "passive-lp-kumbaya-2026-10-26-002": {
     "intent_id": "passive-lp-kumbaya-2026-10-26-002",
-    "last_decision": "ALLOW",
-    "last_riskBps": 2000,
-    "last_polled_at": "2026-10-27T20:57:33.344Z",
-    "status": "OPEN"
+    "last_decision": "ERROR",
+    "last_riskBps": -1,
+    "last_polled_at": "2026-10-27T21:02:35.621Z",
+    "status": "EXITED"
   },
   "passive-lp-kumbaya-2026-10-26-003": {
     "intent_id": "passive-lp-kumbaya-2026-10-26-003",
