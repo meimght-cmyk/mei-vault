@@ -5692,16 +5692,16 @@
   },
   "spot-swap-base-2026-10-30-001": {
     "intent_id": "spot-swap-base-2026-10-30-001",
-    "last_decision": "ALLOW",
-    "last_riskBps": 0,
-    "last_polled_at": "2026-10-30T04:02:47.967Z",
-    "status": "OPEN"
+    "last_decision": "ERROR",
+    "last_riskBps": -1,
+    "last_polled_at": "2026-10-30T04:08:40.861Z",
+    "status": "EXITED"
   },
   "spot-swap-base-2026-10-30-003": {
     "intent_id": "spot-swap-base-2026-10-30-003",
     "last_decision": "ALLOW",
     "last_riskBps": 500,
-    "last_polled_at": "2026-10-30T04:02:49.008Z",
+    "last_polled_at": "2026-10-30T04:08:42.305Z",
     "status": "OPEN"
   },
   "spot-swap-base-2026-10-30-002": {
