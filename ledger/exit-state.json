@@ -5715,14 +5715,14 @@
     "intent_id": "spot-swap-base-2026-10-31-002",
     "last_decision": "ALLOW",
     "last_riskBps": 0,
-    "last_polled_at": "2026-10-31T08:09:08.780Z",
+    "last_polled_at": "2026-10-31T08:15:28.852Z",
     "status": "OPEN"
   },
   "spot-swap-base-2026-10-31-003": {
     "intent_id": "spot-swap-base-2026-10-31-003",
     "last_decision": "ALLOW",
     "last_riskBps": 500,
-    "last_polled_at": "2026-10-31T08:09:10.440Z",
+    "last_polled_at": "2026-10-31T08:15:29.811Z",
     "status": "OPEN"
   }
 }
