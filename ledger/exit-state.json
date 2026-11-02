@@ -5734,17 +5734,17 @@
   },
   "spot-swap-base-2026-11-01-002": {
     "intent_id": "spot-swap-base-2026-11-01-002",
-    "last_decision": "ALLOW",
-    "last_riskBps": 0,
-    "last_polled_at": "2026-11-02T07:51:15.401Z",
-    "status": "OPEN"
+    "last_decision": "ERROR",
+    "last_riskBps": -1,
+    "last_polled_at": "2026-11-02T07:56:22.435Z",
+    "status": "EXITED"
   },
   "spot-swap-base-2026-11-01-003": {
     "intent_id": "spot-swap-base-2026-11-01-003",
-    "last_decision": "ALLOW",
-    "last_riskBps": 500,
-    "last_polled_at": "2026-11-02T07:51:16.351Z",
-    "status": "OPEN"
+    "last_decision": "ERROR",
+    "last_riskBps": -1,
+    "last_polled_at": "2026-11-02T07:56:22.939Z",
+    "status": "EXITED"
   },
   "passive-lp-kumbaya-2026-11-01-002": {
     "intent_id": "passive-lp-kumbaya-2026-11-01-002",
@@ -5758,6 +5758,41 @@
     "last_decision": "ERROR",
     "last_riskBps": -1,
     "last_polled_at": "2026-11-02T07:05:41.373Z",
+    "status": "EXITED"
+  },
+  "passive-lp-kumbaya-2026-11-02-002": {
+    "intent_id": "passive-lp-kumbaya-2026-11-02-002",
+    "last_decision": "ALLOW",
+    "last_riskBps": 2000,
+    "last_polled_at": "2026-11-02T07:56:19.426Z",
+    "status": "OPEN"
+  },
+  "passive-lp-kumbaya-2026-11-02-003": {
+    "intent_id": "passive-lp-kumbaya-2026-11-02-003",
+    "last_decision": "ERROR",
+    "last_riskBps": -1,
+    "last_polled_at": "2026-11-02T07:56:19.929Z",
+    "status": "EXITED"
+  },
+  "spot-swap-base-2026-11-02-002": {
+    "intent_id": "spot-swap-base-2026-11-02-002",
+    "last_decision": "ERROR",
+    "last_riskBps": -1,
+    "last_polled_at": "2026-11-02T07:56:20.432Z",
+    "status": "EXITED"
+  },
+  "spot-swap-base-2026-11-02-003": {
+    "intent_id": "spot-swap-base-2026-11-02-003",
+    "last_decision": "ALLOW",
+    "last_riskBps": 500,
+    "last_polled_at": "2026-11-02T07:56:21.431Z",
+    "status": "OPEN"
+  },
+  "spot-swap-base-2026-11-02-001": {
+    "intent_id": "spot-swap-base-2026-11-02-001",
+    "last_decision": "ERROR",
+    "last_riskBps": -1,
+    "last_polled_at": "2026-11-02T07:56:21.933Z",
     "status": "EXITED"
   }
 }
