@@ -6044,7 +6044,7 @@
     "intent_id": "spot-swap-base-2026-11-10-002",
     "last_decision": "ALLOW",
     "last_riskBps": 0,
-    "last_polled_at": "2026-11-12T13:16:29.294Z",
+    "last_polled_at": "2026-11-12T13:21:33.835Z",
     "status": "OPEN"
   },
   "spot-swap-base-2026-11-10-001": {
@@ -6078,8 +6078,8 @@
   "passive-lp-kumbaya-2026-11-11-003": {
     "intent_id": "passive-lp-kumbaya-2026-11-11-003",
     "last_decision": "ALLOW",
-    "last_riskBps": 3121.5,
-    "last_polled_at": "2026-11-12T13:16:30.653Z",
+    "last_riskBps": 3056.5,
+    "last_polled_at": "2026-11-12T13:21:35.405Z",
     "status": "OPEN"
   },
   "passive-lp-kumbaya-2026-11-11-002": {
