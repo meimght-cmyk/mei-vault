@@ -6289,7 +6289,7 @@
     "intent_id": "spot-swap-base-2026-11-17-001",
     "last_decision": "ALLOW",
     "last_riskBps": 0,
-    "last_polled_at": "2026-11-19T10:26:17.682Z",
+    "last_polled_at": "2026-11-19T10:31:21.876Z",
     "status": "OPEN"
   },
   "spot-swap-base-2026-11-17-003": {
@@ -6371,10 +6371,10 @@
   },
   "spot-swap-base-2026-11-19-003": {
     "intent_id": "spot-swap-base-2026-11-19-003",
-    "last_decision": "ALLOW",
-    "last_riskBps": 500,
-    "last_polled_at": "2026-11-19T10:26:19.066Z",
-    "status": "OPEN"
+    "last_decision": "ERROR",
+    "last_riskBps": -1,
+    "last_polled_at": "2026-11-19T10:31:22.380Z",
+    "status": "EXITED"
   },
   "spot-swap-base-2026-11-19-002": {
     "intent_id": "spot-swap-base-2026-11-19-002",
