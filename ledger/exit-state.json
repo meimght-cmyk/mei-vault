@@ -6462,10 +6462,10 @@
   },
   "passive-lp-kumbaya-2026-11-22-003": {
     "intent_id": "passive-lp-kumbaya-2026-11-22-003",
-    "last_decision": "ALLOW",
-    "last_riskBps": 2000,
-    "last_polled_at": "2026-11-26T12:26:29.249Z",
-    "status": "OPEN"
+    "last_decision": "ERROR",
+    "last_riskBps": -1,
+    "last_polled_at": "2026-11-26T12:31:36.435Z",
+    "status": "EXITED"
   },
   "passive-lp-kumbaya-2026-11-22-002": {
     "intent_id": "passive-lp-kumbaya-2026-11-22-002",
@@ -6534,7 +6534,7 @@
     "intent_id": "spot-swap-base-2026-11-24-001",
     "last_decision": "ALLOW",
     "last_riskBps": 0,
-    "last_polled_at": "2026-11-26T12:26:30.213Z",
+    "last_polled_at": "2026-11-26T12:31:37.349Z",
     "status": "OPEN"
   },
   "spot-swap-base-2026-11-24-003": {
@@ -6564,5 +6564,40 @@
     "last_riskBps": -1,
     "last_polled_at": "2026-11-24T19:58:03.868Z",
     "status": "EXITED"
+  },
+  "spot-swap-base-2026-11-26-001": {
+    "intent_id": "spot-swap-base-2026-11-26-001",
+    "last_decision": "ALLOW",
+    "last_riskBps": 0,
+    "last_polled_at": "2026-11-26T12:31:33.241Z",
+    "status": "OPEN"
+  },
+  "spot-swap-base-2026-11-26-002": {
+    "intent_id": "spot-swap-base-2026-11-26-002",
+    "last_decision": "ERROR",
+    "last_riskBps": -1,
+    "last_polled_at": "2026-11-26T12:31:33.745Z",
+    "status": "EXITED"
+  },
+  "spot-swap-base-2026-11-26-003": {
+    "intent_id": "spot-swap-base-2026-11-26-003",
+    "last_decision": "ERROR",
+    "last_riskBps": -1,
+    "last_polled_at": "2026-11-26T12:31:34.247Z",
+    "status": "EXITED"
+  },
+  "passive-lp-kumbaya-2026-11-26-002": {
+    "intent_id": "passive-lp-kumbaya-2026-11-26-002",
+    "last_decision": "ERROR",
+    "last_riskBps": -1,
+    "last_polled_at": "2026-11-26T12:31:34.751Z",
+    "status": "EXITED"
+  },
+  "passive-lp-kumbaya-2026-11-26-003": {
+    "intent_id": "passive-lp-kumbaya-2026-11-26-003",
+    "last_decision": "ALLOW",
+    "last_riskBps": 2000,
+    "last_polled_at": "2026-11-26T12:31:35.933Z",
+    "status": "OPEN"
   }
 }
